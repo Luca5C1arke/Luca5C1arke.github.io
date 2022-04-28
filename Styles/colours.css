@@ -9,6 +9,11 @@
     /* fallbacks */
     background-color: var(--off-white);
     color: var(--dark-blue);
+
+    /* text colours */
+    --color-text-dark: var(--dark-blue);
+    --color-text-light: white;
+    --color-text-alt: var(--gold);
 }
 
 /* headings */
