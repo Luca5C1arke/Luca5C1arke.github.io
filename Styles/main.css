@@ -1,0 +1,55 @@
+/* utility classes */
+:root {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+/* buttons */
+.button {
+    border: none;
+    border-radius: 8px;
+    padding: 0.25em 0.5em;
+    /* fall backs */
+    font-family: var(--font-secondary), serif;
+    font-size: var(--text-m);
+    color: var(--dark-blue);
+    background-color: var(--gold);
+    width: 4em;
+    height: 2em;
+}
+
+.button--lge {
+    width: auto;
+    height: auto;
+}
+
+.button--med {
+    width: auto;
+    height: auto;
+    font-size: var(--text-s);
+}
+
+.button--sml {
+
+}
+
+.button--light {
+
+}
+
+.button--dark {
+
+}
+
+.contact-website > .body-button-med {
+    width: 10em;
+    height: 3em;
+}
+
+.who-are-we, .contact-us > div {
+    box-shadow: 0px 5px 1em rgba(5, 25, 78, 0.2);
+}

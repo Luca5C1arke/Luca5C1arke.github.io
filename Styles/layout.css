@@ -1,12 +1,3 @@
-/* utility classes */
-:root {
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
 /* cover */
 .cover {
     display: flex;
@@ -95,8 +86,7 @@ footer {
 }
 
 footer > * > * {
-    width: 100%;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 /* multimedia */
