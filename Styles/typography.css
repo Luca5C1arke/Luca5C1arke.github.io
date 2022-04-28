@@ -1,0 +1,32 @@
+:root {
+    /* font declarations */
+    --font-primary: 'Source Sans Pro';
+    --font-secondary: 'Passion One';
+
+    /* type scale */
+    --text-scale-ratio: 1.2;
+    --text-xxs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-s: calc(1rem / var(--text-scale-ratio));
+    --text-m: calc(1rem * var(--text-scale-ratio));
+    --text-l: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+    /* text colours */
+    --color-text-dark: var(--dark-blue);
+    --color-text-light: white;
+    --color-text-alt: var(--gold);
+}
+
+/* headings */
+h2, h3, .text__header {
+    font-family: var(--font-secondary), serif;
+    text-transform: uppercase;
+}
+
+/* text */
+p, .text {
+    font-family: var(--font-primary), sans-serif;
+}

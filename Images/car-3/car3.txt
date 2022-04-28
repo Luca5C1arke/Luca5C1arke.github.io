@@ -1,0 +1,58 @@
+Vehicle	2016 Holden Colorado RG MY16 LS Crew Cab Red 6 Speed Sports Automatic Cab Chassis
+Body Colour	Red
+Doors	4
+Seats	5
+Cylinders	4
+Fuel Type	Diesel
+Capacity	2.8
+Gears	6 Speed
+Gearbox	Sports Automatic
+Transmission	Automatic
+Odometer	156,972 kms
+Drive Type	4WD
+Rego	1HU5DL
+StockNo	00005356
+VIN	MMU148DK0GH651235
+Fuel Consumption (Urban)	11.3L/100km
+Fuel Consumption (Extra Urban)	7.9L/100km
+Fuel Consumption (Combined)	9.1L/100km
+Towing Weight Braked	3500kg
+
+Central Locking - Remote/Keyless	Cruise Control
+Air Conditioning	Air Conditioning - Pollen Filter
+Power Steering	ABS (Antilock Brakes)
+Airbag - Driver	Airbag - Passenger
+Airbags - Head for 1st Row Seats (Front)	Airbags - Head for 2nd Row Seats
+Airbags - Side for 1st Row Occupants (Front)	Alarm
+Audio - Aux Input Socket (MP3/CD/Cassette)	Central Locking - Remote/Keyless
+Limited Slip Diff	Power Door Mirrors
+Power Windows - Front & Rear	6 Speaker Stereo
+Control - Traction	12V Socket(s) - Auxiliary
+Adjustable Steering Col. - Tilt only	Armrest - Rear Centre (Shared)
+Audio - Aux Input USB Socket	Audio - Input for iPod
+Audio - MP3 Decoder	Bluetooth System
+Body Colour - Bumpers	Body Colour - Door Handles
+Body Colour - Exterior Mirrors Partial	Bottle Holders - 1st Row
+Control - Electronic Stability	Control - Hill Descent
+Control - Trailer Sway	Cup Holders - 1st Row
+Disc Brakes Front Ventilated	Door Pockets - 1st row (Front)
+EBD (Electronic Brake Force Distribution)	Engine Immobiliser
+Flip/Fold Out Key	Footrest - Drivers
+Gauges - Coloured Dials	Gloveboxes - Upper & Lower
+Guard - Sump	Headrests - Adjustable 1st Row (Front)
+Headrests - Adjustable 2nd Row x3	Hill Holder
+Independent Front Suspension	Intermittent Wipers - Variable
+Leather Steering Wheel	Map/Reading Lamps - for 1st Row
+Mudflaps - front	Mudflaps - rear
+Multi-function Control Screen - Colour	Multi-function Steering Wheel
+Seatbelt - Adjustable Height 1st Row	Seatbelt - Load Limiters 1st Row (Front)
+Seatbelt - Pretensioners 1st Row (Front)	Seatbelts - Lap/Sash for 5 seats
+Seats - 2nd Row Split Fold	Seats - Bucket (Front)
+Spare Wheel - Full Size Steel	Storage Compartment - in Dash
+Storage Compartment - Under 2nd Row (Rear) Seat	Sunvisor - Vanity Mirror for Passenger
+Towing - Latch/Hook Front	Trim - Cloth
+Trip Computer	Vinyl - Cabin Floor
+Log books	Power windows
+Airbag	Anti-lock Braking System (ABS)
+Central Locking	Tow Bar
+Traction control system	Power mirrors

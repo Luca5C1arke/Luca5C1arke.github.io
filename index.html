@@ -17,11 +17,167 @@
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <title>JZMotors</title>
 </head>
-<main>
+<body>
     <header>
-
+        <div class="header__top-row cluster">
+            <div class="header__location cluster">
+                <img src="Icons/address-icon.svg" class="icon location" alt="map location pin">
+                <p class="text text--xxsml text--white">1100 Burwood Hwy,<br> Ferntree Gully, VIC, 3156</p>
+            </div>
+            <div class="header__phone cluster">
+                <img src="Icons/phone-icon.svg" class="icon phone" alt="phone">
+                <p class="text text--xsml text--white">(03) 9752 2799</p>
+            </div>
+            <div class="header__logo">
+                <a href="index.html"><img  class="logo" src="Images/jzmotors-logo.png" alt="JZMotors logo"></a>
+            </div>
+            <div class="header__garage">
+                <a href="mygarage.html" class="">my garage</a>
+                <img src="Icons/garage-icon.svg" class="icon" alt="garage">
+            </div>
+        </div>
+        <ul class="header__nav">
+            <li class="text__header text--lge text--white"><a href="finance.html">Finance</a></li>
+            <li class="text__header text--lge text--white"><a href="news.html">News</a></li>
+            <li class="text__header text--lge text--white"><a href="cars.html">Cars</a></li>
+            <li class="text__header text--lge text--white"><a href="aboutus.html">About Us</a></li>
+            <li class="text__header title text--lge text--white"><a href="contactus.html">Contact Us</a></li>
+        </ul>
     </header>
-    <body>
-        <p>Hello world!</p>
-    </body>
-</main>
+    <main>
+        <!--- Featured Cars -->
+        <div class="featured-cars">
+            <h2 class="text__header text--lge text--dark">New Cars this Week</h2>
+        </div>
+
+        <!--- About Us -->
+        <div class="about-us">
+            <a class="button button--lge button--light">ALL CARS</a>
+            <img src="Images/ferntree-gully-sign.png" alt="Ferntree Gully Sign">
+            <h2 class="text__header text--lge text--dark">Who are we?</h2>
+            <div class="card card__about-us">
+                <div class="not-sidebar"> 
+                    <p>As I&rsquo;ve said my name is Jeff Zaninelli and I proudly own JZ Motors. You probably do not believe what I am claiming and offering here and maybe the conversation you&rsquo;re having in your mind right now is “Oh! He&rsquo;s just one of those &rsquo;car salesmen&rsquo; who put up those promising lines to attract buyers. Blah blah blah…”<br>I&rsquo;m sorry to tell you but I&rsquo;ll say it straight up, that&rsquo;s not true!!! In my life I have always believed that dreams are what distinguishes us from plants and animals and that no matter how difficult and how impossible those dreams may seem, it is in our innate essence to dream and make those dreams come true.</p>
+                    <i>Jeff Zaninelli</i>
+                </div>
+                <div class="sidebar iframe-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fvbi-8N7zXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen muted=1></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!--- Contact Us -->
+        <div class="contact-us">
+            <h2 class="text__header text--lge text--dark">Where are we?</h2>
+            <div class="contact-website">
+                <h3 class="text__header text--med text--white text--box--dark">On our website (here)</h3>
+                <p class="text text--med text--dark">Our website can tell you lots of what you need to know! For help with applying for financial assistance, visit our financing page. Otherwise, you can use our contact us page!</p>
+                <a class="button button--med button--dark">Contact Us about Financing</a>
+                <a class="button button--med button--dark">Contact Us about Everything Else</a>
+            </div>
+            <div class="contact-us__phone">
+                <h3 class="text__header text--med text--white text--box--dark">Over the phone</h3>
+                <div class="phone-number">
+                    <img class = "icon" src="Icons/phone-icon-dark.svg" alt="phone">
+                    <i class="text text--lge text--dark">(03) 9752 2799</i>
+                </div>
+                <p class="text text--med text--dark">Our phone is available during our opening hours (see below), and we will try our best to answer your calls ASAP!</p>
+                <img src="Images/jzmotors-front-1.jpg" alt="JZMotors' physical dealership">
+            </div>
+            <div class="contact-us__in-person">
+                <h3 class="text__header text--med text--white text--box--dark">In person</h3>
+                <div class="not-sidebar">
+                    <div class="contact-us__opening-times stack">
+                        <img class="icon" src="Icons/clock.svg" alt="Clock">
+                        <table>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>8:30am - 6:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>8:30am - 6:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>8:30am - 6:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>8:30am - 6:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>8:30am - 6:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>8:30am - 6:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="contact-us__location stack">
+                        <img class="icon" src="Icons/address-icon-dark.svg" alt="Location Pin">
+                        <p class="text text--lge text--dark">Address:<br>1100 Burwood Hwy, Ferntree Gully, VIC, 3156</p>
+                        <p class="text text--med text--dark">We are open just off of Burwood Highway, a short trip away from the station too! Please use the map on the right to see how you can find us.</p>
+                    </div>
+                </div>
+                <div class="sidebar contact-us__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5440.119412134936!2d145.29300079722503!3d-37.88801680919587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63cc0ed4a2151%3A0x3eb6aad11ca4f7ae!2sJZ%20Motors%20Used%20Cars%20Melbourne!5e0!3m2!1sen!2sau!4v1651033458164!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <!--- Community Hub -->
+        <h2 class="text__header text--lge text--dark">Community Hub</h2>
+        <div class="articles cluster">
+            <div class="card card__article">
+                <img class="img__article" src="Images/article-1-image-1.jpg" alt="Jeff with Warwick Capper outside the store">
+                <h4></h4>
+                <p></p>
+                <a class="button button--dark button--small" href="#">READ MORE</a>
+            </div>
+            <div class="card card__article">
+                <img class="img__article" src="Images/article-2-image-1.jpg" alt="Cars lined up in a parking lot">
+                <h4></h4>
+                <p></p>
+                <a class="button button--dark button--small" href="#">READ MORE</a>
+            </div>
+            <div class="card card__article">
+                <img class="img__article" src="" alt="">
+                <h4></h4>
+                <p></p>
+                <a class="button button--dark button--small" href="#">READ MORE</a>
+            </div>
+            <div class="card card__article">
+                <img class="img__article" src="" alt="">
+                <h4></h4>
+                <p></p>
+                <a class="button button--dark button--small" href="#">READ MORE</a>
+            </div>
+        </div>
+        <a class="button button--light button--large">MORE NEWS</a>
+        <!--- Footer -->
+    </main>
+    <footer>
+        <div class="cluster">
+            <p class="text text--xsml text--white">Privacy Policy</p>
+            <p class="text text--xsml text--light">Logo, business and cars are property of JZMotors. Purely for creative/educational purpose</p>
+            <ul class = "cluster">
+                <li><a href="#"><img src="Icons/youtube.svg" alt="Youtube"></a></li>
+                <li><a href="#"><img src="Icons/twitter.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="Icons/pinterest.svg" alt="Pinterest"></a></li>
+                <li><a href="#"><img src="Icons/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="Icons/facebook.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="Icons/google-plus.svg" alt="Google+"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>

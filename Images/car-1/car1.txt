@@ -1,0 +1,62 @@
+Vehicle	2013 Ford Falcon FG MkII G6 Silver 6 Speed Sports Automatic Sedan
+Body Colour	Silver
+Doors	4
+Seats	5
+Cylinders	6
+Fuel Type	Petrol - Unleaded
+Capacity	4
+Gears	6 Speed
+Gearbox	Sports Automatic
+Transmission	Automatic
+Odometer	109,738 kms
+Drive Type	RWD
+Rego	1KQ8RI
+StockNo	00005584
+VIN	6FPAAAJGSWDC44473
+Fuel Consumption (Urban)	14.6L/100km
+Fuel Consumption (Extra Urban)	7.2L/100km
+Fuel Consumption (Combined)	9.9L/100km
+Towing Weight Braked	2300kg
+
+Central Locking - Remote/Keyless	Cruise Control
+17" Alloy Wheels	Air Conditioning - Rear
+Air Cond. - Climate Control	CD Player
+ABS (Antilock Brakes)	Airbag - Driver
+Airbag - Passenger	Airbags - Head for 1st Row Seats (Front)
+Airbags - Head for 2nd Row Seats	Airbags - Side for 1st Row Occupants (Front)
+Audio - Aux Input Socket (MP3/CD/Cassette)	Central Locking - Remote/Keyless
+Electric Seat - Drivers	Power Door Mirrors
+Power Windows - Front & Rear	6 Speaker Stereo
+Control - Traction	Adjustable Steering Col. - Tilt & Reach
+Armrest - Front Centre (Shared)	Armrest - Rear Centre (Shared)
+Audio - Aux Input USB Socket	Audio - Input for iPod
+Audio - MP3 Decoder	Bluetooth System
+Body Colour - Bumpers	Body Colour - Exterior Mirrors Partial
+Body Colour - Rear Garnish	Brake Assist
+Calipers - Front 2 Spot	Chrome Exhaust Tip(s)
+Chrome Fog Lamp Bezels/surrounds	Chrome Grille Surround
+Chrome Window Surrounds - Exterior	Clock - Digital
+Control - Electronic Stability	Control - Park Distance Rear
+Cup Holders - 1st Row	Cup Holders - 2nd Row
+Disc Brakes Front Ventilated	Disc Brakes Rear Solid
+Door Pockets - 1st row (Front)	Drive By Wire (Electronic Throttle Control)
+EBD (Electronic Brake Force Distribution)	Engine Immobiliser
+Flip/Fold Out Key	Fog Lamps - Front
+Headlamps - Blacked Out Surrounds	Headlamps - Clear Lenses
+Headlamps Automatic (light sensitive)	Independent Rear Suspension
+Intermittent Wipers - Variable	Leather Steering Wheel
+Map/Reading Lamps - for 1st Row	Metallic Finish Door Handles - Interior
+Multi-function Control Screen - Colour	Multi-function Steering Wheel
+Power Steering - Variable Ratio (more lock faster)	Remote Boot/Hatch Release
+Remote Fuel Lid Release	Seat - Drivers Lumbar Adjustment Manual
+Seat - Passenger Lumbar Adjustment Manual	Seatbelt - Pretensioners 1st Row (Front)
+Seatbelts - Lap/Sash for 5 seats	Seats - 2nd Row Split Fold
+Spare Wheel - Space Saver/Temporary	Suspension - Sports
+Tacho	Tail Lamps - Blacked Out Surrounds
+Trim - Cloth	Trip Computer
+Warning - Driver Fatigue	Log books
+Power windows	Airbag
+Anti-lock Braking System (ABS)	Central Locking
+Air Conditioning	Traction control system
+Power mirrors	Alloy Wheels
+Climate Control	 

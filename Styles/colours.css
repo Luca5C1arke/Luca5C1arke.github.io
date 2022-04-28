@@ -1,0 +1,39 @@
+:root {
+    --dark-blue: #284d7b;
+    --light-blue: #1654a2;
+    --gold: #f6cd13;
+    --off-white: #f5f5f5;
+    --positive-green: #50d68a;
+    --negative-red: #ce1717;
+
+    /* fallbacks */
+    background-color: var(--off-white);
+    color: var(--dark-blue);
+}
+
+/* headings */
+h2, h3, .text__header {
+    color: var(--dark-blue);
+}
+
+/* text */
+p, .text {
+    color: var(--dark-blue);
+}
+
+.text--white {
+    color: white;
+}
+
+.text--light {
+    color: var(--gold);
+}
+
+.text--dark {
+    color: var(--dark-blue);
+}
+
+/* header and footer */
+header, footer {
+    background-color: var(--dark-blue);
+}
