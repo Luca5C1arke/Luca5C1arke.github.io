@@ -20,41 +20,43 @@
 <body>
     <header>
         <div class="header__top-row cluster">
-            <div class="header__location cluster">
-                <img src="Icons/address-icon.svg" class="icon location" alt="map location pin">
-                <p class="text text--xxsml text--white">1100 Burwood Hwy,<br> Ferntree Gully, VIC, 3156</p>
+            <div class="header__details cluster cluster--row">
+                <div class="header__location cluster">
+                    <img src="Icons/address-icon.svg" class="icon location" alt="map location pin">
+                    <p class="text text--xxsml text--white">1100 Burwood Hwy,<br> Ferntree Gully, VIC, 3156</p>
+                </div>
+                <div class="header__phone cluster">
+                    <img src="Icons/phone-icon.svg" class="icon phone" alt="phone">
+                    <p class="text text--xsml text--white">(03) 9752 2799</p>
+                </div>
             </div>
-            <div class="header__phone cluster">
-                <img src="Icons/phone-icon.svg" class="icon phone" alt="phone">
-                <p class="text text--xsml text--white">(03) 9752 2799</p>
-            </div>
-            <div class="header__logo">
+            <div class="header__logo center">
                 <a href="index.html"><img  class="logo" src="Images/jzmotors-logo.png" alt="JZMotors logo"></a>
             </div>
-            <div class="header__garage">
-                <a href="mygarage.html" class="">my garage</a>
+            <div class="header__garage cluster cluster--right">
+                <a href="mygarage.html" class="text__header text--med text--light">my garage</a>
                 <img src="Icons/garage-icon.svg" class="icon" alt="garage">
             </div>
         </div>
-        <ul class="header__nav">
-            <li class="text__header text--lge text--white"><a href="finance.html">Finance</a></li>
-            <li class="text__header text--lge text--white"><a href="news.html">News</a></li>
-            <li class="text__header text--lge text--white"><a href="cars.html">Cars</a></li>
-            <li class="text__header text--lge text--white"><a href="aboutus.html">About Us</a></li>
-            <li class="text__header title text--lge text--white"><a href="contactus.html">Contact Us</a></li>
+        <ul class="header__nav cluster">
+            <li><a class="text__header text--lge text--light" href="finance.html">Finance</a></li>
+            <li><a class="text__header text--lge text--light" href="news.html">News</a></li>
+            <li><a class="text__header text--lge text--light" href="cars.html">Cars</a></li>
+            <li><a class="text__header text--lge text--light" href="aboutus.html">About Us</a></li>
+            <li><a class="text__header text--lge text--light" href="contactus.html">Contact Us</a></li>
         </ul>
     </header>
     <main>
         <!--- Featured Cars -->
         <div class="featured-cars">
-            <h2 class="text__header text--lge text--dark">New Cars this Week</h2>
+            <h2 class="text__header text--xlge text--dark">New Cars this Week</h2>
         </div>
 
         <!--- About Us -->
         <div class="about-us">
-            <a href="cars.html"><button class="button button--lge button--light">CARS</button></a>
+            <a href="cars.html"><button class="button button--lge button--light">ALL CARS</button></a>
             <img src="Images/ferntree-gully-sign.png" alt="Ferntree Gully Sign">
-            <h2 class="text__header text--lge text--dark">Who are we?</h2>
+            <h2 class="text__header text--xlge text--dark">Who are we?</h2>
             <div class="card card__about-us">
                 <div class="not-sidebar"> 
                     <p>As I&rsquo;ve said my name is Jeff Zaninelli and I proudly own JZ Motors. You probably do not believe what I am claiming and offering here and maybe the conversation you&rsquo;re having in your mind right now is “Oh! He&rsquo;s just one of those &rsquo;car salesmen&rsquo; who put up those promising lines to attract buyers. Blah blah blah…”<br>I&rsquo;m sorry to tell you but I&rsquo;ll say it straight up, that&rsquo;s not true!!! In my life I have always believed that dreams are what distinguishes us from plants and animals and that no matter how difficult and how impossible those dreams may seem, it is in our innate essence to dream and make those dreams come true.</p>
@@ -68,14 +70,14 @@
 
         <!--- Contact Us -->
         <div class="contact-us">
-            <h2 class="text__header text--lge text--dark">Where are we?</h2>
-            <div class="contact-website">
+            <h2 class="text__header text--xlge text--dark">Where are we?</h2>
+            <div class="contact-website card">
                 <h3 class="text__header text--med text--white text--box--dark">On our website (here)</h3>
                 <p class="text text--med text--dark">Our website can tell you lots of what you need to know! For help with applying for financial assistance, visit our financing page. Otherwise, you can use our contact us page!</p>
                 <a ><button class="button button--med button--dark">Contact Us about Financing</button></a>
                 <a class="button button--med button--dark">Contact Us about Everything Else</a>
             </div>
-            <div class="contact-us__phone">
+            <div class="contact-us__phone card">
                 <h3 class="text__header text--med text--white text--box--dark">Over the phone</h3>
                 <div class="phone-number">
                     <img class = "icon" src="Icons/phone-icon-dark.svg" alt="phone">
@@ -84,7 +86,7 @@
                 <p class="text text--med text--dark">Our phone is available during our opening hours (see below), and we will try our best to answer your calls ASAP!</p>
                 <img src="Images/jzmotors-front-1.jpg" alt="JZMotors' physical dealership">
             </div>
-            <div class="contact-us__in-person">
+            <div class="contact-us__in-person card">
                 <h3 class="text__header text--med text--white text--box--dark">In person</h3>
                 <div class="not-sidebar">
                     <div class="contact-us__opening-times stack">
@@ -136,7 +138,7 @@
             </div>
         </div>
         <!--- Community Hub -->
-        <h2 class="text__header text--lge text--dark">Community Hub</h2>
+        <h2 class="text__header text--xlge text--dark">Community Hub</h2>
         <div class="articles cluster">
             <div class="card card__article">
                 <img class="img__article" src="Images/article-1-image-1.jpg" alt="Jeff with Warwick Capper outside the store">
@@ -167,7 +169,7 @@
         <!--- Footer -->
     </main>
     <footer>
-        <div class="cluster">
+        <div class="cluster cluter--row">
             <p class="text text--xsml text--white">Privacy Policy</p>
             <p class="text text--xsml text--light">Logo, business and cars are property of JZMotors. Purely for creative/educational purpose</p>
             <ul class = "cluster">

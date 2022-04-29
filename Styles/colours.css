@@ -38,6 +38,10 @@ p, .text {
     color: var(--dark-blue);
 }
 
+.text--box--dark {
+    background-color: var(--dark-blue);
+}
+
 /* header and footer */
 header, footer {
     background-color: var(--dark-blue);

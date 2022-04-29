@@ -18,10 +18,50 @@
 /* headings */
 h2, h3, .text__header {
     font-family: var(--font-secondary), serif;
+    text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* text */
-p, .text {
+p, .text, th, td {
     font-family: var(--font-primary), sans-serif;
+}
+
+th {
+    font-weight: bold;
+}
+
+ul, ul > * {
+    color: var(--gold);
+    text-decoration: none;
+    list-style: none;
+}
+
+.text--xlge {
+    font-size: var(--text-xl);
+}
+
+.text--lge {
+    font-size: var(--text-l);
+}
+
+.text--med {
+    font-size: var(--text-m);
+}
+
+.text--sml {
+    font-size: var(--text-s);
+}
+
+.text--white {
+    color: white;
+}
+
+.text--dark {
+    color: var(--dark-blue);
+}
+
+.text--light {
+    color: var(--gold);
 }

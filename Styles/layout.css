@@ -46,6 +46,17 @@
     margin: 0.5rem;
 }
 
+.cluster--row {
+    flex-wrap: nowrap;
+}
+
+.cluster--right {
+    box-sizing: content-box;
+    justify-content: flex-end;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+}
+
 /* sidebar */
 .sidebar-container {
     display: flex;
@@ -73,14 +84,32 @@ body {
 
 main {
     max-width: 1200px;
+    margin-top: 340px;
+    /* will make a responsive body once mobile header is developed */
     margin-left: auto;
     margin-right: auto;
 }
 
+/* header */
 header {
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 
+header > * {
+    padding: 10px 30px 0 30px;
+}
+
+.header__top-row > *:not(.header__logo) {
+    width: 30vw;
+}
+
+.header__nav { 
+    padding: 15px 50px;
+}
+
+/* footer */
 footer {
     min-width: 100%;
 }
