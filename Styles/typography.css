@@ -54,6 +54,14 @@ ul, ul > * {
     font-size: var(--text-s);
 }
 
+.text--xsml {
+    font-size: var(--text-xs);
+}
+
+.text--xxsml {
+    font-size: var(--text-xxs);
+}
+
 .text--white {
     color: white;
 }

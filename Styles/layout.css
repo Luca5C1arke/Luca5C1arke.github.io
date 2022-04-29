@@ -11,13 +11,19 @@
 }
 
 /* centre */
-.centre {
+.center {
     box-sizing: content-box;
     /* max-width: 60ch; */
     margin-left: auto;
     margin-right: auto;
     padding-left: var(--space-sm);
     padding-right: var(--space-sm);
+}
+
+/* for when items need to be totally centered */
+.super-center {
+    display: grid;
+    place-items: center;
 }
 
 /* stack */
@@ -75,6 +81,24 @@
     min-width: 50%;
 }
 
+/* lineup */
+.lineup {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100px;
+    width: 100%;
+  }
+
+ .lineup > * {
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 100%;
+ }
+
 /* content */
 
 /* sections */
@@ -83,11 +107,20 @@ body {
 }
 
 main {
-    max-width: 1200px;
-    margin-top: 340px;
+    max-width: 1000px;
+    margin-top: 200px;
     /* will make a responsive body once mobile header is developed */
     margin-left: auto;
     margin-right: auto;
+}
+
+footer {
+    margin-top: 400px;
+    /* will also make responsive */
+}
+
+main > * {
+    padding: var(--space-s) var(--space-m);
 }
 
 /* header */
@@ -97,16 +130,29 @@ header {
     width: 100%;
 }
 
-header > * {
-    padding: 10px 30px 0 30px;
+.header__top-row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 6fr 8fr 6fr;
 }
 
-.header__top-row > *:not(.header__logo) {
-    width: 30vw;
+.header__details {
+    grid-column: 1;
+    place-content: left;
 }
 
-.header__nav { 
-    padding: 15px 50px;
+.header__logo {
+    grid-column: 2;
+    place-self: center;
+}
+
+.header__garage {
+    grid-column: 3;
+    place-content: right;
+}
+
+.header__nav > * {
+    flex: 1;
 }
 
 /* footer */
@@ -124,10 +170,174 @@ img {
 }
 
 .logo {
-    width: 20rem;
+    width: 10rem;
 }
 
 .icon {
     width: 25px;
     height: 25px;
 }
+
+/* about us + sign */
+.about-us {
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    place-items: center;
+}
+
+.about-us > a {
+    grid-row: 1;
+    grid-column: 2;
+
+}
+
+.about-us > h2 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.about-us > img {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    max-height: 12em;
+}
+
+.card__about-us {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 40%);
+}
+
+.about-us__text {
+    padding: var(--space-l);
+    grid-column: 1;
+}
+
+.about-us__media {
+    grid-column: 2;
+}
+
+/* add media query breakpoint for media */
+
+
+
+
+/* contact us */
+.contact-us {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% auto auto;
+}
+
+.contact-us > * {
+    margin: 1em;
+}
+
+.contact-us > h2 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.contact-us__website {
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 65% 25%;
+}
+
+.contact-us__website > h3 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.contact-us__website > p {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+.contact-us__website > a:first-of-type {
+    grid-row: 3;
+    grid-column: 1;
+    margin: 0 1em 4em 2em;
+}
+
+.contact-us__website > a:last-of-type {
+    grid-row: 3;
+    grid-column: 2;
+    margin: 0 2em 4em 1em;
+}
+
+.contact-us__phone {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 10% 25% 65%;
+}
+
+.contact-us__phone > h3 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.contact-us__phone > .phone-number {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+.contact-us__phone > p {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.contact-us__phone > .img-container {
+    grid-row: 2 / span 2;
+    grid-column: 2;
+    margin: 0;
+}
+
+.contact-us__phone > .img-container > img {
+    max-width: 90%;
+}
+
+.contact-us__in-person {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 30% 25% 45%;
+    grid-template-rows: 15% 85%;
+}
+
+.contact-us__in-person > h3 {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+}
+
+.contact-us__opening-times {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.contact-us__location {
+    grid-row: 2;
+    grid-column: 2;
+    padding: 1em;
+}
+
+.contact-us > .contact-us__map {
+    margin: 0;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.contact-us__map > iframe {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* community hub */
