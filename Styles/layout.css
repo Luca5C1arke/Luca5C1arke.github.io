@@ -83,20 +83,32 @@
 
 /* lineup */
 .lineup {
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 100px;
-    width: 100%;
-  }
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* add a media query for flex wrap : wrap at breakpoint */
 
  .lineup > * {
     margin: 0 1em;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     justify-content: space-between;
     width: 100%;
+ }
+
+ .lineup img {
+    width: 100%;
+    margin: 0;
+    height: 45%;
+    object-fit: cover;
+ }
+
+ .lineup .button {
+    width: 40%;
+    place-self: center;
+    margin: 0.65em;
  }
 
 /* content */
@@ -113,12 +125,6 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-
-footer {
-    margin-top: 400px;
-    /* will also make responsive */
-}
-
 main > * {
     padding: var(--space-s) var(--space-m);
 }
@@ -190,7 +196,6 @@ img {
 .about-us > a {
     grid-row: 1;
     grid-column: 2;
-
 }
 
 .about-us > h2 {
@@ -341,3 +346,6 @@ img {
 
 
 /* community hub */
+main .button--lge {
+    margin: 2em 0;
+}

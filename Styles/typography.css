@@ -26,10 +26,12 @@ h2, h3, .text__header {
 /* text */
 p, .text, th, td {
     font-family: var(--font-primary), sans-serif;
+    font-size: var(--text-s);
 }
 
 th {
     font-weight: bold;
+    font-size: var(--text-m);
 }
 
 ul, ul > * {
