@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="Styles/typography.css">
     <link rel="stylesheet" href="Styles/spacing.css">
     <link rel="stylesheet" href="Styles/layout.css">
+    <!-- js scripts --->
+    <script src="scripts.js"></script>
     <!--- fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,22 +52,30 @@
         <!--- Featured Cars -->
         <div class="featured-cars">
             <h2 class="text__header text--xlge text--dark">New Cars this Week</h2>
-            <div class="carousel carousel__cars">
+            <div class="carousel">
+                <button class="button button--sml button--dark" id="car-carousel__prev">PREV</button>
                 <!-- car 1 -->
                 <div class="card carousel__card">
-                    <img src="" alt="" class="img__car">
+                    <img src="Images/car-1/car1-main.jpg" alt="" class="img__car">
+                    <h3 class="text__header text--xsml text--dark">NAME OF CAR GOES HERE</h3>
+                    <p class="text text--xxsml">This is a descripiton for the car, it should be about two or three sentences long. Just enough to fill the box but not overwhelmingly.</p>
+                    <a class="button button--dark button--xsml" href="#">READ MORE</a>
                 </div>
                 <!-- car 2 -->
-                <div class="card carousel__card">
-
+                <div class="card carousel__card carousel__card--main">
+                    <img src="Images/car-2/car2-main.jpg" alt="" class="img__car">
+                    <h3 class="text__header text--med text--dark">NAME OF CAR GOES HERE</h3>
+                    <p class="text text--sml">This is a descripiton for the car, it should be about two or three sentences long. Just enough to fill the box but not overwhelmingly.</p>
+                    <a class="button button--dark button--sml" href="#">READ MORE</a>
                 </div>
                 <!-- car 3 -->
                 <div class="card carousel__card">
-
+                    <img src="Images/car-3/car3-main.jpg" alt="" class="img__car">
+                    <h3 class="text__header text--xsml text--dark">NAME OF CAR GOES HERE</h3>
+                    <p class="text text--xxsml">This is a descripiton for the car, it should be about two or three sentences long. Just enough to fill the box but not overwhelmingly.</p>
+                    <a class="button button--dark button--xsml" href="#">READ MORE</a>
                 </div>
-                <!-- buttons -->
-                <a onclick=""><img class="carousel__button" src="Icons/previous-arrow.svg" alt="Arrow to previous car"></a>
-                <a onclick=""><img class="carousel__button" src="Icons/next-arrow" alt="Arrow to next car"></a>
+                <button class="button button--sml button--dark" id="car-carousel__next">NEXT</button>
             </div>
         </div>
 

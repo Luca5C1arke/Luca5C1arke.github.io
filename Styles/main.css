@@ -22,25 +22,26 @@
     height: 2em;
     text-decoration: none;
     text-align: center;
+    width: auto;
+    height: auto;
 }
 
 .button--lge {
-    width: auto;
-    height: auto;
     font-size: var(--text-l);
 }
 
 .button--med {
-    width: auto;
-    height: auto;
     font-size: var(--text-m);
 }
 
 .button--sml {
-    width: auto;
-    height: auto;
     padding: 0.5em 0.75em;
     font-size: var(--text-s);
+}
+
+.button--xsml {
+    padding: 0.5em 0.5em;
+    font-size: var(--text-xs);
 }
 
 .button--light {
@@ -52,6 +53,28 @@
     background-color: var(--dark-blue);
     color: white;
 }
+
+.button:hover {
+    background-color: yellow;
+}
+
+.button:active {
+    background-color: red;
+}
+
+/* carousel buttons */
+#car-carousel__next, #car-carousel__prev {
+    position: absolute;
+}
+
+#car-carousel__prev {
+    left: 5px;
+}
+
+#car-carousel__next {
+    right: 5px;
+}
+
 
 .contact-website > .body-button-med {
     width: 10em;
