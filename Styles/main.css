@@ -62,20 +62,6 @@
     background-color: red;
 }
 
-/* carousel buttons */
-#car-carousel__next, #car-carousel__prev {
-    position: absolute;
-}
-
-#car-carousel__prev {
-    left: 5px;
-}
-
-#car-carousel__next {
-    right: 5px;
-}
-
-
 .contact-website > .body-button-med {
     width: 10em;
     height: 3em;

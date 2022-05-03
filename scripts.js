@@ -1,26 +1,25 @@
-const carouselCards = document.querySelector('.carousel__cards');
-const carouselButtons = document.querySelectorAll('.carousel__button');
-const numberOfImages = document.querySelectorAll('.carousel__cards img').length;
-let imageIndex = 1;
-let translateX = 0;
-
-carouselButtons.forEach(button => {
-    button.addEventListener('click', event => {
-        // if previous button is clicked
-        if (event.target.id == 'carousel__prev') {
-            if (imageIndex !== 1) {
-                imageIndex -= 1;
-                translateX += 300;
-            }
-        } else {
-            // else if next button is clicked
-            if (imageIndex !== numberOfImages) {
-                imageIndex++;
-                translateX -= 300;
-            }
-        }
-       carouselImages.style.transform = 'translateX($(translateX)px)';
-    });
-});
-
+/* CAROUSEL FUNCTIONALITY */
 // new idea, just swap image, h3, link and p around.
+const carouselImages = document.querySelectorAll('.carousel__card > img');
+const numOfImages = document.querySelectorAll(".carousel__card > img").length;
+const carouselDescriptions = document.querySelectorAll('.carousel p');
+let currMainImage = 2;
+
+function shiftLeft() {
+    console.log("Shifting left..");
+    if (currMainImage == numOfImages) {
+        currMainImage = 1; 
+    } else {
+        currMainImage ++;
+    }
+}
+
+function shiftRight() {
+    console.log("Shifting right...");
+    if (currMainImage == 1) {
+        currMainImage = 3; 
+    } else {
+        currMainImage --;
+    }
+}
+

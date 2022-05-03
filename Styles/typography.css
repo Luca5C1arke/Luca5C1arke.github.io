@@ -5,7 +5,7 @@
 
     /* type scale */
     --text-scale-ratio: 1.2;
-    --text-xxs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-xxs: calc(1rem / ( var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)));
     --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
     --text-s: calc(1rem / var(--text-scale-ratio));
     --text-m: calc(1rem * var(--text-scale-ratio));
@@ -63,6 +63,7 @@ ul, ul > * {
 .text--xxsml {
     font-size: var(--text-xxs);
 }
+
 
 .text--white {
     color: white;
