@@ -1,3 +1,5 @@
+/* LOAD HEADER AND FOOTER */
+
 /* CAROUSEL FUNCTIONALITY */
 // new idea, just swap image, h3, link and p around.
 const carouselImages = document.querySelectorAll('.carousel__card > img');
@@ -22,4 +24,3 @@ function shiftRight() {
         currMainImage --;
     }
 }
-
