@@ -1,5 +1,3 @@
-/* LOAD HEADER AND FOOTER */
-
 const getData = (pageUrl) => {
     return new Promise((resolve, reject) => {
         let request = new XMLHttpRequest();
@@ -33,24 +31,34 @@ function buttonClick(buttonElement) {
             document.getElementById("carousel-car-1").style.gridColumn = 5;
             document.getElementById("carousel-car-2").style.gridColumn = 1;
             document.getElementById("carousel-car-3").style.gridColumn = 3;
-        } else if ((document.getElementById("carousel-car-1").style.gridColumn) == "5 / auto") {
-            // order is currently 2 3 1, make it 3 1 2
-            document.getElementById("carousel-car-1").style.gridColumn = 3;
-            document.getElementById("carousel-car-2").style.gridColumn = 5;
-            document.getElementById("carousel-car-3").style.gridColumn = 1;
-        } else {
-            console.log(document.getElementById("carousel-car-1").style.gridColumn);
+        } else if ((document.getElementById("carousel-car-1").style.gridColumn) == "3 / auto") {
             // order is currently 3 1 2, make it 1 2 3
             document.getElementById("carousel-car-1").style.gridColumn = 1;
             document.getElementById("carousel-car-2").style.gridColumn = 3;
             document.getElementById("carousel-car-3").style.gridColumn = 5;
+        } else {
+            // order is currently 2 3 1, make it 3 1 2
+            document.getElementById("carousel-car-1").style.gridColumn = 3;
+            document.getElementById("carousel-car-2").style.gridColumn = 5;
+            document.getElementById("carousel-car-3").style.gridColumn = 1;
         }
     } else if (buttonElement.textContent == "NEXT") {
-        alert("Shifting to..."+buttonElement.textContent);
-        console.log("Hey you clicked "+buttonElement.textContent);
-        // go the other way
-
-
+        if ((document.getElementById("carousel-car-1").style.gridColumn) == "5 / auto") {
+            // order is currently 2 3 1, make it 1 2 3
+            document.getElementById("carousel-car-1").style.gridColumn = 1;
+            document.getElementById("carousel-car-2").style.gridColumn = 3;
+            document.getElementById("carousel-car-3").style.gridColumn = 5;
+        } else if ((document.getElementById("carousel-car-1").style.gridColumn) == "3 / auto") {
+            // order is currently 3 1 2, make it 2 3 1
+            document.getElementById("carousel-car-1").style.gridColumn = 5;
+            document.getElementById("carousel-car-2").style.gridColumn = 1;
+            document.getElementById("carousel-car-3").style.gridColumn = 3;
+        } else {
+            // order is currently 1 2 3, make it 3 1 2
+            document.getElementById("carousel-car-1").style.gridColumn = 3;
+            document.getElementById("carousel-car-2").style.gridColumn = 5;
+            document.getElementById("carousel-car-3").style.gridColumn = 1;
+        }
     } else {
         alert("Hey you clicked "+buttonElement.textContent);
         console.log("Hey you clicked "+buttonElement.textContent);

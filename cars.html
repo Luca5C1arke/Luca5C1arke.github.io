@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="Styles/layout.css">
     <!-- js scripts --->
     <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="insert.js"></script>
     <!--- fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,36 +22,7 @@
     <title>JZMotors</title>
 </head>
 <body>
-    <div id="header"> 
-        <header> 
-            <div class="header__top-row">
-                <div class="header__details cluster cluster--row">
-                    <div class="header__location cluster">
-                        <img src="Icons/address-icon.svg" class="icon location" alt="map location pin">
-                        <p class="text text--xxsml text--white">1100 Burwood Hwy,<br> Ferntree Gully, VIC, 3156</p>
-                    </div>
-                    <div class="header__phone cluster">
-                        <img src="Icons/phone-icon.svg" class="icon phone" alt="phone">
-                        <p class="text text--xsml text--white">(03) 9752 2799</p>
-                    </div>
-                </div>
-                <div class="header__logo center">
-                    <a href="index.html"><img class="logo" src="Images/jzmotors-logo.png" alt="JZMotors logo"></a>
-                </div>
-                <div class="header__garage cluster cluster--right">
-                    <a href="mygarage.html" class="text__header text--med text--light">my garage</a>
-                    <img src="Icons/garage-icon.svg" class="icon" alt="garage">
-                </div>
-            </div>
-            <ul class="header__nav cluster">
-                <li><a class="text__header text--lge text--light super-center" href="finance.html">Finance</a></li>
-                <li><a class="text__header text--lge text--light super-center" href="news.html">News</a></li>
-                <li><a class="text__header text--lge text--light super-center" href="cars.html">Cars</a></li>
-                <li><a class="text__header text--lge text--light super-center" href="aboutus.html">About Us</a></li>
-                <li><a class="text__header text--lge text--light super-center" href="contactus.html">Contact Us</a></li>
-            </ul>
-        </header>
-    </div>
+    <div id="header"></div>
     <main>
         <div class="nav-bar-search">
             
@@ -73,7 +46,7 @@
             <div class="car-box">
                 <div class="card card__car center stack">
                     <div class="card__car__head stack">
-                        <h3 class="text__header text--med text--white super-center">CAR NAME</h3>
+                        <h3 class="text__header text--lge text--white super-center">CAR NAME</h3>
                         <h3 class="text text--sml text--white super-center">$999,999.99 DRIVE AWAY</h3>
                     </div>
                     <div class="card__car__photo">
@@ -87,7 +60,7 @@
                             </div>
                             <div class="car-stat">
                                 <img class="icon icon__car-stat" src="Icons/gear-shifter.svg" alt="Transmission">
-                                <p class="text--xxsml text--bold">Automatic/Manual</p>
+                                <p class="text--xxsml text--bold">Automatic</p>
                             </div>
                             <div class="car-stat">
                                 <img class="icon icon__car-stat" src="Icons/engine.svg" alt="Engine Specs">
@@ -102,7 +75,7 @@
                             <p class="p--sml">This car currently does not have a description. Please bear with us as we update this listing in the coming future!</p>
                         </div>
                     </div>
-                    <div class="car-card__buttons">
+                    <div class="card__car__buttons">
                         <a href="#" class="button button--sml button--dark">add to garage</a>
                         <a href="#" class="button button--sml button--dark">inquire</a>
                         <a href="#" class=" button button--sml button--dark">read more</a>
@@ -120,19 +93,6 @@
         </div>
 
     </main>
-    <footer>
-        <div class="cluster cluster--row">
-            <p class="text text--xsml text--white">Privacy Policy</p>
-            <p class="text text--xsml text--light">Logo, business and cars are property of JZMotors. Purely for creative/educational purpose</p>
-            <ul class = "cluster">
-                <li><a href="#"><img src="Icons/youtube.svg" alt="Youtube"></a></li>
-                <li><a href="#"><img src="Icons/twitter.svg" alt="Twitter"></a></li>
-                <li><a href="#"><img src="Icons/pinterest.svg" alt="Pinterest"></a></li>
-                <li><a href="#"><img src="Icons/instagram.svg" alt="Instagram"></a></li>
-                <li><a href="#"><img src="Icons/facebook.svg" alt="Facebook"></a></li>
-                <li><a href="#"><img src="Icons/google-plus.svg" alt="Google+"></a></li>
-            </ul>
-        </div>
-    </footer>
+    <div id="footer"></div>
 </body> 
 </html>

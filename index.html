@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="Styles/layout.css">
     <!-- js scripts --->
     <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="insert.js"></script>
     <!--- fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,34 +22,7 @@
     <title>JZMotors</title>
 </head>
 <body>
-    <header>
-        <div class="header__top-row">
-            <div class="header__details cluster cluster--row">
-                <div class="header__location cluster">
-                    <img src="Icons/address-icon.svg" class="icon location" alt="map location pin">
-                    <p class="text text--xxsml text--white">1100 Burwood Hwy,<br> Ferntree Gully, VIC, 3156</p>
-                </div>
-                <div class="header__phone cluster">
-                    <img src="Icons/phone-icon.svg" class="icon phone" alt="phone">
-                    <p class="text text--xsml text--white">(03) 9752 2799</p>
-                </div>
-            </div>
-            <div class="header__logo center">
-                <a href="index.html"><img class="logo" src="Images/jzmotors-logo.png" alt="JZMotors logo"></a>
-            </div>
-            <div class="header__garage cluster cluster--right">
-                <a href="mygarage.html" class="text__header text--med text--light">my garage</a>
-                <img src="Icons/garage-icon.svg" class="icon" alt="garage">
-            </div>
-        </div>
-        <ul class="header__nav cluster">
-            <li><a class="text__header text--lge text--light super-center" href="finance.html">Finance</a></li>
-            <li><a class="text__header text--lge text--light super-center" href="news.html">News</a></li>
-            <li><a class="text__header text--lge text--light super-center" href="cars.html">Cars</a></li>
-            <li><a class="text__header text--lge text--light super-center" href="aboutus.html">About Us</a></li>
-            <li><a class="text__header text--lge text--light super-center" href="contactus.html">Contact Us</a></li>
-        </ul>
-    </header>
+    <div id="header"></div>
     <main>
         <!--- Featured Cars -->
         <div class="featured-cars">
@@ -57,23 +32,23 @@
                 <!-- car 1 -->
                 <div id="carousel-car-1" class="card carousel__card cluster cluster--top">
                     <img src="Images/car-1/car1-main.jpg" alt="" class="img__car">
-                    <h3 class="text__header text--xsml text--dark">2013 Ford Falcon FG MkII</h3>
-                    <p class="text text--xxsml">This 2013 Ford is a reliable, fairly-priced 6-speed automatic with only 109,738 kms on the dial.</p>
-                    <a class="button button--dark button--xsml" href="#">READ MORE</a>
+                    <h3 class="text__header text--med text--dark">2013 Ford Falcon FG MkII</h3>
+                    <p class="text text--xsml">This 2013 Ford is a reliable, fairly-priced 6-speed automatic with only 109,738 kms on the dial.</p>
+                    <a class="button button--dark button--sml" href="#">READ MORE</a>
                 </div>
                 <!-- car 2 -->
                 <div id="carousel-car-2" class="card carousel__card carousel__card--main cluster cluster--top">
                     <img src="Images/car-2/car2-main.jpg" alt="" class="img__car">
                     <h3 class="text__header text--med text--dark">2018 Skoda Rapid NH</h3>
-                    <p class="text text--sml">This 7-speed automatic hatchback has done only 42,837 kms, and is incredibly fuel efficient. A great first car!</p>
+                    <p class="text text--xsml">This 7-speed automatic hatchback has done only 42,837 kms, and is incredibly fuel efficient. A great first car!</p>
                     <a class="button button--dark button--sml" href="#">READ MORE</a>
                 </div>
                 <!-- car 3 -->
                 <div id="carousel-car-3" class="card carousel__card cluster cluster--top">
                     <img src="Images/car-3/car3-main.jpg" alt="" class="img__car">
-                    <h3 class="text__header text--xsml text--dark">2016 Holden Colorado RG MY16 LS</h3>
-                    <p class="text text--xxsml">This 2016 diesel is the ideal car for any tradies in the market for a new ute. Filled with lots of great modern features!</p>
-                    <a class="button button--dark button--xsml" href="#">READ MORE</a>
+                    <h3 class="text__header text--med text--dark">2016 Holden Colorado RG MY16 LS</h3>
+                    <p class="text text--xsml">This 2016 diesel is the ideal car for any tradies in the market for a new ute. Filled with lots of great modern features!</p>
+                    <a class="button button--dark button--sml" href="#">READ MORE</a>
                 </div>
                 <button class="button button--sml button--dark button__carousel" id="car-carousel__next">NEXT</button>
             </div>
@@ -197,18 +172,5 @@
             <a href="news.html" class="button button--light button--lge">MORE NEWS</a>
         </div>
     </main>
-    <footer>
-        <div class="cluster cluster--row">
-            <p class="text text--xsml text--white">Privacy Policy</p>
-            <p class="text text--xsml text--light">Logo, business and cars are property of JZMotors. Purely for creative/educational purpose</p>
-            <ul class = "cluster">
-                <li><a href="#"><img src="Icons/youtube.svg" alt="Youtube"></a></li>
-                <li><a href="#"><img src="Icons/twitter.svg" alt="Twitter"></a></li>
-                <li><a href="#"><img src="Icons/pinterest.svg" alt="Pinterest"></a></li>
-                <li><a href="#"><img src="Icons/instagram.svg" alt="Instagram"></a></li>
-                <li><a href="#"><img src="Icons/facebook.svg" alt="Facebook"></a></li>
-                <li><a href="#"><img src="Icons/google-plus.svg" alt="Google+"></a></li>
-            </ul>
-        </div>
-    </footer>
+    <div id="footer"></div>
 </body>
