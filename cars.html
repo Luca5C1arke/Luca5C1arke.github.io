@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- css stylesheets --->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/colours.css">
+    <link rel="stylesheet" href="Styles/typography.css">
+    <link rel="stylesheet" href="Styles/spacing.css">
+    <link rel="stylesheet" href="Styles/layout.css">
+    <!-- js scripts --->
+    <script src="scripts.js"></script>
+    <!--- fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <title>JZMotors</title>
+</head>
+<body>
+    <div id="header"> 
+        <header> 
+            <div class="header__top-row">
+                <div class="header__details cluster cluster--row">
+                    <div class="header__location cluster">
+                        <img src="Icons/address-icon.svg" class="icon location" alt="map location pin">
+                        <p class="text text--xxsml text--white">1100 Burwood Hwy,<br> Ferntree Gully, VIC, 3156</p>
+                    </div>
+                    <div class="header__phone cluster">
+                        <img src="Icons/phone-icon.svg" class="icon phone" alt="phone">
+                        <p class="text text--xsml text--white">(03) 9752 2799</p>
+                    </div>
+                </div>
+                <div class="header__logo center">
+                    <a href="index.html"><img class="logo" src="Images/jzmotors-logo.png" alt="JZMotors logo"></a>
+                </div>
+                <div class="header__garage cluster cluster--right">
+                    <a href="mygarage.html" class="text__header text--med text--light">my garage</a>
+                    <img src="Icons/garage-icon.svg" class="icon" alt="garage">
+                </div>
+            </div>
+            <ul class="header__nav cluster">
+                <li><a class="text__header text--lge text--light super-center" href="finance.html">Finance</a></li>
+                <li><a class="text__header text--lge text--light super-center" href="news.html">News</a></li>
+                <li><a class="text__header text--lge text--light super-center" href="cars.html">Cars</a></li>
+                <li><a class="text__header text--lge text--light super-center" href="aboutus.html">About Us</a></li>
+                <li><a class="text__header text--lge text--light super-center" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </header>
+    </div>
+    <main>
+        <div class="nav-bar-search">
+            
+        </div>
+        <div class="filter-descriptions cluster">
+            <div class="filter-descriptions--worded">
+                <p class="text__header text--dark text--med">Looking at "all" cars...</p>
+                <p class="text text--dark text--sml">9 cars found</p>
+            </div>
+            <div class="filters-dropdown box cluster">
+                <!-- drop down of filters goes here -->
+                <div class="filters-dropdown__text">
+                    <p class="text text--dark text--sml">Sort By: Featured</p>
+                </div>
+                <div class="filters-dropdown__arrow box">
+                    <p class="text text--white text--sml">V</p>
+                </div>
+            </div>
+        </div>
+        <div class="car-grid cluster cluster--grow">
+            <div class="car-box">
+                <div class="card card__car center stack">
+                    <div class="card__car__head stack">
+                        <h3 class="text__header text--med text--white">CAR NAME</h3>
+                        <h3 class="text text--sml text--light">$999,999.99 DRIVE AWAY</h3>
+                    </div>
+                    <div class="card__car__photo">
+                        <img src="car-placeholder.png" alt="Car">
+                    </div>
+                    <div class="card__car__description">
+                        <div class="card__car__stats lineup">
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/odometer.svg" alt="Odometer">
+                                <p class="text--xxsml text--bold">999,999km</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/gear-shifter.svg" alt="Transmission">
+                                <p class="text--xxsml text--bold">Automatic/Manual</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/engine.svg" alt="Engine Specs">
+                                <p class="text--xxsml text--bold">0.0L</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/fuel.svg" alt="Fuel Economy">
+                                <p class="text--xxsml text--bold">0.0L/100km</p>
+                            </div>
+                        </div>
+                        <div class="car-card__description__paragraph">
+                            <p class="p--sml">This car currently does not have a description. Please bear with us as we update this listing in the coming future!</p>
+                        </div>
+                    </div>
+                    <div class="car-card__buttons">
+                        <a href="#" class="button button--sml button--dark">add to garage</a>
+                        <a href="#" class="button button--sml button--dark">inquire</a>
+                        <a href="#" class=" button button--sml button--dark">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-box"></div>
+            <div class="car-box"></div>
+            <div class="car-box"></div>
+            <div class="car-box"></div>
+            <div class="car-box"></div>
+            <div class="car-box"></div>
+            <div class="car-box"></div>
+            <div class="car-box"></div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="cluster cluster--row">
+            <p class="text text--xsml text--white">Privacy Policy</p>
+            <p class="text text--xsml text--light">Logo, business and cars are property of JZMotors. Purely for creative/educational purpose</p>
+            <ul class = "cluster">
+                <li><a href="#"><img src="Icons/youtube.svg" alt="Youtube"></a></li>
+                <li><a href="#"><img src="Icons/twitter.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="Icons/pinterest.svg" alt="Pinterest"></a></li>
+                <li><a href="#"><img src="Icons/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="Icons/facebook.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="Icons/google-plus.svg" alt="Google+"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body> 
+</html>
