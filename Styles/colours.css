@@ -46,3 +46,16 @@ p, .text {
 header, footer {
     background-color: var(--dark-blue);
 }
+
+/* cards */
+.card__car__head {
+    background-color: var(--dark-blue);
+}
+
+.card__car__head > *:last-of-type {
+    background-color: var(--light-blue);
+}
+
+.card__car__photo > img {
+    width: 100%;
+}

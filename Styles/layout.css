@@ -458,3 +458,11 @@ main .button--lge {
     margin: 1em;
     width: 250px;
 }
+
+.card__car__head {
+    height: 4em;
+}
+
+.card__car__head > * {
+    margin: 0;
+}
