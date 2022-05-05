@@ -55,7 +55,3 @@ header, footer {
 .card__car__head > *:last-of-type {
     background-color: var(--light-blue);
 }
-
-.card__car__photo > img {
-    width: 100%;
-}
