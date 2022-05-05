@@ -24,6 +24,7 @@
     text-align: center;
     width: auto;
     height: auto;
+    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .button--lge {
@@ -55,11 +56,31 @@
 }
 
 .button:hover {
-    background-color: yellow;
+    text-shadow: none;
 }
 
-.button:active {
-    background-color: red;
+.button--dark:hover {
+    background-color: white;
+    color: var(--dark-blue);
+    box-shadow: 0px 0px 3px var(--dark-blue);
+}
+
+.button--dark:active {
+    background-color: var(--dark-blue);
+    color: white;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+.button--light:hover {
+    background-color: var(--dark-blue);
+    color: gold;
+    box-shadow: 0px 0px 3px var(--dark-blue);
+}
+
+.button--light:active {
+    background-color: var(--gold);
+    color: var(--dark-blue);
+    box-shadow: inset 0px 0px 3px var(--dark-blue);
 }
 
 .contact-website > .body-button-med {
