@@ -40,6 +40,10 @@ ul, ul > * {
     list-style: none;
 }
 
+i {
+    font-style: italic;
+}
+
 a {
     text-decoration: none;
 }

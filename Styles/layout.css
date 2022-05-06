@@ -102,7 +102,7 @@
     margin: 0 1em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: f;
     width: 100%;
     flex-wrap: nowrap;
 }
@@ -486,3 +486,27 @@ main .button--lge {
     padding: 1em;
 }
 
+.card__car__buttons > * {
+    margin: 0.5em;
+}
+
+/* about us */
+.about-us-box {
+    padding-top: 0;
+}
+
+.about-us-box h3 {
+    padding-top: 2em;
+}
+
+.reviews-list {
+    padding: 2em 5em 4.5em 3em;
+}
+
+.reviews li {
+    align-items: center;
+}
+
+.reviews li > img {
+    max-width: 40px;
+}
