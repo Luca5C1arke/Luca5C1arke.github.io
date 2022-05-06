@@ -510,3 +510,67 @@ main .button--lge {
 .reviews li > img {
     max-width: 40px;
 }
+
+/* individual car page */
+.button__back-to-cars {
+    margin-left: 1em;
+    color: white;
+}
+
+.car-listing {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 20% 80%;
+}
+
+.car-listing__header {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.button__add-to-garage {
+    grid-row: 1;
+    grid-column: 2;
+    height: 30%;
+    background-color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.button__add-to-garage > p {
+    grid-column: 1;
+}
+
+
+.button__add-to-garage > .button {
+    grid-column: 2;
+    height: 90%;
+}
+
+.car-listing__header > h2 {
+    text-align: left;
+}
+
+
+.car-details li {
+    padding: 1em;
+}
+
+.car-details .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.car-featured-shots {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.car-featured-shots img {
+    width: 22vw;
+    max-width: 200px;
+    padding: 0.5em;
+}
