@@ -653,6 +653,10 @@ main .button--lge {
     place-items: center;
 }
 
+.finance-form-box h2 {
+    padding-top: 2em;
+}
+
 .image-row > img {
     max-width: 90%;
 }
@@ -679,6 +683,11 @@ main .button--lge {
     padding: 0 2em;
 }
 
+.finance-form-details h3 {
+    text-align: left;
+    padding: 2em 0 0 0.375em;
+}
+
 .label__header {
     padding-top: 2em;
 }
@@ -687,6 +696,13 @@ main .button--lge {
     justify-content: flex-start;
 }
 
+.finance-form-box .button {
+    text-transform: uppercase;
+    text-align: center;
+}
 
+.form {
+    margin-bottom: 10em;
+}
 
 
