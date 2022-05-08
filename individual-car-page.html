@@ -24,22 +24,26 @@
 
 <body>
     <div id="header"></div>
-    <main>
-        <a class="button__back-to-cars button button--dark text text--light">&#8592 back to cars</a>
+    <main id="body__individual-car-page">
+        <button class="button button__back-to-cars center"><a class="text">&#8592 back to cars</a></button>
         <div class="car-listing">
             <div class="car-listing__header">
                 <h2 class="text__header text--xlge text--dark">LONGER VERSION FOR THE NAME OF CAR</h2>
                 <h2 class="text text--med text--dark">$999,999.99 DRIVE AWAY</h2>
             </div>
-            <div class="button button__add-to-garage">
-                <p class="text text--xsml text--white">ADD TO GARAGE</p>
-                <a class="button button--light">+</a>
+            <div class="button__add-to-garage">
+                <div class="add-to-garage-text">
+                    <p class="text text--xsml text--white">ADD TO GARAGE</p>
+                </div>
+                <button class="button button--light"><a>+</a></button>
             </div>
             <div class="car-hero-shots">
-                <img src="Images/car-1/car1-main.jpg" alt="Car from a 3/4 front angle">
+                <div class="hero-shot">
+                    <img src="Images/car-1/car1-main.jpg" alt="Car from a 3/4 front angle">
+                </div>
                 <!-- dots go here -->
             </div>
-            <div class="car-details">
+            <div class="car-details stack">
                 <ul>
                     <li class="lineup">
                         <img src="Icons/gear-shifter.svg" alt="Transmission" class="icon">
@@ -74,14 +78,16 @@
             <img src="Images/car-1/car1-4.jpg" alt="Car from behind">
             <img src="Images/car-1/car1-5.jpg" alt="Steering wheel of the car">
         </div>
-        <div class="descriptor-box">
-            <p class="blue-body-text">Here is a description about the car</p>
+        <div class ="stack">
+            <div class="card descriptor-box">
+                <p class="text text--blue text--sml">Here is a description about the car.</p>
+            </div>
+            <a class="button button--lge button--light">INQUIRE ABOUT THIS CAR</a>
+            <div class="accordion-menu">
+                <p>accordion menu will go here!</p>
+            </div>
+            <a class="button button--lge button--light">INQUIRE ABOUT THIS CAR</a>
         </div>
-        <a class="button button--lge button--light">INQUIRE ABOUT THIS CAR</a>
-        <div class="accordion-menu">
-            <p>accordion menu will go here!</p>
-        </div>
-        <an class="button button--lge button--light">INQUIRE ABOUT THIS CAR</an>
     </main>
     <div id="footer"></div>
 </body>

@@ -55,3 +55,7 @@ header, footer {
 .card__car__head > *:last-of-type {
     background-color: var(--light-blue);
 }
+
+.car-details {
+    background-color: var(--light-blue);
+}

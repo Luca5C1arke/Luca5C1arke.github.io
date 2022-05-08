@@ -18,7 +18,7 @@
 /* headings */
 h2, h3, .text__header {
     font-family: var(--font-secondary), serif;
-    text-align: l;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
 }
