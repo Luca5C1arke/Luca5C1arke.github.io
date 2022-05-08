@@ -44,7 +44,7 @@ p, .text {
 
 /* header and footer */
 header, footer {
-    background-color: var(--dark-blue);
+    background-image: linear-gradient(var(--light-blue), var(--dark-blue));
 }
 
 /* cards */

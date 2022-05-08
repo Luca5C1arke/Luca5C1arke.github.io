@@ -129,7 +129,8 @@ body {
 
 main {
     max-width: 1000px;
-    margin-top: 200px;
+    min-height: 80vw;
+    margin-top: 150px;
     /* will make a responsive body once mobile header is developed */
     margin-left: auto;
     margin-right: auto;
@@ -146,20 +147,26 @@ header {
     z-index: 999;
 }
 
+.header__details img {
+    max-width: 15px;
+}
+
 .header__top-row {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 6fr 8fr 6fr;
+    grid-template-columns: 8fr 7fr 8fr;
 }
 
 .header__details {
     grid-column: 1;
     place-content: left;
+    justify-content: flex-start;
 }
 
 .header__logo {
     grid-column: 2;
     place-self: center;
+    padding: 0 0.125em;
 }
 
 .header__garage {
@@ -169,6 +176,8 @@ header {
 
 .header__nav > * {
     flex: 1;
+    padding: 0;
+    margin: 0.25em;
 }
 
 
@@ -195,7 +204,7 @@ img {
 }
 
 .logo {
-    width: 10rem;
+    width: 8rem;
 }
 
 .icon {
