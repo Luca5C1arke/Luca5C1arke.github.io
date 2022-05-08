@@ -641,3 +641,52 @@ main .button--lge {
 .descriptor-box p {
     padding: 1em 2em;
 }
+
+/* finance page */
+.finance-intro > p {
+    padding-bottom: 1.5em;
+}
+
+.finance-intro > .image-row {
+    display: grid;
+    grid-template-areas: "a b c";
+    place-items: center;
+}
+
+.image-row > img {
+    max-width: 90%;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form > h2 {
+    padding-top: 1em;
+}
+
+.form__question > * {
+    text-align: left;
+    padding-left: 2em;
+}
+
+.form__question > h3 {
+    padding: 2em 0 0 2.5em;
+}
+
+.homeowner-details, .business-employment-details {
+    padding: 0 2em;
+}
+
+.label__header {
+    padding-top: 2em;
+}
+
+.finance-input-questions {
+    justify-content: flex-start;
+}
+
+
+
+

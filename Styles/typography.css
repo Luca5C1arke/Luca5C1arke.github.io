@@ -94,3 +94,15 @@ a:active {
 .text--light {
     color: var(--gold);
 }
+
+label {
+    font-family: var(--font-primary), sans-serif;
+    font-size: var(--text-s);
+    text-justify: center;
+}
+
+.label__header {
+    font-family: var(--font-secondary), serif;
+    text-transform: lowercase;
+    text-decoration: none;
+}
