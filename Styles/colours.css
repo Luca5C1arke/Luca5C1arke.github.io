@@ -57,7 +57,7 @@ header, footer {
 }
 
 .car-details {
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
 }
 
 .form {

@@ -531,7 +531,12 @@ main .button--lge {
 .button__back-to-cars {
     margin-left: 1em;
     color: var(--light-blue);
+    background-color: var(--off-white);
     padding: 0.25em 0.5em;
+}
+
+.button__back-to-cars:hover {
+    box-shadow: none;
 }
 
 .car-listing {
@@ -550,36 +555,23 @@ main .button--lge {
     grid-row: 1;
     grid-column: 2;
     margin: 0;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    place-content: start;
-    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin: 1.2em 1.5em 0 0;
 }
 
 .button__add-to-garage .add-to-garage-text {
-    height: 30px;
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    margin: 0;
-    align-self: center;
-    align-content: center;
+    height: 35px;
     background-color: var(--dark-blue);
-    border-radius: 8px;
-    display: grid;
-    grid-template-areas: "a b";
-    padding-left: 1em;
-}
-
-.add-to-garage-text p {
-    grid-area: a;
+    padding: 0 1em;
 }
 
 .button__add-to-garage button {
-    grid-column: 2;
-    grid-row: 1;
-    height: 30px;
-    align-self: center;
+    height: 35px;
     z-index: 2;
+    border-radius: 0;
 }
 
 .button__add-to-garage, .button__add-to-garage:hover, .button__add-to-garage:active {
@@ -714,4 +706,21 @@ main .button--lge {
     margin-bottom: 10em;
 }
 
+/* news */
+.card__news {
+    margin-top: 2em;
+    justify-content: flex-start;
+}
+
+.card__news > h3 {
+    margin: 0;
+    padding: 1.5em 1em;
+}
+
+.card__news > p {
+    margin: 0;
+    padding: 0 2em 3em;
+}
+
+/* add a media query to news cards to change to a column of articles
 

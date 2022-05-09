@@ -40,6 +40,10 @@ ul, ul > * {
     list-style: none;
 }
 
+.header__top-row p {
+    font-size: 0.55em;
+}
+
 i {
     font-style: italic;
 }
