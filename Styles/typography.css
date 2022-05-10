@@ -86,6 +86,9 @@ a:active {
     font-size: var(--text-xxs);
 }
 
+.text--bold {
+    font-weight: bold;
+}
 
 .text--white {
     color: white;
