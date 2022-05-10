@@ -90,6 +90,7 @@
 
 .card {
     box-shadow: 0px 5px 1em rgba(5, 25, 78, 0.2);
+    background-color: var(--off-white);
 }
 
 /* box */

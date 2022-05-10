@@ -1,0 +1,140 @@
+/* for mobile */
+@media (max-width: 575.98px) {   
+    /* index page */
+
+    /* finance page */
+    .image-row {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .image-row > img {
+        padding: 1em;
+        max-width: 300px;
+    }
+    .image-row > img:first-of-type {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .image-row > img:nth-of-type(2) { 
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .image-row > img:last-of-type {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .finance-form-box > h2:first-of-type {
+        padding-top: 0;
+    }
+    .finance-form-box > i {
+        padding-bottom: 1em;
+    }
+    .finance-form-box * {
+        overflow: hidden;
+    }
+    /* news page */
+
+    /* cars page */
+
+    /* contact us page */
+
+    /* about us page */
+
+    /* garage page */
+
+    /* individual car page */
+
+    /* footer */
+}
+
+
+/* for a narrower desktop */
+@media (max-width: 767.98px) { 
+    /* index page */
+
+    /* finance page */
+
+    /* news page */
+    .featured-articles__cards {
+        flex-direction: column;
+        place-items: center;
+    }
+    .card__news {
+        margin: 1em 0;
+        max-width: 80vw;
+    }
+    .featured-articles__cards p, .featured-articles__cards h3 {
+        padding: 1em;
+    }
+    .featured-articles__cards img {
+        min-width: 100%;
+    }
+    .archives {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+    .archives > .archives__filters {
+        width: 70vw;
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 2em;
+    }
+    .archives > .archives__box {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .featured-articles__cards > .card__news a {
+        margin-bottom: 2em;
+    }
+    /* cars page */
+
+    /* contact us page */
+
+    /* about us page */
+
+    /* garage page */
+
+    /* individual car page */
+
+    /* footer */
+    
+}
+
+
+/* for a large desktop */
+@media (max-width: 991.98px) { 
+    /* header */
+    /* TOTALLY SWAP THE HEADER HERE TO THE DESKTOP VERSION */   
+
+
+}
+
+
+/* for a super wide screen */
+@media (max-width: 1199.98px) { 
+    /* header */
+    /* TOTALLY SWAP THE HEADER HERE TO THE DESKTOP VERSION */   
+
+
+}
+
+
+/* index page */
+
+/* finance page */
+
+/* news page */
+
+/* cars page */
+
+/* contact us page */
+
+/* about us page */
+
+/* garage page */
+
+/* individual car page */
+
+/* footer */
+
