@@ -500,21 +500,6 @@ main .button--lge {
 }
 
 /* about us */
-.about-us-main {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    max-width: none;
-    min-height: none;
-    background-image: url(/Images/about-us-road-lge.png);
-    background-repeat: no-repeat;
-}
-
-.about-us-box {
-    margin: 150px auto 200px;
-    padding: none;
-    max-width: 1000px;
-}
 
 .about-us-box h3 {
     padding-top: 2em;
@@ -530,6 +515,13 @@ main .button--lge {
 
 .reviews li > img {
     max-width: 40px;
+}
+
+.welcome-to-jz > * > img {
+    padding: 0.5em 1em;
+    max-width: 200px;
+    border-radius: 20px;
+    
 }
 
 /* individual car page */
@@ -727,7 +719,8 @@ main .button--lge {
 .card__news {
     margin-top: 2em;
     justify-content: flex-start;
-height:;}
+    height: auto;
+}
 
 .card__news > h3 {
     margin: 0;
