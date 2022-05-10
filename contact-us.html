@@ -16,6 +16,7 @@
     <script src="scripts.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="insert.js"></script>
+    <script src="slider.js"></script>
     <!--- fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,30 @@
 <body>
     <div id="header"></div>
     <main>
-
+        <section class="section">
+            <div class="container">
+                <div class="slider">
+                    <div class="slider-item" style="background-color: aquamarine;"></div>
+                    <div class="slider-item active" style="background-color: salmon;"></div>
+                    <div class="slider-item" style="background-color: bisque;"></div>
+                    <div class="slider-item" style="background-color:blueviolet;"></div>
+                    <div class="slider-item" style="background-color:rgb(226, 43, 186);"></div>
+                    <ol class="slide-indicators">
+                        <li class="slide-indicator"></li>
+                        <li class="slide-indicator"></li>
+                        <li class="slide-indicator"></li>
+                        <li class="slide-indicator"></li>
+                        <li class="slide-indicator"></li>
+                    </ol>
+                    <span class="slider-control-prev" role="button">
+                        <img src="Icons/previous-arrow.svg" alt="Previous Slide Button">
+                    </span>
+                    <span class="slider-control-next" role="button">
+                        <img src="Icons/next-arrow.svg" alt="Next Slide Button">
+                    </span>
+                </div>
+            </div>
+        </section>
     </main>
     <div id="footer"></div>
 </body>
