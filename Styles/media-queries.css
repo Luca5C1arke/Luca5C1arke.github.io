@@ -133,21 +133,15 @@
     .carousel__card__description > p {
         margin-bottom: 1em; 
     }
-    #carousel-car-1 {
-        grid-column: 1 / auto;
+    #carousel-car-2 {
+        grid-column: 3;
+        max-width: 500px;
     }
     #car-carousel__prev {
         grid-column: 2;
     }
-    #carousel-car-2 {
-        grid-column:  3 / auto;
-        max-width: 500px;
-    }
     #car-carousel__next {
         grid-column: 4;
-    }
-    #carousel-car-3 {
-        grid-column: 5 / auto;
     }
     .about-us > img:first-of-type {
         visibility: hidden;
