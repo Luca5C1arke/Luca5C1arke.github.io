@@ -226,14 +226,16 @@ img {
 #main__index > *:not(.featured-cars) {
     margin-left: auto;
     margin-right: auto;
-    max-width: 80vw;
+    width: 80vw;
+    max-width: 1200px;
+
 }
 
 /* featured cars */
-
 .featured-cars {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 1500px;
 }
 
 .featured-cars > .carousel {
@@ -246,32 +248,36 @@ img {
 }
 
 .carousel__card {
-    display: grid;
+    overflow: hidden;
+    position: relative;
     max-width: 100%;
-    max-height: 60%;
-}
-
-.carousel__card--main {
-    max-height: 80%;
 }
 
 .carousel__card > img {
-    grid-row: 1;
+    display: block;
     max-width: 100%;
-    min-height: 100%;
+    height: auto;
     object-fit: cover;
     margin: 0;
     padding: 0;
 }
 
 .carousel__card__description {
-    z-index: 99;
+    position: absolute;
+    bottom: 0;    
+    z-index: 3;
+    height: 8em;
     margin: 0;
+    padding: 0;
     width: 100%;
 }
 
 .carousel__card__description * {
     margin: 0.5em;
+}
+
+.carousel__card__description > p {
+    margin-bottom: 2em;
 }
 
 .carousel__card:first-of-type {
