@@ -1,3 +1,14 @@
+/*  hamburger menu animation */
+/* credit to https://www.codewithrandom.com/2021/08/hamburger-menu-hamburger-menu-with.html#:~:text=%20How%20to%20Create%20Hamburger-menu%3A%20%201%201.Writing,.%204%203.%20Writing%20JS%20Code%3A%20More%20 */
+const hamburger = document.querySelector(".hamburger");  
+const navsub = document.querySelector(".nav-sub");  
+hamburger.addEventListener('click', () => {  
+    console.log("button was pressed")
+    hamburger.classList.toggle("change")  
+    navsub.classList.toggle("nav-change")  
+});  
+
+
 const getData = (pageUrl) => {
     return new Promise((resolve, reject) => {
         let request = new XMLHttpRequest();
