@@ -32,7 +32,7 @@
     flex-direction: column;
     justify-content: center;
     --stack-space: 1rem;
-    height: a;
+    height: auto;
 }
 
 .stack > * + * {
@@ -93,7 +93,7 @@
 .lineup {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: r;
 }
 
 /* add a media query for flex wrap : wrap at breakpoint */
@@ -219,7 +219,7 @@ img {
 
 /* Index Page */
 #main__index {
-    margin: 150px 0 0;
+    margin: 180px 0 0;
     max-width: 100vw;
     margin: 150px auto 0;
 }
@@ -268,13 +268,15 @@ img {
     bottom: 0;    
     z-index: 3;
     height: 8em;
-<<<<<<< HEAD
     opacity: 5%;
-=======
->>>>>>> parent of 4d28588 (added mobile flex\ibility for individual car page)
     margin: 0;
     padding: 0;
     width: 100%;
+    transition: 1s cubic-bezier(0.175, 0.985, 0.82, 1.275);
+}
+
+.carousel__card__description:hover {
+   opacity: 100%;
 }
 
 .carousel__card__description * {
@@ -516,6 +518,7 @@ main .button--lge {
     height: 4em;
 }
 
+
 .car-box * {
     margin: 0;
 }
@@ -528,6 +531,10 @@ main .button--lge {
 
 .card__car__description > * {
     padding: 1em;
+}
+
+.car-card__description__paragraph {
+    margin: 0 1em;
 }
 
 .card__car__stats > * {

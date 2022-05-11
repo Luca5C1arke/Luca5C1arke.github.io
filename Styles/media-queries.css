@@ -115,8 +115,15 @@
     }  
 
     /* index page */
+    #main__index > .featured-cars {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    #main__index > *:not(.featured-cars) {
+        width: 90vw;
+        margin: 0 auto;
+    }
     .featured-cars > .carousel {
-<<<<<<< HEAD
         grid-template-columns: 0.01% 9.99% 80% 9.99% 0.01%;
     }
     .carousel__card__description {
@@ -125,9 +132,6 @@
     }
     .carousel__card__description > p {
         margin-bottom: 1em; 
-=======
-        grid-template-columns: 1% 9% 80% 9% 1%;
->>>>>>> parent of 4d28588 (added mobile flex\ibility for individual car page)
     }
     #carousel-car-1 {
         grid-column: 1 / auto;
@@ -153,7 +157,7 @@
         grid-template-rows: 0.5fr 0.5fr 4fr;
     }
     .about-us__media {
-       min-height: 300px;
+        min-height: 200px;
         grid-column: 1 / span 3;
         grid-row: 3;
     }
@@ -177,12 +181,13 @@
         grid-column: 1 / span 2;
         grid-row: 4;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 5% 35% 35% 25%;
+        grid-template-rows: 5% 40% 35% 20%;
         min-height: auto;
     }
     .contact-us__in-person > .contact-us__opening-times {
         grid-column: 1 / span 3;
         grid-row: 2;
+        justify-content: flex-end;
     }
     .contact-us__in-person > .contact-us__location {
         grid-column: 1 / span 3;
@@ -196,7 +201,11 @@
         flex-direction: column;
     }
     .articles > * {
-        margin: 1.5em 0;
+        margin: 1.5em auto;
+        max-width: 300px;
+    }
+    .articles .img__article {
+        min-width: 100%;
     }
 
     /* finance page */
@@ -243,9 +252,50 @@
     /* garage page */
 
     /* individual car page */
-
+    .car-listing {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 10% auto 30%;
+    }
+    .car-listing__header {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .button__add-to-garage {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .car-hero-shots {
+        grid-row: 3;
+        grid-column: 1;
+        margin-bottom: 1em;
+    }
+    .car-details {
+        grid-row: 4;
+        grid-column: 1;
+        max-width: 550px;
+        margin-bottom: 4em;
+    }
+    .car-details > ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .car-details > ul > li {
+        padding: 0.5em;
+    }
+    .car-featured-shots {
+        justify-content: space-around;
+    }
+    .car-featured-shots > img {
+        min-width: 150px;
+    }
     /* footer */
-    
+    #footer img {
+        max-width: 15px;
+    }
+    #footer ul {
+        justify-content: flex-end;
+    }
 }
 
 
