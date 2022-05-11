@@ -1,7 +1,9 @@
 /* for mobile */
 @media (max-width: 575.98px) {   
     /* index page */
-
+    .about-us > a:first-of-type, .about-us > h2 {
+        grid-column: 1 / span 3;
+    }
     /* finance page */
     .image-row {
         grid-template-columns: 1fr;
@@ -51,6 +53,72 @@
 /* for a narrower desktop */
 @media (max-width: 767.98px) { 
     /* index page */
+    .featured-cars > .carousel {
+        grid-template-columns: 1% 9% 80% 9% 1%;
+    }
+    #carousel-car-2 {
+        grid-column: 3;
+        max-width: 500px;
+    }
+    #car-carousel__prev {
+        grid-column: 2;
+    }
+    #car-carousel__next {
+        grid-column: 4;
+    }
+    .about-us > img:first-of-type {
+        visibility: hidden;
+        max-width: 10px;
+    }
+    .about-us {
+        grid-template-rows: 0.5fr 0.5fr 4fr;
+    }
+    .about-us__media {
+       min-height: 300px;
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+    .about-us__text {
+        grid-row: 4;
+        grid-column: 1 / span 3;
+    }
+    .contact-us {
+        grid-template-rows: auto;
+        
+    }
+    .contact-us__website {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    .contact-us__phone {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+    .contact-us__in-person {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 5% 35% 35% 25%;
+        min-height: auto;
+    }
+    .contact-us__in-person > .contact-us__opening-times {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+    .contact-us__in-person > .contact-us__location {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+    .contact-us__in-person > .contact-us__map {
+        grid-column: 1 / span 3;
+        grid-row: 4;
+    }
+    .articles {
+        flex-direction: column;
+    }
+    .articles > * {
+        margin: 1.5em 0;
+    }
 
     /* finance page */
 
