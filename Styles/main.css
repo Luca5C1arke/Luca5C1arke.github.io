@@ -99,6 +99,13 @@
     border: solid var(--dark-blue) 1px;
 }
 
+/* header */
+.mobile-header * {
+    overflow: hidden;
+    height: 0px;
+    width: 0px;
+}
+
 /* backgrounds/extra visual aesthetics
 #winding-road {
     position: fixed;

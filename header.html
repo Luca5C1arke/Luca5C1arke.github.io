@@ -1,30 +1,62 @@
 <!-- by default, the header is the mobile version for faster load times on mobile -->
 
 <header>
-    <div class="header__top-row">
-        <div class="header__details cluster cluster--row">
-            <div class="header__location lineup">
-                <img src="Icons/address-icon.svg" class="icon location" alt="map location pin">
-                <p class="text text--xxsml text--white">1100 Burwood Hwy,<br> Ferntree Gully, VIC, 3156</p>
+    <div class="desktop-header">
+        <div class="header__top-row">
+            <div class="header__details cluster cluster--row">
+                <div class="header__location lineup">
+                    <img src="Icons/address-icon.svg" class="icon location" alt="map location pin">
+                    <p class="text text--xxsml text--white">1100 Burwood Hwy,<br> Ferntree Gully, VIC, 3156</p>
+                </div>
+                <div class="header__phone lineup">
+                    <img src="Icons/phone-icon.svg" class="icon phone" alt="phone">
+                    <p class="text text--xsml text--white">(03) 9752 2799</p>
+                </div>
             </div>
-            <div class="header__phone lineup">
-                <img src="Icons/phone-icon.svg" class="icon phone" alt="phone">
-                <p class="text text--xsml text--white">(03) 9752 2799</p>
+            <div class="header__logo center">
+                <a href="index.html"><img class="logo" src="Images/jzmotors-logo.png" alt="JZMotors logo"></a>
+            </div>
+            <div class="header__garage cluster cluster--right">
+                <a href="mygarage.html" class="text__header text--sml text--light">my garage</a>
+                <img src="Icons/garage-icon.svg" class="icon" alt="garage">
             </div>
         </div>
-        <div class="header__logo center">
-            <a href="index.html"><img class="logo" src="Images/jzmotors-logo.png" alt="JZMotors logo"></a>
-        </div>
-        <div class="header__garage cluster cluster--right">
-            <a href="mygarage.html" class="text__header text--sml text--light">my garage</a>
-            <img src="Icons/garage-icon.svg" class="icon" alt="garage">
+        <ul class="header__nav cluster">
+            <li><a class="text__header text--med text--white super-center" href="finance.html">Finance</a></li>
+            <li><a class="text__header text--med text--white super-center" href="news.html">News</a></li>
+            <li><a class="text__header text--med text--white super-center" href="cars.html">Cars</a></li>
+            <li><a class="text__header text--med text--white super-center" href="contact-us.html">Contact Us</a></li>
+            <li><a class="text__header text--med text--white super-center" href="about-us.html">About Us</a></li>
+        </ul>
+    </div>
+    <div class="mobile-header">
+        <div class="navbar"> 
+            <div class="logo"><img src="Images/jzmotors-logo.png" alt="JZMotors logo"></div>  
+            <div class="hamburger" >  
+                <span class="line1"></span>  
+                <span class="line2"></span>  
+                <span class="line3"></span>  
+            </div>  
+            <ul class="nav-sub">  
+                <li class="list-item"><a href="#" class="nav-link text__header text--med text--white">Home</a></li>  
+                <li class="list-item"><a href="#" class="nav-link text__header text--med text--white">News</a></li>  
+                <li class="list-item"><a href="#" class="nav-link text__header text--med text--white">Cars</a></li>
+                <li class="list-item"><a href="#" class="nav-link text__header text--med text--white">Financing</a></li>  
+                <li class="list-item"><a href="#" class="nav-link text__header text--med text--white">Contact Us</a></li>  
+                <li class="list-item"><a href="#" class="nav-link text__header text--med text--white">About Us</a></li>
+                <li class="list-item"><a href="#" class="nav-link text__header text--med text--light">My Garage</a></li>    
+            </ul> 
+            <div class="header-details cluster">
+                <div class="header__location cluster">
+                    <img src="Icons/address-icon.svg" class="icon location" alt="map location pin">
+                    <p class="text text--xxsml text--white">1100 Burwood Hwy,<br> Ferntree Gully, VIC, 3156</p>
+                </div>
+                <div class="header__phone lineup">
+                <div class="header__phone cluster">
+                    <img src="Icons/phone-icon.svg" class="icon phone" alt="phone">
+                    <p class="text text--xsml text--white">(03) 9752 2799</p>
+                </div>
+            </div>
         </div>
     </div>
-    <ul class="header__nav cluster">
-        <li><a class="text__header text--med text--white super-center" href="finance.html">Finance</a></li>
-        <li><a class="text__header text--med text--white super-center" href="news.html">News</a></li>
-        <li><a class="text__header text--med text--white super-center" href="cars.html">Cars</a></li>
-        <li><a class="text__header text--med text--white super-center" href="contact-us.html">Contact Us</a></li>
-        <li><a class="text__header text--med text--white super-center" href="about-us.html">About Us</a></li>
-    </ul>
 </header>

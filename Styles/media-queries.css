@@ -52,6 +52,20 @@
 
 /* for a narrower desktop */
 @media (max-width: 767.98px) { 
+    /* header */
+    .desktop-header {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    .mobile-header, .mobile-header > .navbar {
+        height: 15vh;
+    }
+    .mobile-header * {
+        height: auto;
+        width: auto;
+    }
+
     /* index page */
     #main__index > .featured-cars {
         width: 90vw;
@@ -63,7 +77,9 @@
     }
     .featured-cars > .carousel {
         grid-template-columns: 0.01% 9.99% 80% 9.99% 0.01%;
-        height: 300px;
+    }
+    .featured-cars > .carousel img {
+        height: 100%;
     }
     .carousel__card__description {
         height: 7em;
