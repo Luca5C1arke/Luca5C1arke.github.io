@@ -52,68 +52,6 @@
 
 /* for a narrower desktop */
 @media (max-width: 767.98px) { 
-    /* header */
-    #header .navbar {
-        background-color: var(--light-blue);
-        display: grid;
-        grid-template-columns: 85% 15%;
-        grid-template-rows: 30% auto;
-        padding: 1em 1em 0;
-        height: 10vh;
-    }
-    #header .logo > img {
-        align-self: left;
-        max-width: 80px;
-    }
-    #header > .hamburger {
-        align-self: right;
-    }
-    #header .icon {
-        max-width: 10px;
-        max-height: 10px;
-    }
-    .header-details {
-        grid-row: 2;
-        grid-column: 1 / span 2;
-        justify-content: center;
-    }
-    
-    /* hamburger menu */
-    .nav-sub > * {
-        padding: 1em;
-    }
-    .nav-link{  
-        text-decoration: none;  
-    }
-    .nav-sub {  
-        position: absolute;   
-        top: 40px;  
-        right: 0px;
-        height: 100vh;
-        padding: 1em 4em 1em 1em;
-        background-color: var(--light-blue);
-        transition: transform 0.3s ease-in;  
-        transform: translate(100%);
-    }  
-    .nav-change{  
-        transform: translate(0%); 
-        box-shadow: -5em 0.5em 20em var(--light-blue);    
-    }
-    .hamburger {  
-        display: block;
-        justify-content: flex-end;
-    }  
-      
-    .change .line1 {  
-       transform: rotate(45deg) translate(8px,3px);  
-    }  
-    .change .line2 {  
-       opacity: 0;  
-    }  
-    .change .line3 {  
-       transform: rotate(-45deg) translate(8px,-3px);  
-    }  
-
     /* index page */
     #main__index > .featured-cars {
         width: 90vw;
@@ -125,10 +63,10 @@
     }
     .featured-cars > .carousel {
         grid-template-columns: 0.01% 9.99% 80% 9.99% 0.01%;
+        height: 300px;
     }
     .carousel__card__description {
         height: 7em;
-        opacity: 80%;
     }
     .carousel__card__description > p {
         margin-bottom: 1em; 
