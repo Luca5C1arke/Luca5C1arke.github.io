@@ -292,7 +292,7 @@ img {
 /* featured cars */
 .featured-cars {
     margin: 0 auto;
-    padding: 0;
+    padding: 2em;
     max-width: 1500px;
 }
 
@@ -325,14 +325,14 @@ img {
     bottom: 0;    
     z-index: 3;
     height: 8em;
-    opacity: 0;
+    opacity: 10%;
     margin: 0;
     padding: 0;
     width: 100%;
     transition: 1s cubic-bezier(0.175, 0.985, 0.82, 1.275);
 }
 
-.carousel__card__description:hover {
+.carousel__card:hover .carousel__card__description {
    opacity: 100%;
 }
 
@@ -415,7 +415,7 @@ img {
 
 /* add media query breakpoint for media */
 
-/* contact us */
+/* INDEX PAGE -> contact us */
 .contact-us {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -466,7 +466,7 @@ img {
     grid-column: 2;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 10% 25% 65%;
+    grid-template-rows: 20% 80%;
 }
 
 .contact-us__phone > h3 {
@@ -474,24 +474,23 @@ img {
     grid-column: 1 / span 2;
 }
 
-.contact-us__phone > .phone-number {
-    grid-row: 2;
-    grid-column: 1 / span 2;
-}
-
 .contact-us__phone > p {
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
+    align-self: center;
+    justify-content: center;
+    padding-left: 0.25em;
 }
 
 .contact-us__phone > .img-container {
-    grid-row: 2 / span 2;
+    grid-row: 2;
     grid-column: 2;
     margin: 0;
 }
 
 .contact-us__phone > .img-container > img {
     max-width: 90%;
+    padding: 0.5em;
 }
 
 .contact-us__in-person {
@@ -510,6 +509,7 @@ img {
 .contact-us__opening-times {
     grid-row: 2;
     grid-column: 1;
+    justify-self: center;
 }
 
 .contact-us__location {
@@ -891,89 +891,26 @@ main .button--lge {
 
 /* media query here to swap filter box and articles from row to column
 
-/* credit to https://github.com/EngineerToDeveloper/JavaScript-Slider-Carousel for this carousel */
-.slider {
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-}
-
-.slider .slider-item {
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: absolute;
-    transition: transform 400ms;
-}
-
-.slider .slider-item.active,
-.slider .slider-item.prev-item,
-.slider .slider-item.next-item {
-    display: block;
-}
-
-.slider-item.prev-item,
-.slider-item.active.slide-next {
-    transform: translateX(-100%);
-}
-
-.slider-item.active.slide-prev,
-.slider-item.next-item {
-    transform: translateX(100%);
-}
-
-.slider-item.prev-item.slide-end,
-.slider-item.next-item.slide-end {
-    transform: translateX(0);
-}
-
-.slide-indicators {
-    position: absolute;
-    z-index: 20;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.slider-control-prev,
-.slider-control-next {
-    position: absolute;
-    z-index: 20;
+/* Contact Us (Page) */
+.accordion {
+    background-color: var(--dark-blue);
+    border: 1em solid white; /* doesnt work for some reason */
     cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.3;
-    transition: opacity 300ms;
-}
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: var(--light-blue);
+  }
 
-.slider-control-prev {
-    left: 20px;
-}
-
-.slider-control-prev:hover {
-    opacity: 1;
-}
-
-.slider-control-next {
-    right: 20px;
-}
-
-.slider-control-next:hover {
-    opacity: 1;
-}
-
-.slide-indicator {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background: #ffffff;
-    opacity: 0.5;
-    margin: 0 8px;
-}
-
-.slide-indicator.active {
-    opacity: 1;
-}
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }

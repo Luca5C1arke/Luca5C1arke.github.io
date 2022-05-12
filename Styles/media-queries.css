@@ -86,7 +86,7 @@
     }
     /* index page */
     #main__index > .featured-cars {
-        width: 90vw;
+        width: 80vw;
         margin: 0 auto;
     }
     #main__index > *:not(.featured-cars) {
@@ -148,13 +148,15 @@
         grid-column: 1 / span 2;
         grid-row: 4;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 5% 40% 35% 20%;
+        grid-template-rows: 5% 35% 35% 25%;
         min-height: auto;
     }
     .contact-us__in-person > .contact-us__opening-times {
         grid-column: 1 / span 3;
         grid-row: 2;
-        justify-content: flex-end;
+        padding-left: 1.25em;
+        justify-self: left;
+        align-self: flex-end;
     }
     .contact-us__in-person > .contact-us__location {
         grid-column: 1 / span 3;
