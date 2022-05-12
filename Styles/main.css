@@ -115,6 +115,11 @@
     width: 0px;
 }
 
+/* accordion menu */
+.accordion {
+    border-radius: 0;
+}
+
 /* backgrounds/extra visual aesthetics
 #winding-road {
     position: fixed;
@@ -124,10 +129,10 @@
     left: 0;
     top: 0;
     opacity: 10%;
-} could do with some more work */
+} could do with some more work
 
 .about-us-page {
     background-image: url(/Images/about-us-road-lge.svg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */

@@ -68,3 +68,11 @@ header, footer {
 .archives__article {
     background-color: var(--grey);
 }
+
+.accordion-menu > * {
+    box-shadow: 0px 5px 1em rgba(5, 25, 78, 0.2);
+}
+
+.panel {
+    background-color: white;
+}

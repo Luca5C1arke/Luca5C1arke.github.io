@@ -93,6 +93,9 @@
         width: 90vw;
         margin: 0 auto;
     }
+    .featured-cars {
+        padding: 0;
+    }
     .featured-cars > .carousel {
         grid-template-columns: 0.01% 9.99% 80% 9.99% 0.01%;
     }
