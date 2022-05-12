@@ -76,6 +76,7 @@
     /* header */
     .desktop-header {
         visibility: hidden;
+        padding: 0;
         height: 0px;
         width: 0px;
     }

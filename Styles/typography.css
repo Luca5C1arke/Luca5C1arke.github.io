@@ -74,6 +74,10 @@ a:active {
     font-size: var(--text-m);
 }
 
+.text--smmed {
+    font-size: var(--text-sm);
+}
+
 .text--sml {
     font-size: var(--text-s);
 }
