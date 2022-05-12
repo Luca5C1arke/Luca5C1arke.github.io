@@ -1,3 +1,12 @@
+window.addEventListener("DOMContentLoaded", function() {
+    var buttonsList = document.getElementsByClassName("button");
+    for (const button of buttonsList) {
+        button.addEventListener("click", function(event) {
+            buttonClick(event.target);
+        });
+    }
+});
+
 /* hamburger */
 function hamburger() {
     console.log("hamburger was clicked");
@@ -32,9 +41,8 @@ function loadPage(PageUrl) {
         });
 }
 
-
-/* index page carousel */
 function buttonClick(buttonElement) {
+    /* index page carousel */
     if (buttonElement.textContent == "PREV") {
         if ((document.getElementById("carousel-car-1").style.gridColumn) == "1 / auto") {
             // order is currently 1 2 3, make it 2 3 1
@@ -69,6 +77,15 @@ function buttonClick(buttonElement) {
             document.getElementById("carousel-car-2").style.gridColumn = 5;
             document.getElementById("carousel-car-3").style.gridColumn = 1;
         }
+    /* add to cart function */
+    } if (buttonElement.textContent == "+") {
+        alert("This car was added to your garage");
+        document.getElementById("button__add-car").classList.add("button--added");
+        document.getElementById("button__add-car").textContent = "-";
+    } else if (buttonElement.textContent == "-") {
+        alert("This car was removed from your garage");
+        document.getElementById("button__add-car").classList.remove("button--added");
+        document.getElementById("button__add-car").textContent = "+";
     } else {
         alert("Hey you clicked "+buttonElement.textContent);
         console.log("Hey you clicked "+buttonElement.textContent);
@@ -76,13 +93,5 @@ function buttonClick(buttonElement) {
 
 }
 
-window.addEventListener("DOMContentLoaded", function() {
-    var buttonsList = document.getElementsByClassName("button");
-    for (const button of buttonsList) {
-        button.addEventListener("click", function(event) {
-            buttonClick(event.target);
-        });
-    }
-});
 
 /* hamburger menu functionality */

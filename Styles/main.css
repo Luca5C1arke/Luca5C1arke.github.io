@@ -83,6 +83,15 @@
     box-shadow: inset 0px 0px 3px var(--dark-blue);
 }
 
+.button--success {
+    background-color: var(--positive-green);
+}
+
+.button--added {
+    background-color: var(--negative-red);
+    color: white;
+}
+
 .contact-website > .body-button-med {
     width: 10em;
     height: 3em;
