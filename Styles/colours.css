@@ -76,3 +76,7 @@ header, footer {
 .panel {
     background-color: white;
 }
+
+.car-card__description__paragraph {
+    background-color: white;
+}
