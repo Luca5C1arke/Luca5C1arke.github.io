@@ -4,3 +4,5 @@ $(function(){
     $("#footer").load("footer.html"); 
   });
 
+/* LOAD PRODUCTS ONTO CARS PAGE */
+/* array/database of the cars to inject */

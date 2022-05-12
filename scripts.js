@@ -78,7 +78,7 @@ function buttonClick(buttonElement) {
             document.getElementById("carousel-car-3").style.gridColumn = 1;
         }
     /* add to cart function */
-    } if (buttonElement.textContent == "+") {
+    } else if (buttonElement.textContent == "+") {
         alert("This car was added to your garage");
         document.getElementById("button__add-car").classList.add("button--added");
         document.getElementById("button__add-car").textContent = "-";
@@ -87,10 +87,11 @@ function buttonClick(buttonElement) {
         document.getElementById("button__add-car").classList.remove("button--added");
         document.getElementById("button__add-car").textContent = "+";
     } else {
+        /*
         alert("Hey you clicked "+buttonElement.textContent);
         console.log("Hey you clicked "+buttonElement.textContent);
+        */
     }
-
 }
 
 
