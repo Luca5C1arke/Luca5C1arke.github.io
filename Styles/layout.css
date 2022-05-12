@@ -129,7 +129,7 @@ body {
 
 main {
     max-width: 70rem;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     min-height: 800px;
@@ -192,36 +192,27 @@ header {
 .navbar > .logo, .logo img {
     grid-area: 1;
     overflow: visible;
-    padding: 0.125em 0;
+    padding: 0 0.3em;
     margin: 0;
     width: 100px;
-    padding-left: 0.5em;
 }
 .navbar > .hamburger {
     display: block;
     grid-column: 2;
     grid-row: 1;
 }
-.navbar > .header-details {
-    height: 30px;
-    grid-column: 1 / span 2;
-    grid-row: 2;
+.nav-sub > .header-details {
+    padding: 1em 0 0;
+    align-content: end;
 }
-.navbar > .header-details {
-    height: 60px;
-    grid-column: 1 / span 2;
-    grid-row: 2;
-    justify-content: center;
-    align-items: flex-start;
-}
-.navbar > .header-details > * {
+.nav-sub > .header-details > * {
     margin: 0;
+    margin: 0.5em 0;
 }
-.navbar > .header-details .icon {
+.nav-sub > .header-details .icon {
     max-height: 10px;
     max-width: 10px;
 }
-
 /* hamburger */
 .line1, .line2, .line3 {
     display: block;
@@ -890,7 +881,6 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 
 .accordion {
     background-color: var(--dark-blue);
-    border: 1em solid white; /* doesnt work for some reason */
     cursor: pointer;
     padding: 10px;
     width: 100%;
@@ -911,4 +901,74 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 
 .accordion--active + .panel {
     display: block;
+}
+
+.panel-1 h3 {
+    text-align: left;
+    padding-left: 0.75em 
+}
+
+.panel-1 .icon {
+    max-height: 15px;
+}
+
+.message-form form {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 2em;
+}
+
+.message-form label, .message-form input {
+    margin: 0.8em;
+    font-size: var(--text-xs);
+    width: 80%;
+}
+
+.message-form .message-form-details {
+    grid-column: 1;
+}
+
+.message-form .message-form-entry, .message-form-entry textarea {
+    grid-column: 2;
+    max-width: 90%;
+    padding-top: 1em;
+}
+
+.message-form-entry > * {
+    margin: 0.5em;
+}
+
+.message-form-entry button {
+    align-content: right;
+}
+
+.contact-us-details {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 1.2em 0.5em;
+}
+
+.contact-us-details-single {
+    padding: 0;
+    justify-content: flex-start; 
+}
+
+.panel-3, .panel-4 {
+    padding: 1rem 1rem 2rem;
+}
+
+.panel-3 p, .panel-4 p {
+    margin: 1rem;
+}
+
+.inquiry-buttons {
+    display: flex;
+    justify-content: end;
+    margin-right: 0.7rem;
+}
+
+.inquiry-buttons a {
+    margin: 0.5rem;
 }
