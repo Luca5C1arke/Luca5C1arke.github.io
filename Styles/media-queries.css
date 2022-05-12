@@ -60,12 +60,30 @@
     }
     .mobile-header, .mobile-header > .navbar {
         height: 13vh;
+        background-color: var(--light-blue);
     }
     .mobile-header * {
         height: auto;
         width: auto;
     }
-
+    .nav-sub {
+        position: fixed;
+        top: 30px;
+        height: 100vh;
+        width: 150px;
+        padding: 0 2em 0 1em;
+        background-color: var(--light-blue);
+        right: -150px;
+        transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .nav-sub > *{
+        padding: 0.5em;
+    }
+    .nav-active {
+        /* give the hamburger this class to open */
+        box-shadow: 1px 2em 1em var(--dark-blue);
+        right: 0;
+    }
     /* index page */
     #main__index > .featured-cars {
         width: 90vw;

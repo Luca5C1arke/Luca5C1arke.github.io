@@ -1,3 +1,11 @@
+/* hamburger */
+function hamburger() {
+    console.log("hamburger was clicked");
+    var navSub = document.getElementById("nav-sub");
+    navSub.classList.toggle("nav-active");
+}
+
+/* this is all a mess */
 const getData = (pageUrl) => {
     return new Promise((resolve, reject) => {
         let request = new XMLHttpRequest();
@@ -24,6 +32,8 @@ function loadPage(PageUrl) {
         });
 }
 
+
+/* index page carousel */
 function buttonClick(buttonElement) {
     if (buttonElement.textContent == "PREV") {
         if ((document.getElementById("carousel-car-1").style.gridColumn) == "1 / auto") {
@@ -75,28 +85,4 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
-/* CAROUSEL FUNCTIONALITY */
-// new idea, just swap image, h3, link and p around.
-var carouselImages = document.querySelectorAll('.carousel__card > img');
-const numOfImages = document.querySelectorAll(".carousel__card > img").length;
-var carouselDescriptions = document.querySelectorAll('.carousel p');
-let currMainImage = 2;
-
-function shiftLeft() {
-    console.log("Shifting left..");
-    if (currMainImage == numOfImages) {
-        currMainImage = 1; 
-    } else {
-        currMainImage ++;
-    }
-}
-
-function shiftRight() {
-    console.log("Shifting right...");
-    if (currMainImage == 1) {
-        currMainImage = 3; 
-    } else {
-        currMainImage --;
-    }
-}
+/* hamburger menu functionality */
