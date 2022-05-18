@@ -817,6 +817,10 @@ main .button--lge {
     margin: 0 auto;
 }
 
+.header__news {
+    margin: 1em 0 0;
+}
+
 .card__news {
     margin-top: 2em;
     justify-content: flex-start;
@@ -870,6 +874,10 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
     padding: 1em;
 }
 
+.archives__filters {
+    height: 70%;
+}
+
 .archives__filters > p:first-of-type {
     margin: 0;
     padding-bottom: 0.25em;
@@ -879,6 +887,10 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
     /* grid-column: 1; */
     grid-row: 1;
     /* margin-bottom: 80px; */
+}
+
+.archives__box__articles {
+    margin: 2em 1em;
 }
 
 /* media query here to swap filter box and articles from row to column
