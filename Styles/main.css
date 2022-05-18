@@ -11,7 +11,7 @@
 /* buttons */
 .button {
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 0.25em 0.5em;
     /* fall backs */
     font-family: var(--font-secondary), serif;
@@ -118,6 +118,13 @@
 /* accordion menu */
 .accordion {
     border-radius: 0;
+}
+
+/* forms */
+input, textarea {
+    border-radius: 0.2em;
+    border: 1px var(--dark-blue) solid;
+    padding: 0.25em;
 }
 
 /* backgrounds/extra visual aesthetics

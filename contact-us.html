@@ -27,23 +27,93 @@
     <main>
         <div class="accordion-menu accordion-menu__contact-us">
             <button id="accordion-contact-1" class="button accordion">WAYS TO CONTACT US</button>
-            <div class="panel">
-                <p>Panel contents go here</p>
+            <div class="panel panel-1">
+                <div class="message-form">
+                    <form method="GET">
+                        <div class="message-form-details">
+                            <h3 class="text text--sml text--bold">Write a message here</h3>
+                            <label for="contact-fullname">Full Name</label><br>
+                            <input id="contact-fullname" name="contact-fullname" type="text">
+                            <br>
+                            <label for="contact-phonenum">Phone Number</label><br>
+                            <input id="contact-phonenum" name="contact-phonenum" type="text">
+                            <br>
+                            <label for="contact-email">Email Address</label><br>
+                            <input id="contact-email" name="contact-email" type="text">
+                            <br>
+                            <label for="contact-email">Message Title</label><br>
+                            <input id="contact-title" name="contact-title" type="text">
+                        </div>
+                        <div class="message-form-entry">
+                            <label for="contact-message">How can we help?</label><br>
+                            <textarea id="contact-message" name="contact-message" rows="4" cols="50"></textarea>
+                            <button type="submit" class="button button--med button--light">&nbsp;SUBMIT&nbsp;</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-us-details stack">
+                    <h3 class="text text--sml text--bold">Other ways to contact us</h3>
+                    <div class="contact-us-details-single cluster">
+                        <img class="icon" src="Icons/email-dark.svg" alt="Email">
+                        <i class="text text--xxsml">jzmotors@bigpond.net.au</i>
+                    </div>
+                    <div class="contact-us-details-single cluster">
+                        <img class="icon" src="Icons/phone-icon-dark.svg" alt="">
+                        <i class="text text--xsml">(03) 9752 2799</i>
+                    </div>
+                    <div class="contact-us-details-single cluster">
+                        <img class="icon" src="Icons/address-icon-dark.svg" alt="">
+                        <i class="text text--xsml">1100 Burwood Hwy,<br>Ferntree Gully, VIC, 3156</i>
+                    </div>
+                </div>
             </div>
-    
             <button id="accordion-contact-2" class="button accordion">FAQs</button>
-            <div class="panel">
-                <p>Panel contents go here</p>
+            <div class="panel panel-2">
+                <div class="faqs">
+                    <div class="faqs-col-1">
+                        <div class="single-faq">
+                            <p class="text text--sml text--dark text--faq">Q: Question goes here</p>
+                            <p class="text text--xsml text--dark text--faq"><br>A: Answer goes here</p>
+                        </div>
+                        <div class="single-faq">
+                            <p class="text text--sml text--dark text--faq">Q: Question goes here</p>
+                            <p class="text text--xsml text--dark text--faq"><br>A: Answer goes here</p>
+                        </div>
+                        <div class="single-faq">
+                            <p class="text text--sml text--dark text--faq">Q: Question goes here</p>
+                            <p class="text text--xsml text--dark text--faq"><br>A: Answer goes here</p>
+                        </div>
+                    </div>
+                    <div class="faqs-col-2">
+                        <div class="single-faq">
+                            <p class="text text--sml text--dark text--faq">Q: Question goes here</p>
+                            <p class="text text--xsml text--dark text--faq"><br>A: Answer goes here</p>
+                        </div>
+                        <div class="single-faq">
+                            <p class="text text--sml text--dark text--faq">Q: Question goes here</p>
+                            <p class="text text--xsml text--dark text--faq"><br>A: Answer goes here</p>
+                        </div>
+                        <div class="single-faq">
+                            <p class="text text--sml text--dark text--faq">Q: Question goes here</p>
+                            <p class="text text--xsml text--dark text--faq"><br>A: Answer goes here</p>
+                        </div>
+                    </div>
+                </div>                
             </div>
-    
             <button id="accordion-contact-3" class="button accordion">ENQUIRING ABOUT A CAR?</button>
-            <div class="panel">
-                <p>Panel contents go here</p>
+            <div class="panel panel-3">
+                <p class="text text-sml text--dark"><i>For inquiries about one of our cars - such as to book a test drive - please use the 'inquiry' button on the car's page, which can be found via search or saved in your garage</i></p>
+                <div class="inquiry-buttons">
+                    <a href="mygarage.html" class="button button--med button--light">GARAGE</a>
+                    <a href="cars.html" class="button button--med button--light">CARS</a>
+                </div>
             </div>
-
             <button id="accordion-contact-4" class="button accordion">ENQUIRING ABOUT FINANCING?</button>
-            <div class="panel">
-                <p>Panel contents go here</p>
+            <div class="panel panel-4">
+                <p class="text text-sml text--dark"><i>For inquiries about one of our cars - such as to book a test drive - please use the 'inquiry' button on the car's page, which can be found via search or saved in your garage</i></p>
+                <div class="inquiry-buttons">
+                    <a href="finance.html" class="button button--med button--light">FINANCING</a>
+                </div>
             </div>
         </div>
     </main>
