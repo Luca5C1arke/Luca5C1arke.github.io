@@ -115,6 +115,26 @@
     width: 0px;
 }
 
+.button__header {
+    background-color: revert;
+    max-height: 50%;
+    padding: 1em;
+    margin: 0;
+}
+
+.button__header p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+.button__header:hover, .button__header p:hover {
+    background-color: var(--gold);
+    border-radius: 0.3em;
+    transition: 0.1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    text-shadow: 2px 2px 1px var(--dark-blue), 0px 0px 3px var(--dark-blue);
+}
+
 /* accordion menu */
 .accordion {
     border-radius: 0;
@@ -127,6 +147,9 @@ input, textarea {
     padding: 0.25em;
 }
 
+.reviews-list li:hover, .reviews-list p:hover {
+    text-shadow: none;
+}
 /* backgrounds/extra visual aesthetics
 #winding-road {
     position: fixed;

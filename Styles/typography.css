@@ -21,6 +21,7 @@ h2, h3, .text__header {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 1em 0 0.25em;
 }
 
 /* text */
@@ -52,14 +53,14 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-shadow: 0px 0px 3px var(--dark-blue), 1.5px 1.5px var(--gold);
-    transition: 0.5s;
+a:hover, li:hover {
+    text-shadow: 0px 0px 3px var(--dark-blue);
+    transition: 0.1s;
 }
 
 a:active {
     text-shadow: none;
-    color: var(--color-text-alt);
+    color: var(--dark-blue);
 }
 
 .text--xlge {
@@ -72,10 +73,6 @@ a:active {
 
 .text--med {
     font-size: var(--text-m);
-}
-
-.text--smmed {
-    font-size: var(--text-sm);
 }
 
 .text--sml {
@@ -114,7 +111,6 @@ label {
 
 .label__header {
     font-family: var(--font-secondary), serif;
-    text-transform: lowercase;
     text-decoration: none;
 }
 
