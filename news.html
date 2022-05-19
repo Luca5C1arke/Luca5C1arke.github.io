@@ -44,7 +44,7 @@
                     <a href="" class="button button--sml button--dark">Read More</a>
                 </div>
                 <div class="card card__news stack">
-                    <img src="Images/article-3-image-1.jpg" alt="Concept art for a Nissan Maxima ">
+                    <img src="Images/article-4-image-1.jpg" alt="Toyota landcruiser in the desert">
                     <h3 class="text__header text--med text--dark">Cars that can Last for Miles and Miles</h3>
                     <p class="text text--sml text--dark">Here are the top ten long-lasting vehicles according to Forbes, with a personal review by JZMotors owner Jeff. What is your personal favourite?</p>
                     <a href="" class="button button--sml button--dark">Read More</a>
@@ -55,43 +55,34 @@
         <div class="archives">
             <div class="archives__filters card stack">
                 <p class="text text--med">Filter By</p>
-                <div class="filters-dropdown box cluster">
                     <!-- drop down of filters goes here -->
-                    <div class="filters-dropdown__text">
-                        <p class="text text--dark text--sml">Date: from</p>
-                    </div>
-                    <div class="filters-dropdown__arrow box">
-                        <p class="text text--white text--sml">V</p>
-                    </div>
-                </div>
-                <div class="filters-dropdown box cluster">
-                    <!-- drop down of filters goes here -->
-                    <div class="filters-dropdown__text">
-                        <p class="text text--dark text--sml">Date: to</p>
-                    </div>
-                    <div class="filters-dropdown__arrow box">
-                        <p class="text text--white text--sml">V</p>
-                    </div>
-                </div>
-                <div class="filters-dropdown box cluster">
-                    <!-- drop down of filters goes here -->
-                    <div class="filters-dropdown__text">
-                        <p class="text text--dark text--sml">Topic</p>
-                    </div>
-                    <div class="filters-dropdown__arrow box">
-                        <p class="text text--white text--sml">V</p>
-                    </div>
-                </div>
-                <div class="filters-dropdown box cluster">
-                    <!-- drop down of filters goes here -->
-                    <div class="filters-dropdown__text">
-                        <p class="text text--dark text--sml">Author</p>
-                    </div>
-                    <div class="filters-dropdown__arrow box">
-                        <p class="text text--white text--sml">V</p>
-                    </div>
-                </div>
-                <button class="button button--sml button--dark">SEARCH</button>
+                    <form class="form news">
+                        <div class="filters-dropdown cluster">
+                            <label for="date-from">Date (from):</label>
+                            <input class="input--date" id="date-from" type="date">
+                        </div>
+                        <div class="filters-dropdown cluster">
+                            <label for="date-to">Date (to):</label>
+                            <input class="input--date" id="date-to" type="date">
+                        </div>
+                        <div class="filters-dropdown cluster">
+                            <label for="topic">Topic</label>
+                            <select name="topic" id="topic">
+                                <option value="all-topics">All topics</option>
+                                <option value="cars">Cars</option>
+                                <option value="community">Community</option>
+                                <option value="world">World</option>
+                                <option value="jzmotors">JZMotors</option>
+                            </select>
+                        </div>
+                        <div class="filters-dropdown cluster">
+                            <label for="author">Author</label>
+                            <input type="text" name="author" size="12">
+                        </div>
+                        <div class="entry-button super-center">
+                            <input type="submit" value="SEARCH" class="button button--med button--dark" id="news-form-submit" name="news-form-submit">
+                        </div>
+                    </form>
             </div>
             <div class="archives__box card">
                 <div class="archives__box__articles stack">

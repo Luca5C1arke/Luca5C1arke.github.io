@@ -99,7 +99,7 @@
 
 .card {
     box-shadow: 0px 5px 1em rgba(5, 25, 78, 0.2);
-    background-color: var(--off-white);
+    background-color: white;
 }
 
 /* box */
@@ -142,14 +142,36 @@
 
 /* forms */
 input, textarea {
-    border-radius: 0.2em;
-    border: 1px var(--dark-blue) solid;
-    padding: 0.25em;
+    border-radius: 0.1em;
+    border: 1px var(--dark-blue) dotted;
+    padding: 0.25em 0.5em;
+    font-family: var(--font-primary);
 }
 
 .reviews-list li:hover, .reviews-list p:hover {
     text-shadow: none;
 }
+
+.filters-dropdown {
+    background-color: white;
+}
+
+select {
+    background-color: var(--off-white);
+    border: none;
+    color: var(--dark-blue);
+    background-color: white;
+    border-radius: 0;
+    font-family: var(--font-primary);
+}
+
+option {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 2em;
+    font-family: var(--font-primary);
+}
+
 /* backgrounds/extra visual aesthetics
 #winding-road {
     position: fixed;

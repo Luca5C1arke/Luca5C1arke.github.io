@@ -557,7 +557,7 @@ main .button--lge {
     text-align: left;
 }
 
-.filters-dropdown * {
+.filters-dropdown *:not(input) {
     margin: 0;
     padding: 0;
 }
@@ -898,11 +898,25 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 
 .archives__filters {
     height: 70%;
+    background-color: white;
+}
+
+/* form news */
+.news {
+    margin: 0;
+}
+
+.entry-button input {
+    margin-top: 1em;
+}
+
+.filters-dropdown {
+    padding: 0.25em 0.5em;
 }
 
 .archives__filters > p:first-of-type {
     margin: 0;
-    padding-bottom: 0.25em;
+    padding-bottom: 0.75em;
 }
 
 .archives > .archives__box {
@@ -946,6 +960,10 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
     overflow: hidden;
 }
 
+.panel-1 {
+    padding-top: 1em;
+}
+
 .accordion--active + .panel {
     display: block;
 }
@@ -980,7 +998,10 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 .message-form .message-form-entry, .message-form-entry textarea {
     grid-column: 2;
     max-width: 90%;
-    padding-top: 1em;
+}
+
+.message-form-entry {
+    margin-top: 4em;
 }
 
 .message-form-entry > * {
@@ -994,7 +1015,8 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 .contact-us-details {
     grid-column: 2;
     grid-row: 1;
-    padding: 1.2em 0.5em;
+    padding: 0 1.2em 0.5em;
+    justify-content: start;
 }
 
 .contact-us-details-single {

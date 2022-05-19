@@ -34,13 +34,18 @@
                 <p class="text text--dark text--sml">9 cars found</p>
             </div>
             <div class="filters-dropdown box cluster">
-                <!-- drop down of filters goes here -->
-                <div class="filters-dropdown__text">
-                    <p class="text text--dark text--sml">Sort By: Featured</p>
-                </div>
-                <div class="filters-dropdown__arrow box">
-                    <p class="text text--white text--sml">V</p>
-                </div>
+                <form>
+                    <label for="cars__sort-by">Sort By</label>
+                    <select name="cars__sort-by" id=cars__sort-by">
+                        <option value="price-low-to-high">Price (low to high)</option>
+                        <option value="price-high-to-low">Price (high to low)</option>
+                        <option value="featured">Featured</option>
+                        <option value="odometer-low-to-high">Odometer (low to high)</option>
+                        <option value="odometer-high-to-low">Odometer (high to low)</option>
+                        <option value="odometer-low-to-high">Year (oldest to newest)</option>
+                        <option value="odometer-high-to-low">Year (newest to oldest)</option>
+                    </select>
+                </form>
             </div>
         </div>
         <div class="car-grid cluster cluster--grow">
