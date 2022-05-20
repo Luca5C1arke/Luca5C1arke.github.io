@@ -554,6 +554,10 @@ main .button--lge {
     margin: 0 auto;
 }
 
+.filter-descriptions > .filter-dropdown select {
+    border: none;
+}
+
 .filter-descriptions .text__header {
     text-align: left;
 }
@@ -624,7 +628,8 @@ main .button--lge {
 }
 
 .card__car__buttons > * {
-    margin: 0.5em;
+    margin: 0.25em;
+    text-transform: capitalize;
 }
 
 /* about us */
@@ -963,6 +968,7 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
     text-align: left;
     border: none;
     outline: none;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
   
 .accordion--active, .accordion:hover {
@@ -1030,7 +1036,7 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 .contact-us-details {
     grid-column: 2;
     grid-row: 1;
-    padding: 0 1.2em 0.5em;
+    padding: 1em 1.2em 2.0em;
     justify-content: start;
 }
 
