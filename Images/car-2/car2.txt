@@ -9,6 +9,7 @@ Gears	7 Speed
 Gearbox	Sports Automatic Dual Clutch
 Transmission	Automatic
 Odometer	42,837 kms
+Price       19,920
 Drive Type	FWD
 Rego	BBH658
 StockNo	00005582

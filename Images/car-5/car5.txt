@@ -1,0 +1,74 @@
+Vehicle	2013 Holden Captiva CG MY13 7 AWD CX Grey 6 Speed Sports Automatic Wagon
+Body Colour	Grey
+Doors	5
+Seats	7
+Cylinders	4
+Fuel Type	Diesel
+Capacity	2.2
+Gears	6 Speed
+Gearbox	Sports Automatic
+Transmission	Automatic
+Odometer	117,742 kms
+Drive Type	4WD
+Engine  2.2L 4Cyl
+Price 16990
+Rego	1QU2AT
+StockNo	00005420
+VIN	KL3CD266JDB072784
+Fuel Consumption (Urban)	10.4L/100km
+Fuel Consumption (Extra Urban)	6.8L/100km
+Fuel Consumption (Combined)	8.1L/100km
+Towing Weight Braked	1700kg
+
+
+
+Central Locking - Remote/Keyless	Cruise Control
+18" Alloy Wheels	Power Steering
+Air Cond. - Climate Control 2 Zone	CD Player
+ABS (Antilock Brakes)	Airbag - Driver
+Airbag - Passenger	Airbags - Head for 1st Row Seats (Front)
+Airbags - Head for 2nd Row Seats	Airbags - Side for 1st Row Occupants (Front)
+Audio - Aux Input Socket (MP3/CD/Cassette)	Central Locking - Remote/Keyless
+Power Door Mirrors - Heated	Power Windows - Front & Rear
+6 Speaker Stereo	Control - Traction
+12V Socket(s) - Auxiliary	Adjustable Steering Col. - Tilt & Reach
+Armrest - Front Centre (Shared)	Armrest - Rear Centre (Shared)
+Audio - Aux Input USB Socket	Audio - Input for iPod
+Audio - MP3 Decoder	Bluetooth System
+Body Colour - Door Handles	Brake Assist
+Chrome Exhaust Tip(s)	Clock - Digital
+Compass	Control - Electronic Stability
+Control - Hill Descent	Control - Park Distance Rear
+Control - Rollover Stability	Cup Holders - 1st Row
+Cup Holders - 2nd Row	Cup Holders - 3rd Row
+Disc Brakes Front Ventilated	Disc Brakes Rear Ventilated
+Door Pockets - 1st row (Front)	Door Pockets - 2nd row (rear)
+EBD (Electronic Brake Force Distribution)	Engine Immobiliser
+Exhaust System - Dual	Flares
+Flip/Fold Out Key	Fog Lamp/s - Rear
+Fog Lamps - Front	Headlamps Automatic (light sensitive)
+Headrests - Adjustable 1st Row (Front)	Headrests - Adjustable 2nd Row x3
+Hill Holder	Illuminated - Entry/Exit with Fade
+Independent Rear Suspension	Intermittent Wipers - Variable
+Leather Steering Wheel	Map/Reading Lamps - for 1st Row
+Mudflaps - rear	Multi-function Control Screen
+Multi-function Steering Wheel	Park Brake - Electric
+Rear Wiper/Washer	Remote Boot/Hatch Release
+Remote Fuel Lid Release	Roof Rails
+Scuff Plates (on door sills)	Seat - Drivers Lumbar Adjustment Manual
+Seatback Pockets - 1st Row (Front) seats	Seatbelt - Adjustable Height 1st Row
+Seatbelt - Load Limiters 1st Row (Front)	Seatbelt - Pretensioners 1st Row (Front)
+Seatbelts - Lap/Sash for 7 seats	Seats - 2nd Row (Rear) Flat Folding
+Seats - 2nd Row Split Fold	Seats - 3rd Row (Rear) Flat Folding
+Seats - 3rd Row Split Fold	Spare Wheel - Space Saver/Temporary
+Storage Compartment - Centre Console 1st Row	Storage Compartment - in Dash
+Sunglass Holder	Sunvisor - Vanity Mirror for Driver
+Sunvisor - Vanity Mirror for Passenger	Suspension - Auto Levelling
+Tailgate with Opening Window	Trim - Cloth
+Trip Computer	Vented - Guards Front
+Log books	Power windows
+Airbag	Anti-lock Braking System (ABS)
+Central Locking	Air Conditioning
+Tow Bar	Traction control system
+Sunroof	Power mirrors
+Alloy Wheels	Climate Control

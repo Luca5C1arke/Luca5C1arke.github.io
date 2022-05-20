@@ -9,6 +9,7 @@ Gears	6 Speed
 Gearbox	Sports Automatic
 Transmission	Automatic
 Odometer	156,972 kms
+Price   19500
 Drive Type	4WD
 Rego	1HU5DL
 StockNo	00005356

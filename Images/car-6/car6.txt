@@ -1,0 +1,51 @@
+2012 Hyundai iLOAD TQ-V MY12 White 5 Speed Manual Van
+Vehicle	2012 Hyundai iLOAD TQ-V MY12 White 5 Speed Manual Van
+Body Colour	White
+Doors	5
+Seats	3
+Cylinders	4
+Fuel Type	Petrol - Unleaded
+Capacity	2.4
+Price   22990
+Engine  2.4L 4Cyl
+Gears	5 Speed
+Gearbox	Manual
+Transmission	Manual
+Odometer	142,637 kms
+Drive Type	RWD
+Rego	ZBM079
+StockNo	00005583
+VIN	KMFWBX7RLCU421182
+Fuel Consumption (Urban)	13L/100km
+Fuel Consumption (Extra Urban)	8.3L/100km
+Fuel Consumption (Combined)	10.1L/100km
+Towing Weight Braked	1500kg
+
+Central Locking - Remote/Keyless	Air Conditioning - Pollen Filter
+Power Steering	CD Player
+ABS (Antilock Brakes)	Airbag - Driver
+Airbag - Passenger	Alarm
+Audio - Aux Input Socket (MP3/CD/Cassette)	Central Locking - Remote/Keyless
+Power Door Mirrors	2 Speaker Stereo
+Adjustable Steering Col. - Tilt only	Armrest - Front Centre (Shared)
+Audio - Aux Input USB Socket	Audio - Input for iPod
+Audio - MP3 Decoder	Audio Decoder - WMA
+Bluetooth System	Calipers - Front 2 Spot
+Cargo Tie Down Hooks/Rings	Chrome Grille Surround
+Clock - Digital	Cup Holders - 1st Row
+Disc Brakes Front Ventilated	Disc Brakes Rear Ventilated
+Door - side sliding LHS(passenger side)	Door - side sliding RHS(drivers side)
+Door Pockets - 1st row (Front)	EBD (Electronic Brake Force Distribution)
+Engine Immobiliser	Gloveboxes - Upper & Lower
+Headrests - Adjustable 1st Row (Front)	Illuminated - Key Ignition Barrel/Surround
+Intermittent Wipers - Variable	Metallic Finish Gear Knob
+Multi-function Steering Wheel	Power Windows - Front only
+Rear View Mirror - Manual Anti-Glare	Seat - Front Bench 3st
+Seat - Height Adjustable Driver	Seatbelt - Adjustable Height 1st Row
+Seatbelt - Load Limiters 1st Row (Front)	Seatbelt - Pretensioners 1st Row (Front)
+Spare Wheel - Full Size Steel	Suspension - Leaf
+Tacho	Trim - Cloth
+Log books	Airbag
+Anti-lock Braking System (ABS)	Central Locking
+Air Conditioning	Tow Bar
+Power mirrors

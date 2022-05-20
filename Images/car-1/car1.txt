@@ -9,6 +9,8 @@ Gears	6 Speed
 Gearbox	Sports Automatic
 Transmission	Automatic
 Odometer	109,738 kms
+Price       11890
+Engine    4.0L Barra
 Drive Type	RWD
 Rego	1KQ8RI
 StockNo	00005584

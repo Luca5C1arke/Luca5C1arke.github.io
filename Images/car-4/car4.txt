@@ -1,0 +1,70 @@
+2018 Ford Mondeo MD 2018.25MY Ambiente Gold 6 Speed Sports Automatic Hatchback
+
+Vehicle	2018 Ford Mondeo MD 2018.25MY Ambiente Gold 6 Speed Sports Automatic Hatchback
+Body Colour	Gold
+Doors	5
+Seats	5
+Cylinders	4
+Fuel Type	Petrol - Unleaded
+Capacity	2
+Gears	6 Speed
+Gearbox	Sports Automatic
+Transmission	Automatic
+Odometer	94,726 kms
+Price       22,400
+Drive Type	FWD
+Rego	1MZ3CP
+StockNo	00005461
+VIN	WF0EXXWPCEJS55703
+Fuel Consumption (Urban)	11.9L/100km
+Fuel Consumption (Extra Urban)	6.1L/100km
+Fuel Consumption (Combined)	8.2L/100km
+Towing Weight Braked	1200kg
+
+Central Locking - Remote/Keyless	Cruise Control
+17" Alloy Wheels	Power Steering - Electric Assist
+Air Cond. - Climate Control 2 Zone	CD Player
+ABS (Antilock Brakes)	Airbag - Driver
+Airbag - Knee Driver	Airbag - Passenger
+Airbags - Head for 1st Row Seats (Front)	Airbags - Head for 2nd Row Seats
+Airbags - Side for 1st Row Occupants (Front)	Central Locking - Remote/Keyless
+GPS (Satellite Navigation)	Power Door Mirrors - Heated
+Power Windows - Front & Rear	8 Speaker Stereo
+Control - Traction	12V Socket(s) - Auxiliary
+Adjustable Steering Col. - Tilt & Reach	Airbags - Seatbelt 2nd Row Occupants
+Audio - Aux Input USB Socket	Audio - Input for iPod
+Bluetooth System	Body Colour - Door Handles
+Body Colour - Exterior Mirrors Full	Camera - Rear Vision
+Clock - Digital	Control - Electronic Stability
+Control - Park Distance Front	Control - Park Distance Rear
+Control - Trailer Sway	Cup Holders - 1st Row
+Daytime Running Lamps	Disc Brakes Front Ventilated
+Disc Brakes Rear Solid	Engine Immobiliser
+Exhaust System - Dual	Flip/Fold Out Key
+Floor Mats	Fog Lamps - Front
+Footrest - Drivers	Gear Shift Paddles behind Steering Wheel
+Headlamps - See me home	Headrests - Adjustable 1st Row (Front)
+Headrests - Adjustable 2nd Row x3	Hill Holder
+Illuminated - Entry/Exit with Fade	Illuminated Vanity Mirror for Front Passenger
+In-Car Voice System	Independent Front Suspension
+Independent Rear Suspension	Leather Look - Gear Knob
+Leather Steering Wheel	Map/Reading Lamps - for 1st Row
+Multi-function Control Screen - Colour	Multi-function Steering Wheel
+Park Brake - Electric	Radio - Digital (DAB+)
+Rear View Mirror - Manual Anti-Glare	Rear Windows - Extra Dark/Privacy
+Rear Wiper/Washer	Seat - Height Adjustable Driver
+Seat - Height Adjustable Passenger	Seatback Pocket - Front Driver Seat
+Seatback Pocket - Front Passenger Seat	Seatbelt - Adjustable Height 1st Row
+Seatbelt - Pretensioners 1st Row (Front)	Seats - 2nd Row Split Fold
+Smart Device App Display/Control	Smart Device Integration - Android Auto
+Smart Device Integration - Apple CarPlay	Spare Wheel - Space Saver/Temporary
+Speed Limiter	Storage Compartment - Centre Console 1st Row
+Sunglass Holder	Sunvisor - Illuminated Vanity Mirror for Driver
+Tacho	Tail Lamps - LED
+Trim - Cloth	Trip Computer
+Voice Recognition	Log books
+Power windows	Power Steering
+Airbag	Anti-lock Braking System (ABS)
+Central Locking	Air Conditioning
+Traction control system	Power mirrors
+Alloy Wheels	Climate Control
