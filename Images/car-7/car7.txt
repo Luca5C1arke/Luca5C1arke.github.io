@@ -1,0 +1,69 @@
+2013 Kia Sportage SL Series II MY13 SI Grey 6 Speed Sports Automatic Wagon
+
+Vehicle	2013 Kia Sportage SL Series II MY13 SI Grey 6 Speed Sports Automatic Wagon
+Body Colour	Grey
+Doors	5
+Seats	5
+Cylinders	4
+Fuel Type	Petrol - Unleaded
+Capacity	2
+Engine  2L 4Cyl
+Price   15600
+Gears	6 Speed
+Gearbox	Sports Automatic
+Transmission	Automatic
+Odometer	170,729 kms
+Drive Type	FWD
+Rego	1AX8DV
+StockNo	00005415
+VIN	U5YPB811MDL388049
+Fuel Consumption (Urban)	11.8L/100km
+Fuel Consumption (Extra Urban)	7.1L/100km
+Fuel Consumption (Combined)	8.8L/100km
+Towing Weight Braked	1600kg
+
+Central Locking - Remote/Keyless	Cruise Control
+17" Alloy Wheels	Air Conditioning
+Power Steering	CD Player
+ABS (Antilock Brakes)	Airbag - Driver
+Airbag - Passenger	Airbags - Head for 1st Row Seats (Front)
+Airbags - Head for 2nd Row Seats	Airbags - Side for 1st Row Occupants (Front)
+Alarm	Audio - Aux Input Socket (MP3/CD/Cassette)
+Central Locking - Remote/Keyless	Power Door Mirrors - Heated
+Power Windows - Front & Rear	6 Speaker Stereo
+Control - Traction	12V Socket(s) - Auxiliary
+Adjustable Steering Col. - Tilt & Reach	Armrest - Rear Centre (Shared)
+Audio - Aux Input USB Socket	Audio - Input for iPod
+Audio - MP3 Decoder	Bluetooth System
+Body Colour - Bumpers	Body Colour - Door Handles
+Body Colour - Exterior Mirrors Partial	Body Side Mouldings
+Bottle Holders - 1st Row	Bottle Holders - 2nd Row
+Brake Assist	Cargo Cover
+Cargo Tie Down Hooks/Rings	Clock - Digital
+Control - Electronic Stability	Control - Hill Descent
+Cup Holders - 1st Row	Cup Holders - 2nd Row
+Disc Brakes Front Ventilated	Disc Brakes Rear Solid
+EBD (Electronic Brake Force Distribution)	Engine Immobiliser
+Fog Lamp/s - Rear	Fog Lamps - Front
+Footrest - Drivers	Headlamps - Corner (Fixed)
+Headlamps - Electric Level Adjustment	Headrests - Active 1st Row (Front)
+Headrests - Adjustable 1st Row (Front)	Headrests - Adjustable 2nd Row x3
+Hill Holder	Intermittent Wipers - Variable
+Map/Reading Lamps - for 1st Row	Metallic Finish Door Handles - Interior
+Metallic Finish Front Grille	Mudflaps - front
+Mudflaps - rear	Multi-function Control Screen
+Multi-function Steering Wheel	Rain Sensor (Auto wipers)
+Rear View Mirror - Manual Anti-Glare	Rear Wiper/Washer
+Remote Fuel Lid Release	Seat - Height Adjustable Driver
+Seatback Pockets - 1st Row (Front) seats	Seatbelt - Adjustable Height 1st Row
+Seatbelt - Load Limiters 1st Row (Front)	Seatbelt - Pretensioners 1st Row (Front)
+Seatbelts - Lap/Sash for 5 seats	Seats - 2nd Row Split Fold
+Speed Dependant Volume Stereo	Spoiler - Rear Roof Mounted
+Storage Compartment - Centre Console 1st Row	Sunglass Holder
+Sunvisor - Vanity Mirror for Driver	Sunvisor - Vanity Mirror for Passenger
+Sunvisors - Front	Trim - Cloth
+Trip Computer	Log books
+Power windows	Airbag
+Anti-lock Braking System (ABS)	Central Locking
+Traction control system	Power mirrors
+Alloy Wheels	 

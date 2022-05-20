@@ -1,0 +1,47 @@
+2015 Mercedes-Benz Sprinter NCV3 313CDI Low Roof MWB 7G-Tronic White 7 Speed Sports Automatic Van
+
+Vehicle	2015 Mercedes-Benz Sprinter NCV3 313CDI Low Roof MWB 7G-Tronic White 7 Speed Sports Automatic Van
+Body Colour	White
+Doors	4
+Seats	2
+Cylinders	4
+Fuel Type	Diesel
+Capacity	2.1
+Gears	7 Speed
+Gearbox	Sports Automatic
+Transmission	Automatic
+Odometer	229,492 kms
+Drive Type	RWD
+Rego	1UG8PU
+StockNo	00005550
+VIN	WDB9066332P160592
+
+Central Locking - Remote/Keyless	Cruise Control
+Power Steering	Air Cond. - Climate Control
+ABS (Antilock Brakes)	Airbag - Driver
+Airbag - Passenger	Audio - Aux Input Socket (MP3/CD/Cassette)
+Central Locking - Remote/Keyless	Power Door Mirrors - Heated
+5 Speaker Stereo	Control - Traction
+Adjustable Steering Col. - Tilt & Reach	Audio - AAC Decoder
+Audio - Aux Input USB Socket	Audio - Input for iPod
+Audio - MP3 Decoder	Audio Decoder - WMA
+Bluetooth System	Bottle Holders - 1st Row
+Colour Display Screen - Front	Control - Electronic Stability
+Control - Rollover Stability	Cup Holders - 1st Row
+Daytime Running Lamps	Disc Brakes Front Ventilated
+Disc Brakes Rear Solid	Door - side sliding LHS(passenger side)
+Door Pockets - 1st row (Front)	Doors - Rear Wing/Barn
+EBD (Electronic Brake Force Distribution)	Engine Immobiliser
+Fog Lamp/s - Rear	Front Stabiliser
+Headlamps - Electric Level Adjustment	Headrests - Adjustable 1st Row (Front)
+Hill Holder	Independent Front Suspension
+Intermittent Wipers	Map/Reading Lamps - for 1st Row
+Memory Card Reader	Multi-function Steering Wheel
+Over-head Centre Console - Front	Power Windows - Front only
+Rear Stabiliser	Seatbelt - Adjustable Height 1st Row
+Speed Limiter	Storage Compartment - in Dash
+Tacho	Trim - Cloth
+Airbag	Anti-lock Braking System (ABS)
+Central Locking	Air Conditioning
+Traction control system	Power mirrors
+Climate Control	 
