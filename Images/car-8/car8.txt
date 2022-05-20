@@ -7,10 +7,12 @@ Seats	2
 Cylinders	4
 Fuel Type	Diesel
 Capacity	2.1
+Price   43990
 Gears	7 Speed
 Gearbox	Sports Automatic
 Transmission	Automatic
 Odometer	229,492 kms
+Economy     15.7L/100kms
 Drive Type	RWD
 Rego	1UG8PU
 StockNo	00005550

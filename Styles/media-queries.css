@@ -237,8 +237,7 @@
     }
     .card__news {
         margin: 1em 0;
-        max-width: 80vw;
-        max-width: 300px;
+        max-width: 70vw;
     }
     .featured-articles__cards p, .featured-articles__cards h3 {
         padding: 1em;
@@ -258,7 +257,9 @@
         padding: 2em 1em;
         margin: 0 auto 2em;
     }
-
+    .filters-dropdown {
+        justify-content: center;
+    }
     .archives > .archives__box {
         grid-column: 1;
         grid-row: 2;

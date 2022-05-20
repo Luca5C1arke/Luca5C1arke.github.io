@@ -10,6 +10,7 @@ Capacity	2
 Gears	6 Speed
 Gearbox	Sports Automatic
 Transmission	Automatic
+Engine      2.0L TrbDiesel
 Odometer	94,726 kms
 Price       22,400
 Drive Type	FWD
