@@ -29,6 +29,13 @@ function hamburger() {
     navSub.classList.toggle("nav-active");
 }
 
+/* inquiry form */
+function inquiryForm() {
+    alert("Load")
+    var popup = document.getElementById("inquiry");
+    popup.classList.toggle("inquiry--show");
+}
+
 /*
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {

@@ -48,6 +48,10 @@
     align-items: center;
 }
 
+.cluster--left {
+    justify-content: left;
+}
+
 .cluster > * {
     margin: 0.5rem;
 }
@@ -1089,4 +1093,28 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 
 .inquiry-buttons a {
     margin: 0.5rem;
+}
+
+/* inquiry form page */
+form .cluster {
+    padding-left: 1.5em;
+}
+
+.inquiry-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(5, 25, 78, 0.2);
+}
+
+.inquiry-form-box {
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    background-color: white;
+    width: 70vw;
+    margin: 0 auto;
 }
