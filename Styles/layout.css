@@ -1100,21 +1100,63 @@ form .cluster {
     padding-left: 1.5em;
 }
 
-.inquiry-form {
+.inquiry {
+    visibility: hidden;
+}
+
+.inquiry--show {
+    visibility: visible;
+}
+
+.shadow-overlay {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
-    z-index: 10;
-    background-color: rgba(5, 25, 78, 0.2);
+    z-index: 9;
+    background-color: rgba(5, 25, 78, 0.6);
 }
 
 .inquiry-form-box {
-    position: fixed;
-    top: 15%;
-    left: 15%;
+    z-index: 10;
+    position: absolute;
     background-color: white;
     width: 70vw;
-    margin: 0 auto;
+    top: 13%;
+    left: 15%;
+    padding: 2em;
+}
+
+.inquiry-form-box .inquiry__header {
+    justify-content: space-between;
+}
+
+.return-x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.inquiry-form-box .cluster {
+    padding-left: 0;
+}
+
+.inquiry-form-box h3 {
+    padding: 0;
+    margin: 2em 0 0.5em;
+}
+
+.inquiry-form-box label, .inquiry-form-box .form__input, .inquiry-form-box .radio-answers {
+    padding: 0 1em 0 0;
+    margin: 0 0;
+}
+
+.inquiry-form-box .radio-answers {
+    padding: 2em 0 2em;
+}
+
+.body--noscroll {
+    max-height: 40rem;
+    overflow: hidden;
 }
