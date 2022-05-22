@@ -49,8 +49,6 @@
     .archives__article > .cluster a {
         margin: 0.25em 0 0;
     }
-    /* cars page */
-
     /* contact us page */
     .accordion--active + .panel-1 {
         grid-template-columns: 1fr;
@@ -270,7 +268,6 @@
         margin-bottom: 2em;
     }
     /* cars page */
-
     /* contact us page */
     .panel-1 {
         grid-template-columns: 1fr;
@@ -349,6 +346,8 @@
         display: grid;
         grid-template-columns: 70% 30%;
     }
+    /* cars page*/
+
     /* TOTALLY SWAP THE HEADER HERE TO THE DESKTOP VERSION */   
 
 }
@@ -362,6 +361,24 @@
     /* contact us */
 
 
+}
+
+/* for the car grid (fix bug) */
+@media (min-width: 200px) {
+    .car-grid {
+        grid-template-columns: 1fr;
+        margin: 1em;
+    }
+}
+@media (min-width: 700px) {
+    .car-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1000px) {
+    .car-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 

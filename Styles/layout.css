@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: s;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -550,12 +550,21 @@ main .button--lge {
 
 /* cars page */
 .filter-descriptions {
-    max-width: 950px;
-    margin: 0 auto;
+    margin: 0 1.5em;
 }
 
-.filter-descriptions > .filter-dropdown select {
+.filter-descriptions > .filters-dropdown {
+    padding-bottom: 0.45em;
+    background-color: var(--off-white);
     border: none;
+    font-weight: bold;
+}
+
+.filter-descriptions > .filters-dropdown select {
+    border: none;
+    padding: 0.5em 0.1em;
+    margin: 0;
+    justify-self: center;
 }
 
 .filter-descriptions .text__header {
@@ -584,13 +593,16 @@ main .button--lge {
 }
 
 .car-grid {
-    max-width: 1000px;
     margin: 0 auto 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    place-content: center;
 }
 
 .car-box {
+    width: auto;
     margin: 1em;
-    width: 250px;
 }
 
 .car-box * {
