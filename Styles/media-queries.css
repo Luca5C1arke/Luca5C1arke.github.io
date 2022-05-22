@@ -329,6 +329,9 @@
     .car-featured-shots > img {
         min-width: 150px;
     }
+    .inquiry-form-box {
+        padding: 2em 1em;
+    }
     /* footer */
     #footer img {
         max-width: 15px;

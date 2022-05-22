@@ -31,9 +31,15 @@ function hamburger() {
 
 /* inquiry form */
 function inquiryForm() {
-    alert("Load")
-    var popup = document.getElementById("inquiry");
-    popup.classList.toggle("inquiry--show");
+    var popup = document.getElementsByClassName("inquiry");
+    popup[0].classList.toggle("inquiry--show");
+    var body = document.getElementById("body__individual-car-page");
+    body.classList.toggle("body--noscroll");
+}
+
+function inquirySuccess() {
+    var newPopup = document.getElementsByClassName("success-popup");
+    newPopup[0].classList.toggle("inquiry--show");
 }
 
 /*
@@ -70,7 +76,7 @@ function loadPage(PageUrl) {
     getData(pageUrl)
         .then((resolve) => {
             console.log(resolve);
-            document.getElementById("page-content").innerHTML = resolve;
+            document.getElementByClass("page-content").innerHTML = resolve;
         })
         .catch((reject) => {
             console.error(reject);

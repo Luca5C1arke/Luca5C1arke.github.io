@@ -1104,7 +1104,7 @@ form .cluster {
     visibility: hidden;
 }
 
-.inquiry--show {
+.inquiry--show, .inquiry-form-box .inquiry--show {
     visibility: visible;
 }
 
@@ -1124,7 +1124,8 @@ form .cluster {
     background-color: white;
     width: 70vw;
     top: 13%;
-    left: 15%;
+    left: 50%;
+    margin: 0 0 0 -35vw;
     padding: 2em;
 }
 
@@ -1136,6 +1137,7 @@ form .cluster {
     position: absolute;
     top: 10px;
     right: 10px;
+    cursor: pointer;
 }
 
 .inquiry-form-box .cluster {
@@ -1155,6 +1157,33 @@ form .cluster {
 .inquiry-form-box .radio-answers {
     padding: 2em 0 2em;
 }
+
+.success-popup {
+    visibility: hidden;
+}
+
+.success-popup .shadow-overlay {
+    z-index: 101;
+}
+
+.success-box {
+    position: fixed;
+    z-index: 103;
+    background-color: var(--light-blue);
+    padding: 4em;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    justify-content: center;
+}
+
+.success-popup input {
+    max-width: 60%;
+    margin: 1em auto;
+}
+
 
 .body--noscroll {
     max-height: 40rem;

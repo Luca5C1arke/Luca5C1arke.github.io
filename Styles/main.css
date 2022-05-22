@@ -25,6 +25,7 @@
     width: auto;
     height: auto;
     transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
 }
 
 .button--lge {

@@ -1,14 +1,15 @@
 <!-- this is an overlay to be placed on top of the current individual car page  --> 
-<div class="inquiry-form inquiry--show">
+<div id="inquiry-form">
 	<div class="shadow-overlay"></div>
 	<div class="inquiry-form-box">
 		<form>
-			<div class="cluster cluster--grow">
+			<div class="cluster cluster--left inquiry__header">
 					<h2 class="text__header text--xlge text--dark">INQUIRE ABOUT THIS CAR</h2>
-					<a onclick="inquiryForm()">return</a>
+					<div class="return-x">
+						<a class="text text--sml text--bold" onclick="inquiryForm()">return</a>
+					</div>
+					
 			</div>
-			
-			
 			<div class="form__question">
 				<h3 class="text__header text__form__question text--MED text--dark">Name</h3>
 				<div class="cluster cluster--left">
@@ -73,7 +74,14 @@
 				</div>
 			</div>
 			<div class="entry-button super-center">
-				<input type="submit" value="SUBMIT" class="button button--lge button--light" id="inquiry-form-submit" name="inquiry form submit">
+				<a onclick="inquirySuccess()" class="button button--lge button--light">SUBMIT</a>
+			</div>
+			<div class="success-popup stack">
+				<div class="shadow-overlay"></div>
+				<div class="success-box stack super-center">
+					<p class="text text--sml text--white">Thanks for your inquiry! See the confirmation message (sent to phone/email) for all of the details</p>
+					<input type="submit" value="RETURN" class="button button--lge button--light" id="inquiry-form-submit" name="inquiry form submit">
+				</div>
 			</div>
 		</form>
 	</div>
