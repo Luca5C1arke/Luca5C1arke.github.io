@@ -770,6 +770,22 @@ main .button--lge {
     padding: 1em;
 }
 
+.accordion-menu__individual-car-page table {
+    margin: 2em 1em;
+}
+
+.accordion-menu__individual-car-page tr {
+    justify-content: baseline;
+}
+
+.accordion-menu__individual-car-page th, .accordion-menu__individual-car-page td {
+    padding-bottom: 1em;
+}
+
+.button_inquire:last-of-type {
+    margin: -2rem 0;
+}
+
 /* add a media query to set flex wrap at a certain point */
 
 .car-details .icon {

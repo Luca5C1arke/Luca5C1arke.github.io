@@ -122,3 +122,19 @@ label {
     color: white;
     text-decoration: none;
 }
+
+.accordion-menu__individual-car-page li, .accordion-menu__individual-car-page td {
+    font-family: var(--font-primary), sans-serif;
+    list-style-type: disc;
+    color: var(--light-blue);
+    padding-bottom: 0.5em;
+    text-shadow: none;
+    font-size: var(--text-s);
+}
+
+.accordion-menu__individual-car-page th {
+    padding-right: 1em;
+    text-shadow: none;
+    font-size: var(--text-s);
+    text-align: right;
+}
