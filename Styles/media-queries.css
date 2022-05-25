@@ -287,7 +287,10 @@
     /* about us page */
 
     /* garage page */
-
+    .cars-cart {
+        grid-template-columns: 1fr;
+        padding: 0 10vw;
+    }
     /* individual car page */
     .car-listing {
         grid-template-columns: 1fr;

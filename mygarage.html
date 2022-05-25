@@ -25,17 +25,232 @@
 <body>
     <div id="header"></div>
     <main>
-        <h3 class="text__header text--lge text--dark">MY Garage</h3>
+        <h3 class="text__header text--med text--dark">MY Garage</h3>
+        <div class="garage-explanation">
+            <p class="text text--sml text--dark super-center">Press the green plus to compare 2 of the cars in your garage!<nbsp>(at the bottom of this page).</p>
+        </div>
         <div class="cars-cart">
             <!-- this box holds all the cars-->
+            <div class="car-box">
+                <div class="card card__car center stack">
+                    <div class="compare-button">
+                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                    </div>
+                    <div class="card__car__head stack">
+                        <h3 class="text__header text--med text--white super-center">2016 HOLDEN COLORADO</h3>
+                        <h3 class="text text--sml text--white super-center">$19,500 DRIVE AWAY</h3>
+                    </div>
+                    <div class="card__car__photo">
+                        <img src="Images/car-3/car3-4.jpg" alt="Car">
+                    </div>
+                    <div class="card__car__description">
+                        <div class="card__car__stats lineup">
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/odometer.svg" alt="Odometer">
+                                <p class="text--xxsml text--bold">156,972km</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/gear-shifter.svg" alt="Transmission">
+                                <p class="text--xxsml text--bold">Automatic</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/engine.svg" alt="Engine Specs">
+                                <p class="text--xxsml text--bold">2.8L Turbo</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/fuel.svg" alt="Fuel Economy">
+                                <p class="text--xxsml text--bold">9.1L/100km</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__car__buttons cluster">
+                        <a href="#" class="button button--xsml button--white">remove from garage</a>
+                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <!-- may need to change the link below once understood -->
+                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-box">
+                <div class="card card__car center stack">
+                    <div class="compare-button">
+                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                    </div>
+                    <div class="card__car__head stack">
+                        <h3 class="text__header text--med text--white super-center">2013 HOLDEN CAPTIVA</h3>
+                        <h3 class="text text--sml text--white super-center">$16,990 DRIVE AWAY</h3>
+                    </div>
+                    <div class="card__car__photo">
+                        <img src="Images/car-5/car5-main.jpg" alt="Car">
+                    </div>
+                    <div class="card__car__description">
+                        <div class="card__car__stats lineup">
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/odometer.svg" alt="Odometer">
+                                <p class="text--xxsml text--bold">117,742km</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/gear-shifter.svg" alt="Transmission">
+                                <p class="text--xxsml text--bold">Automatic</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/engine.svg" alt="Engine Specs">
+                                <p class="text--xxsml text--bold">2.2L 4Cyl</p>
+                            </div> 
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/fuel.svg" alt="Fuel Economy">
+                                <p class="text--xxsml text--bold">8.1L/100km</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__car__buttons cluster">
+                        <a href="#" class="button button--xsml button--white">remove from garage</a>
+                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <!-- may need to change the link below once understood -->
+                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-box">
+                <div class="card card__car center stack">
+                    <div class="compare-button">
+                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                    </div>
+                    <div class="card__car__head stack">
+                        <h3 class="text__header text--med text--white super-center">2012 HYUNDAI ILOAD TQ-V</h3>
+                        <h3 class="text text--sml text--white super-center">$22,990 DRIVE AWAY</h3>
+                    </div>
+                    <div class="card__car__photo">
+                        <img src="Images/car-6/car6-main.jpg" alt="Car">
+                    </div>
+                    <div class="card__car__description">
+                        <div class="card__car__stats lineup">
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/odometer.svg" alt="Odometer">
+                                <p class="text--xxsml text--bold">142,637km</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/gear-shifter.svg" alt="Transmission">
+                                <p class="text--xxsml text--bold">Manual</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/engine.svg" alt="Engine Specs">
+                                <p class="text--xxsml text--bold">2.4L</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/fuel.svg" alt="Fuel Economy">
+                                <p class="text--xxsml text--bold">10.1L/100km</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__car__buttons cluster">
+                        <a href="#" class="button button--xsml button--white">remove from garage</a>
+                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <!-- may need to change the link below once understood -->
+                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-box">
+                <div class="card card__car center stack">
+                    <div class="compare-button">
+                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                    </div>
+                    <div class="card__car__head stack">
+                        <h3 class="text__header text--med text--white super-center">2013 KIA SPORTAGE SL</h3>
+                        <h3 class="text text--sml text--white super-center">$15,600 DRIVE AWAY</h3>
+                    </div>
+                    <div class="card__car__photo">
+                        <img src="Images/car-7/car7-main.jpg" alt="Car">
+                    </div>
+                    <div class="card__car__description">
+                        <div class="card__car__stats lineup">
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/odometer.svg" alt="Odometer">
+                                <p class="text--xxsml text--bold">170,729km</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/gear-shifter.svg" alt="Transmission">
+                                <p class="text--xxsml text--bold">Automatic</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/engine.svg" alt="Engine Specs">
+                                <p class="text--xxsml text--bold">2.0L 4Cyl</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/fuel.svg" alt="Fuel Economy">
+                                <p class="text--xxsml text--bold">8.8L/100km</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__car__buttons cluster">
+                        <a href="#" class="button button--xsml button--white">remove from garage</a>
+                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <!-- may need to change the link below once understood -->
+                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-box">
+                <div class="card card__car center stack">
+                    <div class="compare-button">
+                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                    </div>
+                    <div class="card__car__head stack">
+                        <h3 class="text__header text--med text--white super-center">2015 MERCEDES SPRINTER</h3>
+                        <h3 class="text text--sml text--white super-center">$43,990 DRIVE AWAY</h3>
+                    </div>
+                    <div class="card__car__photo">
+                        <img src="Images/car-8/car8-main.jpg" alt="Car">
+                    </div>
+                    <div class="card__car__description">
+                        <div class="card__car__stats lineup">
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/odometer.svg" alt="Odometer">
+                                <p class="text--xxsml text--bold">229,492km</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/gear-shifter.svg" alt="Transmission">
+                                <p class="text--xxsml text--bold">Automatic</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/engine.svg" alt="Engine Specs">
+                                <p class="text--xxsml text--bold">2.0L</p>
+                            </div>
+                            <div class="car-stat">
+                                <img class="icon icon__car-stat" src="Icons/fuel.svg" alt="Fuel Economy">
+                                <p class="text--xxsml text--bold">15.7L/100km</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__car__buttons cluster">
+                        <a href="#" class="button button--xsml button--white">remove from garage</a>
+                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <!-- may need to change the link below once understood -->
+                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="compare-cars">
-            <h3 class="text__header text--lge text--dark">Compare Cars</h3>
-            <div class="compare-cars__first">
-
-            </div>
-            <div class="compare-cars__second">
-
+            <h3 class="text__header text--med text--dark">Compare Cars</h3>
+            <div class="compare-cars__boxes">
+                <div class="compare-cars__first box">
+                    <div class="default__no-car">
+                        <div>
+                            <p class="text text--lge text--white">+</p>
+                        </div>
+                        <p class="text text--med text--dark">Please add a car above!</p>
+                    </div>
+                </div>
+                <div class="compare-cars__second box">
+                    <div class="default__no-car">
+                        <div>
+                            <p class="text text--lge text--white">+</p>
+                        </div>
+                        <p class="text text--med text--dark">Please add a car above!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
