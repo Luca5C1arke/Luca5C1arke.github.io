@@ -42,21 +42,6 @@ function inquirySuccess() {
     newPopup[0].classList.toggle("inquiry--show");
 }
 
-/*
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("accordion--active");
-    console.log("The accordion menu was clicked somewhere");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-} */
-
-/* this is all a mess */
 const getData = (pageUrl) => {
     return new Promise((resolve, reject) => {
         let request = new XMLHttpRequest();
@@ -119,20 +104,29 @@ function buttonClick(buttonElement) {
             document.getElementById("carousel-car-2").style.gridColumn = 5;
             document.getElementById("carousel-car-3").style.gridColumn = 1;
         }
+    }
     /* add to cart function */
-    } else if (buttonElement.textContent == "+") {
-        alert("This car was added to your garage");
-        document.getElementById("button__add-car").classList.add("button--added");
-        document.getElementById("button__add-car").textContent = "-";
-    } else if (buttonElement.textContent == "-") {
-        alert("This car was removed from your garage");
-        document.getElementById("button__add-car").classList.remove("button--added");
-        document.getElementById("button__add-car").textContent = "+";
+    else if (buttonElement.id == "button__add-car") {
+        if (buttonElement.textContent == "+") {
+            document.getElementById("button__add-car").classList.add("button--added");
+            document.getElementById("button__add-car").textContent = "-";
+        } else {
+            document.getElementById("button__add-car").classList.remove("button--added");
+            document.getElementById("button__add-car").textContent = "+";
+        }
+    }
+    /* garage comparison function */
+    else if (buttonElement.id == "button-garage") {
+        buttonElement.classList.toggle("button--added");
+        if (buttonElement.textContent == "+") { 
+            buttonElement.textContent = "-";
+        } else {
+            buttonElement.textContent = "+";
+        }
+
     } else {
-        /*
         alert("Hey you clicked "+buttonElement.textContent);
         console.log("Hey you clicked "+buttonElement.textContent);
-        */
     }
 }
 
