@@ -70,7 +70,7 @@ function loadPage(PageUrl) {
 
 function buttonClick(buttonElement) {
     /* index page carousel */
-    if (buttonElement.textContent == "PREV") {
+    if (buttonElement.id == "car-carousel__prev") {
         if ((document.getElementById("carousel-car-1").style.gridColumn) == "1 / auto") {
             // order is currently 1 2 3, make it 2 3 1
             document.getElementById("carousel-car-1").style.gridColumn = 5;
@@ -87,7 +87,7 @@ function buttonClick(buttonElement) {
             document.getElementById("carousel-car-2").style.gridColumn = 5;
             document.getElementById("carousel-car-3").style.gridColumn = 1;
         }
-    } else if (buttonElement.textContent == "NEXT") {
+    } else if (buttonElement.id == "car-carousel__next") {
         if ((document.getElementById("carousel-car-1").style.gridColumn) == "5 / auto") {
             // order is currently 2 3 1, make it 1 2 3
             document.getElementById("carousel-car-1").style.gridColumn = 1;
