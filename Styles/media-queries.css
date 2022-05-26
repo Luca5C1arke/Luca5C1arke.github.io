@@ -1,9 +1,6 @@
 /* for mobile */
 @media (max-width: 575.98px) {   
     /* index page */
-    .about-us > a:first-of-type, .about-us > h2 {
-        grid-column: 1 / span 3;
-    }
     
     /* finance page */
     .image-row {
@@ -154,12 +151,9 @@
         grid-column: 5 / auto;
         grid-row: 1;
     }
-    .featured-cars > .carousel img {
-        height: 100%;
-    }
     .carousel__card__description {
         height: 7em;
-        opacity: 80%;
+        opacity: 90%;
         margin: 0;
         padding: 1em 0.8em 0;
     }
@@ -175,6 +169,9 @@
     }
     #car-carousel__next {
         grid-column: 4;
+    }
+    .about-us > a:first-of-type, .about-us > h2 {
+        grid-column: 1 / span 3;
     }
     .about-us > img:first-of-type {
         visibility: hidden;
@@ -239,6 +236,7 @@
     .articles .img__article {
         min-width: 100%;
     }
+    .articles 
     /* finance page */
 
     /* news page */
@@ -277,6 +275,10 @@
     }
     .featured-articles__cards > .card__news a {
         margin-bottom: 2em;
+    }
+    .news-button {
+        padding-top: 0;
+        margin-top: 0;
     }
     /* cars page */
     /* contact us page */
