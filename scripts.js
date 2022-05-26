@@ -28,6 +28,7 @@ function hamburger() {
 
 /* inquiry form */
 function inquiryForm() {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     var popup = document.getElementsByClassName("inquiry");
     popup[0].classList.toggle("inquiry--show");
     var body = document.getElementById("body__individual-car-page");
@@ -37,6 +38,11 @@ function inquiryForm() {
 function inquirySuccess() {
     var newPopup = document.getElementsByClassName("success-popup");
     newPopup[0].classList.toggle("inquiry--show");
+}
+
+function inquirySuccessFinance() {
+    var newPopup = document.getElementsByClassName("success-popup");
+    newPopup[0].style.visibility = "visible";
 }
 
 const getData = (pageUrl) => {
@@ -118,10 +124,10 @@ function buttonClick(buttonElement) {
     /* add to cart function */
     else if (buttonElement.id == "button__add-car") {
         if (buttonElement.textContent == "+") {
-            document.getElementById("button__add-car").querySelector('.carousel__card__description').classList.add("button--added");
+            document.getElementById("button__add-car").classList.add("button--added");
             document.getElementById("button__add-car").textContent = "-";
         } else {
-            document.getElementById("button__add-car").querySelector('.carousel__card__description').classList.remove("button--added");
+            document.getElementById("button__add-car").classList.remove("button--added");
             document.getElementById("button__add-car").textContent = "+";
         }
     }
@@ -133,8 +139,42 @@ function buttonClick(buttonElement) {
         } else {
             buttonElement.textContent = "+";
         }
+        if (buttonElement.classList.contains("garage-car-1")) {
+            alert("car one was added");
+        }
+        if (buttonElement.classList.contains("garage-car-2")) {
+            alert("car two was added");
+        }
+        if (buttonElement.classList.contains("garage-car-3")) {
+            alert("car three was added");
+        }
+        if (buttonElement.classList.contains("garage-car-4")) {
+            alert("car four was added");
+        }
+        if (buttonElement.classList.contains("garage-car-5")) {
+            alert("car five was added");
+        }
 
-    } else {
+    }    /* remove from garage button */
+    else if (buttonElement.textContent == "remove from garage") {
+        var cars = document.getElementsByClassName("car-box");
+        if (buttonElement.id == "remove-car-1") {
+            cars[0].style.display = "none";
+        }
+        if (buttonElement.id == "remove-car-2") {
+            cars[1].style.display = "none";
+        }
+        if (buttonElement.id == "remove-car-3") {
+            cars[2].style.display = "none";
+        }
+        if (buttonElement.id == "remove-car-4") {
+            cars[3].style.display = "none";
+        }
+        if (buttonElement.id == "remove-car-5") {
+            cars[4].style.display = "none";
+        }
+    }
+    else {
         console.log("Hey you clicked "+buttonElement.textContent);
     }
 }

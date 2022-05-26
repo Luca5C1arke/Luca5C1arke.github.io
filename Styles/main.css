@@ -24,7 +24,7 @@
     text-align: center;
     width: auto;
     height: auto;
-    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0s cubic-bezier(0.19, 1, 0.22, 1);
     cursor: pointer;
 }
 
@@ -37,13 +37,17 @@
 }
 
 .button--sml {
-    padding: 0.5em 0.75em;
+    padding: 0.45em 0.75em;
     font-size: var(--text-s);
 }
 
 .button--xsml {
-    padding: 0.5em 0.5em;
-    font-size: var(--text-xs);
+    padding: 0.75em 0.5em;
+    font-size: var(--text-s);
+}
+
+.button--clear {
+    font-family: var(--font-primary), sans-serif;
 }
 
 .button--light {

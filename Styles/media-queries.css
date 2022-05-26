@@ -1,7 +1,12 @@
 /* for mobile */
 @media (max-width: 575.98px) {   
     /* index page */
-    
+    .carousel > .carousel__card__description {
+        height: 10em;
+    }
+    .about-us > a {
+        margin-top: 2em;
+    }
     /* finance page */
     .image-row {
         grid-template-columns: 1fr;
@@ -127,7 +132,7 @@
     }
     /* index page */
     #main__index > .featured-cars {
-        width: 80vw;
+        width: 100%;
     }
     #main__index > *:not(.featured-cars) {
         width: 90vw;
@@ -135,12 +140,17 @@
     }
     .featured-cars {
         padding: 0 2em;
+        margin-bottom: 2em;
     }
     .featured-cars > .carousel {
         grid-template-columns: 0.001% 9% 80% 6% 0.001%;
     }
     .carousel__card__description {
-        visibility: hidden;
+        visibility: hidden;        
+        opacity: 95%;
+        margin: 0;
+        bottom: -4em;
+        padding: 0.8em 0.4em 0.6em;
     }
     .carousel__card:first-of-type {
         grid-column: 1 / auto;
@@ -153,12 +163,6 @@
     .carousel__card:last-of-type {
         grid-column: 5 / auto;
         grid-row: 1;
-    }
-    .carousel__card__description {
-        height: 7em;
-        opacity: 90%;
-        margin: 0;
-        padding: 1em 0.8em 0;
     }
     .carousel__card__description > p {
         margin-bottom: 1em; 
@@ -229,17 +233,13 @@
         grid-column: 1 / span 3;
         grid-row: 4;
     }
-    .articles {
-        flex-direction: column;
-    }
     .articles > * {
-        margin: 1.5em auto;
+        margin: 1.5em 2em;
         max-width: 300px;
     }
     .articles .img__article {
         min-width: 100%;
     }
-    .articles 
     /* finance page */
 
     /* news page */
@@ -320,6 +320,9 @@
     .button__add-to-garage {
         grid-row: 2;
         grid-column: 1;
+        padding: 0 1em 2em;
+        justify-content: flex-start;
+
     }
     .car-hero-shots {
         grid-row: 3;
@@ -330,10 +333,9 @@
         grid-row: 4;
         grid-column: 1;
         max-width: 550px;
-        margin-bottom: 4em;
         justify-self: center;
         justify-content: flex-start;
-        max-height: 100px;
+        max-height: auto;
     }
     .car-details > ul {
         display: flex;
@@ -369,6 +371,8 @@
         display: grid;
         grid-template-columns: 70% 30%;
     }
+    /* index */
+
     /* cars page*/
 
     /* TOTALLY SWAP THE HEADER HERE TO THE DESKTOP VERSION */   

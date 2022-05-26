@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--- css stylesheets --->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Styles/reset.css">
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/colours.css">
     <link rel="stylesheet" href="Styles/typography.css">
@@ -25,6 +25,7 @@
 <body>
     <div id="header"></div>
     <main>
+        <div class="inquiry"></div>
         <h3 class="text__header text--med text--dark">MY Garage</h3>
         <div class="garage-explanation">
             <p class="text text--sml text--dark super-center">Press the green plus to compare 2 of the cars in your garage!<nbsp>(at the bottom of this page).</p>
@@ -34,7 +35,7 @@
             <div class="car-box">
                 <div class="card card__car center stack">
                     <div class="compare-button">
-                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                        <button id="button-garage" class="button button__add-to-compare button--success garage-car-1">+</button>
                     </div>
                     <div class="card__car__head stack">
                         <h3 class="text__header text--med text--white super-center">2016 HOLDEN COLORADO</h3>
@@ -64,17 +65,17 @@
                         </div>
                     </div>
                     <div class="card__car__buttons cluster">
-                        <a href="#" class="button button--xsml button--white">remove from garage</a>
-                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <a id="remove-car-1"  class="button button--clear button--xsml button--white">remove from garage</a>
+                        <a onclick="inquiryForm()" class="button button--clear button--xsml button--white">inquire</a>
                         <!-- may need to change the link below once understood -->
-                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                        <a href="individual-car-page.html" class=" button button--clear button--xsml button--light">read more</a>
                     </div>
                 </div>
             </div>
             <div class="car-box">
                 <div class="card card__car center stack">
                     <div class="compare-button">
-                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                        <button id="button-garage" class="button button__add-to-compare button--success garage-car-2">+</button>
                     </div>
                     <div class="card__car__head stack">
                         <h3 class="text__header text--med text--white super-center">2013 HOLDEN CAPTIVA</h3>
@@ -104,17 +105,17 @@
                         </div>
                     </div>
                     <div class="card__car__buttons cluster">
-                        <a href="#" class="button button--xsml button--white">remove from garage</a>
-                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <a id="remove-car-2" class="button button--clear button--xsml button--white">remove from garage</a>
+                        <a onclick="inquiryForm()" class="button button--clear button--xsml button--white">inquire</a>
                         <!-- may need to change the link below once understood -->
-                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                        <a href="individual-car-page.html" class=" button button--clear button--xsml button--light">read more</a>
                     </div>
                 </div>
             </div>
             <div class="car-box">
                 <div class="card card__car center stack">
                     <div class="compare-button">
-                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                        <button id="button-garage" class="button button__add-to-compare button--success garage-car-3">+</button>
                     </div>
                     <div class="card__car__head stack">
                         <h3 class="text__header text--med text--white super-center">2012 HYUNDAI ILOAD TQ-V</h3>
@@ -144,17 +145,17 @@
                         </div>
                     </div>
                     <div class="card__car__buttons cluster">
-                        <a href="#" class="button button--xsml button--white">remove from garage</a>
-                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <a id="remove-car-3" class="button button--clear button--xsml button--white">remove from garage</a>
+                        <a onclick="inquiryForm()" class="button button--clear button--xsml button--white">inquire</a>
                         <!-- may need to change the link below once understood -->
-                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                        <a href="individual-car-page.html" class=" button button--clear button--xsml button--light">read more</a>
                     </div>
                 </div>
             </div>
             <div class="car-box">
                 <div class="card card__car center stack">
                     <div class="compare-button">
-                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                        <button id="button-garage" class="button button__add-to-compare button--success garage-car-4">+</button>
                     </div>
                     <div class="card__car__head stack">
                         <h3 class="text__header text--med text--white super-center">2013 KIA SPORTAGE SL</h3>
@@ -184,17 +185,17 @@
                         </div>
                     </div>
                     <div class="card__car__buttons cluster">
-                        <a href="#" class="button button--xsml button--white">remove from garage</a>
-                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <a id="remove-car-4" class="button button--clear button--xsml button--white">remove from garage</a>
+                        <a onclick="inquiryForm()" class="button button--clear button--xsml button--white">inquire</a>
                         <!-- may need to change the link below once understood -->
-                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                        <a href="individual-car-page.html" class=" button button--clear button--xsml button--light">read more</a>
                     </div>
                 </div>
             </div>
             <div class="car-box">
                 <div class="card card__car center stack">
                     <div class="compare-button">
-                        <button id="button-garage" class="button button__add-to-compare button--success">+</button>
+                        <button id="button-garage" class="button button__add-to-compare button--success garage-car-5">+</button>
                     </div>
                     <div class="card__car__head stack">
                         <h3 class="text__header text--med text--white super-center">2015 MERCEDES SPRINTER</h3>
@@ -224,10 +225,10 @@
                         </div>
                     </div>
                     <div class="card__car__buttons cluster">
-                        <a href="#" class="button button--xsml button--white">remove from garage</a>
-                        <a href="#" class="button button--xsml button--white">inquire</a>
+                        <a id="remove-car-5" class="button button--clear button--xsml button--white">remove from garage</a>
+                        <a onclick="inquiryForm()" class="button button--clear button--xsml button--white">inquire</a>
                         <!-- may need to change the link below once understood -->
-                        <a href="individual-car-page.html" class=" button button--xsml button--light">read more</a>
+                        <a href="individual-car-page.html" class=" button button--clear button--xsml button--light">read more</a>
                     </div>
                 </div>
             </div>
