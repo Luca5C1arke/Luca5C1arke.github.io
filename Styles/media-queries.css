@@ -143,12 +143,29 @@
     .featured-cars > .carousel {
         grid-template-columns: 0.01% 9.99% 80% 9.99% 0.01%;
     }
+    .carousel__card__description {
+        visibility: hidden;
+    }
+    .carousel__card:first-of-type {
+        grid-column: 1 / auto;
+        grid-row: 1;
+    }
+    .carousel__card:nth-of-type(2) {
+        grid-column: 3 / auto;
+        grid-row: 1;
+    }
+    .carousel__card:last-of-type {
+        grid-column: 5 / auto;
+        grid-row: 1;
+    }
     .featured-cars > .carousel img {
         height: 100%;
     }
     .carousel__card__description {
         height: 7em;
         opacity: 80%;
+        margin: 0;
+        padding: 1em 0.8em 0;
     }
     .carousel__card__description > p {
         margin-bottom: 1em; 
@@ -165,7 +182,6 @@
     }
     .about-us > img:first-of-type {
         visibility: hidden;
-        max-width: 10px;
     }
     .about-us {
         grid-template-rows: 0.5fr 0.5fr 4fr;
@@ -227,7 +243,6 @@
     .articles .img__article {
         min-width: 100%;
     }
-
     /* finance page */
 
     /* news page */

@@ -70,36 +70,49 @@ function loadPage(PageUrl) {
 
 function buttonClick(buttonElement) {
     /* index page carousel */
+    var descriptions = document.getElementsByClassName("carousel__card__description");
     if (buttonElement.id == "car-carousel__prev") {
-        if ((document.getElementById("carousel-car-1").style.gridColumn) == "1 / auto") {
+        if (((document.getElementById("carousel-car-1").style.gridColumn) == "1") || ((document.getElementById("carousel-car-1").style.gridColumn) == "1 / auto")) {
             // order is currently 1 2 3, make it 2 3 1
+            descriptions[1].classList.remove("carousel__card--shown");
+            descriptions[2].classList.add("carousel__card--shown");
             document.getElementById("carousel-car-1").style.gridColumn = 5;
             document.getElementById("carousel-car-2").style.gridColumn = 1;
             document.getElementById("carousel-car-3").style.gridColumn = 3;
-        } else if ((document.getElementById("carousel-car-1").style.gridColumn) == "3 / auto") {
+        } else if (((document.getElementById("carousel-car-1").style.gridColumn) == "3") || ((document.getElementById("carousel-car-1").style.gridColumn) == "3 / auto")) {
             // order is currently 3 1 2, make it 1 2 3
+            descriptions[0].classList.remove("carousel__card--shown");
+            descriptions[1].classList.add("carousel__card--shown");
             document.getElementById("carousel-car-1").style.gridColumn = 1;
             document.getElementById("carousel-car-2").style.gridColumn = 3;
             document.getElementById("carousel-car-3").style.gridColumn = 5;
         } else {
             // order is currently 2 3 1, make it 3 1 2
+            descriptions[2].classList.remove("carousel__card--shown");
+            descriptions[0].classList.add("carousel__card--shown");
             document.getElementById("carousel-car-1").style.gridColumn = 3;
             document.getElementById("carousel-car-2").style.gridColumn = 5;
             document.getElementById("carousel-car-3").style.gridColumn = 1;
         }
     } else if (buttonElement.id == "car-carousel__next") {
-        if ((document.getElementById("carousel-car-1").style.gridColumn) == "5 / auto") {
+        if (((document.getElementById("carousel-car-1").style.gridColumn) == "5") || ((document.getElementById("carousel-car-1").style.gridColumn) == "5 / auto")) {
             // order is currently 2 3 1, make it 1 2 3
+            descriptions[2].classList.remove("carousel__card--shown");
+            descriptions[1].classList.add("carousel__card--shown");
             document.getElementById("carousel-car-1").style.gridColumn = 1;
             document.getElementById("carousel-car-2").style.gridColumn = 3;
             document.getElementById("carousel-car-3").style.gridColumn = 5;
-        } else if ((document.getElementById("carousel-car-1").style.gridColumn) == "3 / auto") {
+        } else if (((document.getElementById("carousel-car-1").style.gridColumn) == "3") || ((document.getElementById("carousel-car-1").style.gridColumn) == "3 / auto")) {
             // order is currently 3 1 2, make it 2 3 1
+            descriptions[0].classList.remove("carousel__card--shown");
+            descriptions[2].classList.add("carousel__card--shown");
             document.getElementById("carousel-car-1").style.gridColumn = 5;
             document.getElementById("carousel-car-2").style.gridColumn = 1;
             document.getElementById("carousel-car-3").style.gridColumn = 3;
         } else {
             // order is currently 1 2 3, make it 3 1 2
+            descriptions[1].classList.remove("carousel__card--shown");
+            descriptions[0].classList.add("carousel__card--shown");
             document.getElementById("carousel-car-1").style.gridColumn = 3;
             document.getElementById("carousel-car-2").style.gridColumn = 5;
             document.getElementById("carousel-car-3").style.gridColumn = 1;
@@ -108,10 +121,10 @@ function buttonClick(buttonElement) {
     /* add to cart function */
     else if (buttonElement.id == "button__add-car") {
         if (buttonElement.textContent == "+") {
-            document.getElementById("button__add-car").classList.add("button--added");
+            document.getElementById("button__add-car").querySelector('.carousel__card__description').classList.add("button--added");
             document.getElementById("button__add-car").textContent = "-";
         } else {
-            document.getElementById("button__add-car").classList.remove("button--added");
+            document.getElementById("button__add-car").querySelector('.carousel__card__description').classList.remove("button--added");
             document.getElementById("button__add-car").textContent = "+";
         }
     }
@@ -130,5 +143,13 @@ function buttonClick(buttonElement) {
     }
 }
 
-
-/* hamburger menu functionality */
+/* loads in description if mobile on startup */
+window.addEventListener('load', function () {
+    var x = window.matchMedia("(max-width: 767.98px)");
+    if (x.matches) { // If media query matches
+        var descriptions = document.querySelectorAll(".carousel__card__description");
+        console.log(descriptions.length);
+        descriptions[1].classList.add("carousel__card--shown");
+    }
+    // otherwise is desktop, no worries.
+  })
