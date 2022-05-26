@@ -5,9 +5,6 @@ window.addEventListener("DOMContentLoaded", function() {
             buttonClick(event.target);
         });
     }
-});
-
-window.addEventListener("DOMContentLoaded", function() {
     var accordionButtons = document.getElementsByClassName("accordion");
     for (const button of accordionButtons) {
         button.addEventListener("click", function(event) {
@@ -138,7 +135,6 @@ function buttonClick(buttonElement) {
         }
 
     } else {
-        alert("Hey you clicked "+buttonElement.textContent);
         console.log("Hey you clicked "+buttonElement.textContent);
     }
 }

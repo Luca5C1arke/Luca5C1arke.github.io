@@ -498,7 +498,7 @@ img {
     grid-column: 2;
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 10% 90%;
 }
 
 .contact-us__phone > h3 {
@@ -525,12 +525,16 @@ img {
     padding: 0.5em;
 }
 
+.contact-us__in-person .text--box--dark {
+    z-index: 5;
+}
+
 .contact-us__in-person {
     grid-row: 3;
     grid-column: 1 / span 2;
     display: grid;
     grid-template-columns: 30% 25% 45%;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 10% 90%;
 }
 
 .contact-us__in-person > h3 {

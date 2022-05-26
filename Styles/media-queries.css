@@ -133,6 +133,9 @@
         width: 90vw;
         margin: 0 auto;
     }
+    .featured-cars {
+        padding: 0 2em;
+    }
     .featured-cars > .carousel {
         grid-template-columns: 0.001% 9% 80% 6% 0.001%;
     }
@@ -279,6 +282,7 @@
     .news-button {
         padding-top: 0;
         margin-top: 0;
+        align-items: baseline;
     }
     /* cars page */
     /* contact us page */
