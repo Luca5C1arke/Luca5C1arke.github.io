@@ -131,17 +131,13 @@
     /* index page */
     #main__index > .featured-cars {
         width: 80vw;
-        margin: 0 auto;
     }
     #main__index > *:not(.featured-cars) {
         width: 90vw;
         margin: 0 auto;
     }
-    .featured-cars {
-        padding: 0;
-    }
     .featured-cars > .carousel {
-        grid-template-columns: 0.01% 9.99% 80% 9.99% 0.01%;
+        grid-template-columns: 0.001% 9% 80% 6% 0.001%;
     }
     .carousel__card__description {
         visibility: hidden;
