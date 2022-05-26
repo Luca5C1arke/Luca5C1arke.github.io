@@ -979,6 +979,7 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 .archives__filters {
     height: 80%;
     background-color: white;
+    padding: 0;
 }
 
 /* form news */
