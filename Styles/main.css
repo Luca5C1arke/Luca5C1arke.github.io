@@ -194,6 +194,24 @@ option {
     font-family: var(--font-primary);
 }
 
+.form--invalid {
+    border-color: var(--negative-red);
+    border-style: double;
+    background-color: rgba(235, 167, 161, 0.121);
+    fill-opacity: 40%;
+}
+
+.form--success {
+    border-color: var(--positive-green);
+    background-color: rgba(165, 247, 173, 0.162)
+}
+
+small {
+    color: var(--negative-red);
+    font-family: var(--font-primary), sans-serif;
+    
+}
+
 /* backgrounds/extra visual aesthetics
 #winding-road {
     position: fixed;
