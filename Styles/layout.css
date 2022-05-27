@@ -59,7 +59,6 @@
 .cluster--row {
     flex-wrap: nowrap;
 }
-
 .cluster--right {
     box-sizing: content-box;
     justify-content: flex-end;
@@ -300,7 +299,7 @@ img {
 #main__index > *:not(.featured-cars) {
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    width: 90vw;
     max-width: 1200px;
 
 }
@@ -351,7 +350,7 @@ img {
     bottom: -3em;
     z-index: 3;
     height: auto;
-    opacity: 80%;
+    opacity: 95%;
     margin: 0;
     padding: 0.8em 0.4em 1.2em;
     width: 100%;
@@ -457,7 +456,7 @@ img {
 .contact-us > h2 {
     grid-row: 1;
     grid-column: 1 / span 2;
-    padding: 0.25em 0.25em 0.5em;
+    padding: 0.65em 0.25em 0.15em;
 }
 
 .contact-us__website {
@@ -892,8 +891,9 @@ main .button--lge {
     padding-top: 2em;
 }
 
-.finance-input-questions {
+.finance-form-details .finance-input-questions {
     justify-content: flex-start;
+    padding-left: 0;
 }
 
 .finance-form-box .button {
