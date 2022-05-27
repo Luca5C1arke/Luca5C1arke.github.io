@@ -574,6 +574,11 @@ main .button--lge {
     justify-content: center;
 }
 
+.articles h4 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
 .articles > .card {
     padding-bottom: 2em;
     margin: 0 0.55em 0.85em;
@@ -683,7 +688,7 @@ main .button--lge {
 }
 
 .reviews-list {
-    padding: 2em 5em 4.5em 3em;
+    padding: 2em 5em 0 3em;
 }
 
 .reviews li {
@@ -980,6 +985,21 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
     height: 80%;
     background-color: white;
     padding: 0;
+    justify-content: space-evenly;
+}
+
+.archives__filters input, .archives__filters select {
+    width: 10em;
+    height: 2em;
+    margin-right: 0;
+}
+
+.archives__filters .filters-dropdown {
+    padding-left: 0.5em;
+}
+
+.archives__filters .button {
+    margin-top: 1.4em;
 }
 
 /* form news */
@@ -1013,6 +1033,7 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 
 .archives__box__articles {
     margin: 2em 1em;
+    height: auto;
 }
 
 /* media query here to swap filter box and articles from row to column

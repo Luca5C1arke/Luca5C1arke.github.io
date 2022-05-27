@@ -1,3 +1,4 @@
+/* adding event listeners */
 window.addEventListener("DOMContentLoaded", function() {
     var buttonsList = document.getElementsByClassName("button");
     for (const button of buttonsList) {
@@ -13,6 +14,7 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+/* accordion */
 function accordionClick(buttonElement) {
     console.log(buttonElement);
     buttonElement.classList.toggle("accordion--active");

@@ -51,6 +51,10 @@
     .archives__article > .cluster a {
         margin: 0.25em 0 0;
     }
+    .archives__filters .filters-dropdown {
+        padding: 0.25em 1.2em;
+        justify-content: space-between;
+    }
     /* contact us page */
     .accordion--active + .panel-1 {
         grid-template-columns: 1fr;
