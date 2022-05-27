@@ -28,6 +28,97 @@ function hamburger() {
     navSub.classList.toggle("nav-active");
 }
 
+/* FORMS */
+
+/* validation */
+function validation() {
+    var validated = 0;
+    var formInputs = document.querySelectorAll(".form__input > input");
+    validated += validateElement(formInputs,/\b/,"Error, please fill in these details.");
+    var postcodes = document.querySelectorAll("#postcode");
+    var states = document.querySelectorAll("#state");
+    var phones = document.querySelectorAll("#phone");
+    var emails = document.querySelectorAll("#email");
+    var words = document.querySelectorAll("#word");
+    var nums = document.querySelectorAll("#num");
+    var abns = document.querySelectorAll("#abn");
+    validated += validateElement(postcodes, /^\d{4}$/, "Please enter a 4-digit postcode.");
+    var phoneRe = /^\(?(?:\+?61|0)(?:(?:2\)?[ -]?(?:3[ -]?[38]|[46-9][ -]?[0-9]|5[ -]?[0-35-9])|3\)?(?:4[ -]?[0-57-9]|[57-9][ -]?[0-9]|6[ -]?[1-67])|7\)?[ -]?(?:[2-4][ -]?[0-9]|5[ -]?[2-7]|7[ -]?6)|8\)?[ -]?(?:5[ -]?[1-4]|6[ -]?[0-8]|[7-9][ -]?[0-9]))(?:[ -]?[0-9]){6}|4\)?[ -]?(?:(?:[01][ -]?[0-9]|2[ -]?[0-57-9]|3[ -]?[1-9]|4[ -]?[7-9]|5[ -]?[018])[ -]?[0-9]|3[ -]?0[ -]?[0-5])(?:[ -]?[0-9]){5})$/;
+    validated += validateElement(phones, phoneRe, "Please enter a standard Australian phone number in any standard format");
+    validated += validateElement(emails, /^.+?@.+?\..+$/ ,"Please enter a valid email address");
+    validated += validateElement(words, /^(?!.*[0-9]).*/, "Please enter a valid input (no numbers)");
+    validated += validateElement(nums, /^[0-9]+$/, "Please enter a valid number (no symbols)");
+    validated += validateElement(abns, /^(\d *?){11}$/, "Error, please enter a standard ABN (11 digits long)");
+    // then return if the input is valid or not
+    if (validated > 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+/*
+function blankValidation() {
+    var formInputs = document.querySelectorAll(".form__input");
+    for (var i=0; i<formInputs.length; i++) {
+        var input = formInputs[i];
+        if (input)
+    }
+}
+*/
+
+/*
+function validatePostcode() {
+    var valid = true;
+    const re = ;
+    for (var i=0; i<postcodes.length; i++) {
+        const ok = re.exec(postcodes[i].value);
+        if (!ok) {
+            postcodes[i].classList.add("form--invalid");
+            if (postcodes[i].classList.contains("form--success")) {
+                postcodes[i].classList.remove("form--success");
+            }
+            valid = false;
+            var smallTest = postcodes[i].nextSibling;
+            smallTest.textContent = "Error, please enter a 4-digit postcode.";
+        } else {
+            postcodes[i].classList.add("form--success");
+            if (postcodes[i].classList.contains("form--invalid")) {
+                postcodes[i].classList.remove("form--invalid");
+            }
+            var smallTest = postcodes[i].nextSibling;
+            smallTest.textContent = "";
+        }
+    }
+    return valid;
+}
+*/
+
+function validateElement(element, pattern, errorMessage) {
+    var valid = 0;
+    const re = pattern;
+    for (var i=0; i<element.length; i++) {
+        const ok = re.exec(element[i].value);
+        if (!ok) {
+            element[i].classList.add("form--invalid");
+            if (element[i].classList.contains("form--success")) {
+                element[i].classList.remove("form--success");
+            }
+            valid = 1;
+            var smallErrorMessage = element[i].nextElementSibling;
+            smallErrorMessage.innerHTML = "<br>"+errorMessage;
+        } else {
+            element[i].classList.add("form--success");
+            if (element[i].classList.contains("form--invalid")) {
+                element[i].classList.remove("form--invalid");
+            }
+            var smallTest = element[i].nextSibling;
+            smallTest.textContent = "";
+        }
+    }
+    return valid;
+}
+
 /* inquiry form */
 function inquiryForm() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -38,13 +129,27 @@ function inquiryForm() {
 }
 
 function inquirySuccess() {
-    var newPopup = document.getElementsByClassName("success-popup");
-    newPopup[0].classList.toggle("inquiry--show");
+    var validated = false;
+    // run validation
+    validated = validation();
+    if (validated == true) {
+        var newPopup = document.getElementsByClassName("success-popup");
+        newPopup[0].classList.toggle("inquiry--show");
+    } else {
+        document.body.scrollTop = document.documentElement.scrollTop = 100;
+    }
 }
 
 function inquirySuccessFinance() {
-    var newPopup = document.getElementsByClassName("success-popup");
-    newPopup[0].style.visibility = "visible";
+    var validated = false;
+    // run validation
+    validated = validation();
+    if (validated == true) {
+        var newPopup = document.getElementsByClassName("success-popup");
+        newPopup[0].style.visibility = "visible";
+    } else {
+        document.body.scrollTop = document.documentElement.scrollTop = 100;
+    }
 }
 
 const getData = (pageUrl) => {

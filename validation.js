@@ -2,11 +2,8 @@
 
 /* need to do it for
     *postcode
-    *state
     *phone
     *email
-    *word
-    *num
     *abn (11 nums)
     *date
     *times
@@ -23,4 +20,6 @@ var dates = document.querySelectorAll("#date");
 var times = document.querySelectorAll("#times");
 
 var form = document.querySelector("form");
+
+
 
