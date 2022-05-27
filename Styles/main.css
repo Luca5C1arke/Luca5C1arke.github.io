@@ -209,7 +209,7 @@ option {
 small {
     color: var(--negative-red);
     font-family: var(--font-primary), sans-serif;
-    
+    font-size: var(--text-xs);
 }
 
 /* backgrounds/extra visual aesthetics
