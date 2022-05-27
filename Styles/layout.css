@@ -1085,7 +1085,7 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 .message-form .message-form-entry, .message-form-entry textarea {
     grid-column: 2;
     max-width: 90%;
-}
+flex-direction: column;}
 
 .message-form-entry {
     margin-top: 4em;
@@ -1197,6 +1197,16 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
     text-align: center;
     margin: 0 auto;
     cursor: default;
+}
+
+/* compare cars */
+
+#garage-compare-cars > * {
+    visibility: hidden;
+}
+
+#garage-compare-cars > .car--insert {
+    visibility: visible;
 }
 
 

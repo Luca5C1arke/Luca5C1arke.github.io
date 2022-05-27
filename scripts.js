@@ -60,6 +60,7 @@ const getData = (pageUrl) => {
     })
 }
 
+/* load page function */
 function loadPage(PageUrl) {
     getData(pageUrl)
         .then((resolve) => {
@@ -71,6 +72,7 @@ function loadPage(PageUrl) {
         });
 }
 
+/* (main)/major button function */
 function buttonClick(buttonElement) {
     /* index page carousel */
     var descriptions = document.getElementsByClassName("carousel__card__description");
@@ -134,27 +136,104 @@ function buttonClick(buttonElement) {
     /* garage comparison function */
     else if (buttonElement.id == "button-garage") {
         buttonElement.classList.toggle("button--added");
+        var addingCar = true;
         if (buttonElement.textContent == "+") { 
             buttonElement.textContent = "-";
         } else {
             buttonElement.textContent = "+";
+            addingCar = false;
         }
-        if (buttonElement.classList.contains("garage-car-1")) {
-            alert("car one was added");
+        if (addingCar == true) {
+            console.log("Adding...");
+            var CarID = "compare-car";
+            /* adding cars to comparison */
+            var carBoxOne = document.getElementById("compare-car");
+            var carBoxTwo = document.getElementById("compare-car-2");
+            var boxOneEmpty = false;
+            var boxTwoEmpty = false;
+            if (carBoxOne.classList.contains("no-car-added")) {
+                // then can add to box 1
+                boxOneEmpty = true;
+            }
+            if (carBoxTwo.classList.contains("no-car-added")) {
+                // then can add to box 2
+                boxTwoEmpty = true;
+            }
+            if (boxOneEmpty == true) {
+                CarID = CarID+"-1";
+                carBoxOne.classList.toggle("no-car-added");
+            } else if (boxTwoEmpty == true) {
+                CarID = CarID+"-2";
+                carBoxTwo.classList.toggle("no-car-added");
+            } else {
+                // have to first remove a car
+                removeCar();
+                CarID = CarID+"-1";
+            }
+            console.log("okay up to here");
+            // now determine which car it is
+            if (buttonElement.classList.contains("garage-car-1")) {
+                // then adding car 1
+                CarID = CarID+"-1";
+            } else if (buttonElement.classList.contains("garage-car-2")) {
+                // then adding car 2
+                CarID = CarID+"-2";
+            } else if (buttonElement.classList.contains("garage-car-3")) {
+                // then adding car 3
+                CarID = CarID+"-3";
+            } else if (buttonElement.classList.contains("garage-car-4")) {
+                // then adding car 4
+                CarID = CarID+"-4";
+            } else {
+                // else must be car 5
+                CarID = CarID+"-5";
+            }
+        } else {
+            console.log("Removing...");
+            // simply removing the car
+            // find which instance it is
+            var carBoxOne = document.getElementById("compare-car");
+            var carBoxTwo = document.getElementById("compare-car-2");
+            var boxOneEmpty = false;
+            var boxTwoEmpty = false;
+            var inBox;
+            if (carBoxOne.classList.contains("no-car-added")) {
+                boxOneEmpty = true;
+            }
+            if (carBoxTwo.classList.contains("no-car-added")) {
+                boxTwoEmpty = true;
+            }
+            var CarID = "compare-car";
+            if (boxOneEmpty == true) {
+                // must be in box two
+                CarID = CarID + "-2";
+                boxTwoEmpty == true;
+            } else {
+                CarID = CarID + "-1";
+                boxOneEmpty == true;
+            }
+            // now determine which car it is
+            if (buttonElement.classList.contains("garage-car-1")) {
+                // then adding car 1
+                CarID = CarID+"-1";
+            } else if (buttonElement.classList.contains("garage-car-2")) {
+                // then adding car 2
+                CarID = CarID+"-2";
+            } else if (buttonElement.classList.contains("garage-car-3")) {
+                // then adding car 3
+                CarID = CarID+"-3";
+            } else if (buttonElement.classList.contains("garage-car-4")) {
+                // then adding car 4
+                CarID = CarID+"-4";
+            } else {
+                // else must be car 5
+                CarID = CarID+"-5";
+            }
         }
-        if (buttonElement.classList.contains("garage-car-2")) {
-            alert("car two was added");
-        }
-        if (buttonElement.classList.contains("garage-car-3")) {
-            alert("car three was added");
-        }
-        if (buttonElement.classList.contains("garage-car-4")) {
-            alert("car four was added");
-        }
-        if (buttonElement.classList.contains("garage-car-5")) {
-            alert("car five was added");
-        }
-
+        console.log(CarID)
+        var CarToEdit = document.getElementById(CarID);
+        console.log(CarToEdit);
+        CarToEdit.classList.toggle("car--insert");
     }    /* remove from garage button */
     else if (buttonElement.textContent == "remove from garage") {
         var cars = document.getElementsByClassName("car-box");
@@ -188,4 +267,4 @@ window.addEventListener('load', function () {
         descriptions[1].classList.add("carousel__card--shown");
     }
     // otherwise is desktop, no worries.
-  })
+  });
