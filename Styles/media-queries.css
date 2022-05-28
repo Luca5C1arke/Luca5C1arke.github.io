@@ -79,6 +79,11 @@
         justify-content: flex-start;
         padding: 0 0 2.5rem;
     }
+    .faqs {
+        display: grid;
+        padding: 0.5em;
+        grid-template-columns: 1fr;
+    }
     /* about us page */
 
     /* garage page */
@@ -324,7 +329,7 @@
         max-width: 95vw;
     }
     .compare-cars__boxes > * {
-        max-width: 45vw;
+        max-width: 45wv;
     }
     /* individual car page */
     .car-listing {

@@ -120,13 +120,14 @@ function compareCar(buttonElement) {
             CarID = CarID+"-5";
         }
         // find out what column it's in
-        if ((document.querySelectorAll("#compare-car #"+CarID+" .car--insert")) > 0) {
+        if ((document.querySelectorAll("#compare-car #"+CarID+" .car--insert").length) > 0) {
             boxOneFull = false;
             compareCarRemove("#compare-car");
         } else {
             boxTwoFull = false;
             compareCarRemove("#compare-car-2");
         }
+        compareCarRemove("#compare-car");
     } else {
         // now determine which box is free
         if (boxOneFull == false) {
