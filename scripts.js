@@ -14,6 +14,33 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+/* load page functions */
+const getData = (pageUrl) => {
+    return new Promise((resolve, reject) => {
+        let request = new XMLHttpRequest();
+        request.onload = function(){
+            if (this.readyState == 4 && this.status == 200) {
+                resolve(this.responseText);
+            } else {
+                reject(this.responseText);
+            }
+        };
+        request.open("get", pageUrl, true);
+        request.send();
+    })
+}
+
+function loadPage(PageUrl) {
+    getData(pageUrl)
+        .then((resolve) => {
+            console.log(resolve);
+            document.getElementByClass("page-content").innerHTML = resolve;
+        })
+        .catch((reject) => {
+            console.error(reject);
+        });
+}
+
 /* accordion */
 function accordionClick(buttonElement) {
     console.log(buttonElement);
@@ -28,13 +55,26 @@ function hamburger() {
     navSub.classList.toggle("nav-active");
 }
 
-/* FORMS */
+/* loads in description if mobile on startup */
+window.addEventListener('load', function () {
+    var x = window.matchMedia("(max-width: 767.98px)");
+    if (x.matches) { // If media query matches
+        var descriptions = document.querySelectorAll(".carousel__card__description");
+        console.log(descriptions.length);
+        descriptions[1].classList.add("carousel__card--shown");
+    }
+    // otherwise is desktop, no worries.
+  });
 
-/* validation */
+
+/* FORMS */
+/* validates relevant sections of the forms on a page */
 function validation() {
     var validated = 0;
-    var formInputs = document.querySelectorAll(".form__input > input");
+    console.log("Start, validated="+validated);
+    var formInputs = document.querySelectorAll(".form__input > input:not(.not-required)");
     validated += validateElement(formInputs,/\b/,"Error, please fill in these details.");
+    console.log("After blanks, validated="+validated);
     var postcodes = document.querySelectorAll("#postcode");
     var states = document.querySelectorAll("#state");
     var phones = document.querySelectorAll("#phone");
@@ -43,13 +83,17 @@ function validation() {
     var nums = document.querySelectorAll("#num");
     var abns = document.querySelectorAll("#abn");
     validated += validateElement(postcodes, /^\d{4}$/, "Please enter a 4-digit postcode.");
+    console.log("After postcode, validated="+validated);
     var phoneRe = /^\(?(?:\+?61|0)(?:(?:2\)?[ -]?(?:3[ -]?[38]|[46-9][ -]?[0-9]|5[ -]?[0-35-9])|3\)?(?:4[ -]?[0-57-9]|[57-9][ -]?[0-9]|6[ -]?[1-67])|7\)?[ -]?(?:[2-4][ -]?[0-9]|5[ -]?[2-7]|7[ -]?6)|8\)?[ -]?(?:5[ -]?[1-4]|6[ -]?[0-8]|[7-9][ -]?[0-9]))(?:[ -]?[0-9]){6}|4\)?[ -]?(?:(?:[01][ -]?[0-9]|2[ -]?[0-57-9]|3[ -]?[1-9]|4[ -]?[7-9]|5[ -]?[018])[ -]?[0-9]|3[ -]?0[ -]?[0-5])(?:[ -]?[0-9]){5})$/;
     validated += validateElement(phones, phoneRe, "Please enter a standard Australian phone number in any standard format");
+    console.log("After phonr, validated="+validated);
     validated += validateElement(emails, /^.+?@.+?\..+$/ ,"Please enter a valid email address");
-    validated += validateElement(words, /^(?!.*[0-9]).*/, "Please enter a valid input (no numbers)");
+    console.log("After email, validated="+validated);
     validated += validateElement(nums, /^[0-9]+$/, "Please enter a valid number (no symbols)");
+    console.log("After nums, validated="+validated);
     validated += validateElement(abns, /^(\d *?){11}$/, "Error, please enter a standard ABN (11 digits long)");
     // then return if the input is valid or not
+    console.log("At end, validated="+validated);
     if (validated > 0) {
         return false;
     } else {
@@ -57,43 +101,29 @@ function validation() {
     }
 }
 
-/*
-function blankValidation() {
-    var formInputs = document.querySelectorAll(".form__input");
-    for (var i=0; i<formInputs.length; i++) {
-        var input = formInputs[i];
-        if (input)
+/* handles when there is more than one form on the individual car page */
+function validationDualForm() {
+    var validated = 0;
+    var formInputs = document.querySelectorAll(".message-form .form__input > input:not(.not-required)");
+    validated += validateElement(formInputs,/\b/,"Error, please fill in these details.");
+    var phones = document.querySelectorAll(".message-form #phone");
+    var emails = document.querySelectorAll(".message-form #email");
+    var words = document.querySelectorAll(".message-form #word");
+    var nums = document.querySelectorAll(".message-form #num");
+    var phoneRe = /^\(?(?:\+?61|0)(?:(?:2\)?[ -]?(?:3[ -]?[38]|[46-9][ -]?[0-9]|5[ -]?[0-35-9])|3\)?(?:4[ -]?[0-57-9]|[57-9][ -]?[0-9]|6[ -]?[1-67])|7\)?[ -]?(?:[2-4][ -]?[0-9]|5[ -]?[2-7]|7[ -]?6)|8\)?[ -]?(?:5[ -]?[1-4]|6[ -]?[0-8]|[7-9][ -]?[0-9]))(?:[ -]?[0-9]){6}|4\)?[ -]?(?:(?:[01][ -]?[0-9]|2[ -]?[0-57-9]|3[ -]?[1-9]|4[ -]?[7-9]|5[ -]?[018])[ -]?[0-9]|3[ -]?0[ -]?[0-5])(?:[ -]?[0-9]){5})$/;
+    validated += validateElement(phones, phoneRe, "Please enter a standard Australian phone number in any standard format");
+    validated += validateElement(emails, /^.+?@.+?\..+$/ ,"Please enter a valid email address");
+    validated += validateElement(nums, /^[0-9]+$/, "Please enter a valid number (no symbols)");
+    // then return if the input is valid or not
+    console.log("At end, validated="+validated);
+    if (validated > 0) {
+        return false;
+    } else {
+        return true;
     }
 }
-*/
 
-/*
-function validatePostcode() {
-    var valid = true;
-    const re = ;
-    for (var i=0; i<postcodes.length; i++) {
-        const ok = re.exec(postcodes[i].value);
-        if (!ok) {
-            postcodes[i].classList.add("form--invalid");
-            if (postcodes[i].classList.contains("form--success")) {
-                postcodes[i].classList.remove("form--success");
-            }
-            valid = false;
-            var smallTest = postcodes[i].nextSibling;
-            smallTest.textContent = "Error, please enter a 4-digit postcode.";
-        } else {
-            postcodes[i].classList.add("form--success");
-            if (postcodes[i].classList.contains("form--invalid")) {
-                postcodes[i].classList.remove("form--invalid");
-            }
-            var smallTest = postcodes[i].nextSibling;
-            smallTest.textContent = "";
-        }
-    }
-    return valid;
-}
-*/
-
+/* validates a given type of element in a form against a pattern to match */
 function validateElement(element, pattern, errorMessage) {
     var valid = 0;
     const re = pattern;
@@ -112,7 +142,7 @@ function validateElement(element, pattern, errorMessage) {
             if (element[i].classList.contains("form--invalid")) {
                 element[i].classList.remove("form--invalid");
             }
-            var smallTest = element[i].nextSibling;
+            var smallTest = element[i].nextElementSibling;
             smallTest.textContent = "";
         }
     }
@@ -140,43 +170,22 @@ function inquirySuccess() {
     }
 }
 
-function inquirySuccessFinance() {
+/* inquiry form with slight variation */
+function inquirySuccessFinance(isFirstForm) {
     var validated = false;
     // run validation
-    validated = validation();
+    if (isFirstForm==1) {
+        validated = validationDualForm();
+    } else {
+        validated = validation();
+    }
     if (validated == true) {
         var newPopup = document.getElementsByClassName("success-popup");
         newPopup[0].style.visibility = "visible";
     } else {
-        document.body.scrollTop = document.documentElement.scrollTop = 100;
+        console.log("Failed form validation on submit");
+        document.body.scrollTop = document.documentElement.scrollTop = 20;
     }
-}
-
-const getData = (pageUrl) => {
-    return new Promise((resolve, reject) => {
-        let request = new XMLHttpRequest();
-        request.onload = function(){
-            if (this.readyState == 4 && this.status == 200) {
-                resolve(this.responseText);
-            } else {
-                reject(this.responseText);
-            }
-        };
-        request.open("get", pageUrl, true);
-        request.send();
-    })
-}
-
-/* load page function */
-function loadPage(PageUrl) {
-    getData(pageUrl)
-        .then((resolve) => {
-            console.log(resolve);
-            document.getElementByClass("page-content").innerHTML = resolve;
-        })
-        .catch((reject) => {
-            console.error(reject);
-        });
 }
 
 /* (main)/major button function */
@@ -364,14 +373,3 @@ function buttonClick(buttonElement) {
         console.log("Hey you clicked "+buttonElement.textContent);
     }
 }
-
-/* loads in description if mobile on startup */
-window.addEventListener('load', function () {
-    var x = window.matchMedia("(max-width: 767.98px)");
-    if (x.matches) { // If media query matches
-        var descriptions = document.querySelectorAll(".carousel__card__description");
-        console.log(descriptions.length);
-        descriptions[1].classList.add("carousel__card--shown");
-    }
-    // otherwise is desktop, no worries.
-  });

@@ -30,7 +30,7 @@
             <div class="panel panel-1">
                 <div class="message-form">
                     <form method="GET">
-                        <div class="message-form-details">
+                        <div class="form message-form-details">
                             <h3 class="text text--sml text--bold">Write a message here</h3>
                             <div class="form__input">
                                 <label for="contact-fullname">Full Name</label><br>
@@ -59,7 +59,16 @@
                         <div class="message-form-entry">
                             <label for="contact-message">How can we help?</label><br>
                             <textarea id="contact-message" name="contact-message" rows="8" cols="50"></textarea>
-                            <button type="submit" class="button button--med button--light">&nbsp;SUBMIT&nbsp;</button>
+                            <div class="entry-button super-center">
+                                <a onclick="inquirySuccessFinance()" class="button button--lge button--light">SUBMIT</a>
+                            </div>
+                        </div>
+                        <div class="success-popup stack">
+                            <div class="shadow-overlay"></div>
+                            <div class="success-box stack super-center">
+                                <p class="text text--sml text--white">Thanks for your inquiry! See the confirmation message (sent to phone/email) for all of the details</p>
+                                <input type="submit" value="RETURN" class="button button--xlge button--light" id="message-form-submit" name="message-form-submit">
+                            </div>
                         </div>
                     </form>
                 </div>

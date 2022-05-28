@@ -28,6 +28,12 @@
     cursor: pointer;
 }
 
+.button--xlge {
+    padding: 0;
+    font-size: var(--text-l);
+    margin: 0;
+}
+
 .button--lge {
     font-size: var(--text-l);
 }

@@ -255,7 +255,7 @@ header {
 /* footer */
 footer {
     min-width: 100%;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 footer > .cluster {
@@ -1320,6 +1320,8 @@ form .cluster {
 .success-popup input {
     max-width: 60%;
     margin: 1em auto;
+
+    font-size: var(--text-l);
 }
 
 
