@@ -64,8 +64,119 @@ window.addEventListener('load', function () {
         descriptions[1].classList.add("carousel__card--shown");
     }
     // otherwise is desktop, no worries.
-  });
+});
 
+/* cars add to garage button toggle */
+function garageToggle(buttonElement) {
+    if (buttonElement.innerHTML == "Remove from Garage") {
+        buttonElement.innerHTML = "Add To Garage";
+    } else {
+        buttonElement.innerHTML = "Remove from Garage";
+    }
+    buttonElement.classList.toggle("button--light");
+    buttonElement.classList.toggle("button--white");
+}
+
+/* compare cars feature */
+let boxOneFull = false;
+let boxTwoFull = false;
+
+function compareCar(buttonElement) {
+    // check whether to add or remove car, and check for box collisions
+    var addingCar = true;
+    var boxToInsert = -1;
+    var CarID = "compare-car";
+    if (boxOneFull==true && boxTwoFull==true) {
+        // then first need to remove a car
+        console.log("Error, both boxes already full");
+        // so remove the car, set boxOneFull to false, and change the buttonElements text content (the one being removed)
+        boxOneFull = false;
+        compareCarRemove("#compare-car");
+    }
+    if (buttonElement.textContent == "+") { 
+        buttonElement.textContent = "-";
+    } else {
+        buttonElement.textContent = "+";
+        addingCar = false;
+    }
+    // now either add or remove the car depending on the +/-
+    if (addingCar == false) {
+        var CarID = "compare-car";
+        // find out what car it is
+        if (buttonElement.classList.contains("garage-car-1")) {
+            // then adding car 1
+            CarID = CarID+"-1";
+        } else if (buttonElement.classList.contains("garage-car-2")) {
+            // then adding car 2
+            CarID = CarID+"-2";
+        } else if (buttonElement.classList.contains("garage-car-3")) {
+            // then adding car 3
+            CarID = CarID+"-3";
+        } else if (buttonElement.classList.contains("garage-car-4")) {
+            // then adding car 4
+            CarID = CarID+"-4";
+        } else {
+            // else must be car 5
+            CarID = CarID+"-5";
+        }
+        // find out what column it's in
+        if ((document.querySelectorAll("#compare-car #"+CarID+" .car--insert")) > 0) {
+            boxOneFull = false;
+            compareCarRemove("#compare-car");
+        } else {
+            boxTwoFull = false;
+            compareCarRemove("#compare-car-2");
+        }
+    } else {
+        // now determine which box is free
+        if (boxOneFull == false) {
+            // insert it into box 1
+            boxToInsert = 1;
+        } else if (boxTwoFull == false) {
+            // insert it into box 2
+            boxToInsert = 2;
+        } else {
+            console.log("Error, should not have made it here, program must have flaw.");
+        }
+        // determine which car it is
+        if (buttonElement.classList.contains("garage-car-1")) {
+            // then adding car 1
+            CarID = CarID+"-1";
+        } else if (buttonElement.classList.contains("garage-car-2")) {
+            // then adding car 2
+            CarID = CarID+"-2";
+        } else if (buttonElement.classList.contains("garage-car-3")) {
+            // then adding car 3
+            CarID = CarID+"-3";
+        } else if (buttonElement.classList.contains("garage-car-4")) {
+            // then adding car 4
+            CarID = CarID+"-4";
+        } else {
+            // else must be car 5
+            CarID = CarID+"-5";
+        }
+        // and insert it
+        if (boxToInsert == 1) {
+            boxOneFull = true;
+            var CarToEdit = document.querySelector("#compare-car #"+CarID);
+
+        } else if (boxToInsert == 2) {
+            boxTwoFull = true;
+            var CarToEdit = document.querySelector("#compare-car-2 #"+CarID);
+        } else {
+            console.log("Error 2, should not have made it here, program must have flaw.");
+        }
+        console.log(CarToEdit);
+        CarToEdit.classList.toggle("car--insert");
+    }
+}
+
+/* removes the car situated in the particular given box */
+function compareCarRemove(boxName) {
+    var carToRemove = document.querySelector(boxName+" .car--insert");
+    carToRemove.classList.remove("car--insert");
+    // and also change the - back here.
+}
 
 /* FORMS */
 /* validates relevant sections of the forms on a page */
@@ -252,6 +363,8 @@ function buttonClick(buttonElement) {
     /* garage comparison function */
     else if (buttonElement.id == "button-garage") {
         buttonElement.classList.toggle("button--added");
+        compareCar(buttonElement);
+        /*
         var addingCar = true;
         if (buttonElement.textContent == "+") { 
             buttonElement.textContent = "-";
@@ -262,7 +375,7 @@ function buttonClick(buttonElement) {
         if (addingCar == true) {
             console.log("Adding...");
             var CarID = "compare-car";
-            /* adding cars to comparison */
+            /* adding cars to comparison
             var carBoxOne = document.getElementById("compare-car");
             var carBoxTwo = document.getElementById("compare-car-2");
             var boxOneEmpty = false;
@@ -350,8 +463,10 @@ function buttonClick(buttonElement) {
         var CarToEdit = document.getElementById(CarID);
         console.log(CarToEdit);
         CarToEdit.classList.toggle("car--insert");
-    }    /* remove from garage button */
-    else if (buttonElement.textContent == "remove from garage") {
+    }    
+    */
+    /* remove from garage button */
+    } else if (buttonElement.textContent == "remove from garage") {
         var cars = document.getElementsByClassName("car-box");
         if (buttonElement.id == "remove-car-1") {
             cars[0].style.display = "none";
@@ -368,6 +483,10 @@ function buttonClick(buttonElement) {
         if (buttonElement.id == "remove-car-5") {
             cars[4].style.display = "none";
         }
+    }
+    /* toggle garage on cars page button */
+    else if (buttonElement.id == "button__garage-toggle") {
+        garageToggle(buttonElement);
     }
     else {
         console.log("Hey you clicked "+buttonElement.textContent);
