@@ -320,6 +320,12 @@
         grid-template-columns: 1fr;
         padding: 0 10vw;
     }
+    .compare-cars__boxes {
+        max-width: 95vw;
+    }
+    .compare-cars__boxes > * {
+        max-width: 45vw;
+    }
     /* individual car page */
     .car-listing {
         grid-template-columns: 1fr;
