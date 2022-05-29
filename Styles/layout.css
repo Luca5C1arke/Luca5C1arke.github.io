@@ -1109,7 +1109,7 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 
 .message-form-entry > * {
     margin: 0.5em;
-}
+height: f;}
 
 .message-form-entry button {
     align-content: right;
@@ -1125,6 +1125,11 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 .contact-us-details-single {
     padding: 0;
     justify-content: flex-start; 
+}
+
+.message-form-entry .button__contact-us {
+    justify-self: left;
+    margin: 0.45em 0 0;
 }
 
 .panel-3, .panel-4 {
@@ -1382,13 +1387,23 @@ form .cluster {
     justify-content: center;
 }
 
-.success-popup input {
-    max-width: 60%;
-    margin: 1em auto;
-
-    font-size: var(--text-l);
+.success-box > p:first-of-type {
+    padding: 1.5em 0 0;
 }
 
+.success-box > p:last-of-type {
+    padding-top: 1em;
+}
+
+.success-box > a:last-of-type {
+    margin-top: 0;
+}
+
+.success-popup input {
+    max-width: 70%;
+    margin: 0 0 0.5em;
+    font-size: var(--text-l);
+}
 
 .body--noscroll {
     max-height: 40rem;

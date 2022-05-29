@@ -87,6 +87,13 @@
     /* about us page */
 
     /* garage page */
+    .compare-cars__boxes {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    .compare-cars__boxes > * {
+        margin: 2em auto;
+    }
 
     /* individual car page */
     .car-details {
@@ -334,7 +341,7 @@
     /* individual car page */
     .car-listing {
         grid-template-columns: 1fr;
-        grid-template-rows: auto 10% auto 30%;
+        grid-template-rows: auto auto auto auto;
     }
     .car-listing__header {
         grid-row: 1;
@@ -358,7 +365,7 @@
         max-width: 550px;
         justify-self: center;
         justify-content: flex-start;
-        max-height: auto;
+        height: auto;
     }
     .car-details > ul {
         display: flex;
