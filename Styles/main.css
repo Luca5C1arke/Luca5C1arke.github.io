@@ -169,11 +169,12 @@
 }
 
 /* forms */
-input, textarea {
+input:not(.filters-dropdown *), textarea {
     border-radius: 0.1em;
     border: 1px var(--dark-blue) dotted;
     padding: 0.25em 0.5em;
     font-family: var(--font-primary);
+    margin-bottom: 0.75em;
 }
 
 .reviews-list li:hover, .reviews-list p:hover {

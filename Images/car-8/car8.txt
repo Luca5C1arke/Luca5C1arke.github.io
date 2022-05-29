@@ -47,3 +47,6 @@ Airbag	Anti-lock Braking System (ABS)
 Central Locking	Air Conditioning
 Traction control system	Power mirrors
 Climate Control	 
+
+Description:
+This Mercedes 7-speed 'Sprinter' lives up to its name with luxurious space as a bonus.

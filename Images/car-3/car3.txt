@@ -57,3 +57,6 @@ Log books	Power windows
 Airbag	Anti-lock Braking System (ABS)
 Central Locking	Tow Bar
 Traction control system	Power mirrors
+
+Description:
+This 2016 diesel is the ideal car for any tradies in the market for a new ute.

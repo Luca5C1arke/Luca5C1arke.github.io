@@ -963,7 +963,8 @@ main .button--lge {
 .archives {
     display: grid;
     grid-template-columns: 70% 30%;
-grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
+    grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;
+}
 
 .archives > div{
     text-align: center;
@@ -972,10 +973,10 @@ grid-template-rows: 100%;height: 29rem;margin-bottom: 4rem;}
 }
 
 .archives__filters {
-    height: 80%;
     background-color: white;
-    padding: 0;
+    padding: 1em;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .archives__filters input, .archives__filters select {
@@ -1355,7 +1356,7 @@ form .cluster {
     margin: 2em 0 0.5em;
 }
 
-.inquiry-form-box label, .inquiry-form-box .form__input, .inquiry-form-box .radio-answers {
+.inquiry-form-box label:not(.label__header), .inquiry-form-box .form__input, .inquiry-form-box .radio-answers {
     padding: 0 1em 0 0;
     margin: 0 0;
 }
