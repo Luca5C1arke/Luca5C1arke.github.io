@@ -69,3 +69,6 @@ Airbag	Anti-lock Braking System (ABS)
 Central Locking	Air Conditioning
 Traction control system	Power mirrors
 Alloy Wheels	Climate Control
+
+Description:
+This Ford Mondeo is absolutely packed with modern features, and is surprisingly powerful for a 2.0L engine.
