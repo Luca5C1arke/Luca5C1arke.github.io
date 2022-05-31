@@ -184,7 +184,7 @@ function compareCarRemove(boxName) {
 function validation() {
     var validated = 0;
     console.log("Start, validated="+validated);
-    var formInputs = document.querySelectorAll(".form__input > input:not(.not-required)");
+    var formInputs = document.querySelectorAll(".form__input > input:not(.not-required):not(.contact-us-form-input)");
     validated += validateElement(formInputs,/\b/,"Error, please fill in these details.");
     console.log("After blanks, validated="+validated);
     var postcodes = document.querySelectorAll("#postcode");
@@ -213,15 +213,16 @@ function validation() {
     }
 }
 
+
 /* handles when there is more than one form on the individual car page */
 function validationDualForm() {
     var validated = 0;
     var formInputs = document.querySelectorAll(".message-form .form__input > input:not(.not-required)");
     validated += validateElement(formInputs,/\b/,"Error, please fill in these details.");
-    var phones = document.querySelectorAll(".message-form #phone");
-    var emails = document.querySelectorAll(".message-form #email");
-    var words = document.querySelectorAll(".message-form #word");
-    var nums = document.querySelectorAll(".message-form #num");
+    var phones = document.querySelectorAll(".message-form #contact-phone");
+    var emails = document.querySelectorAll(".message-form #contact-email");
+    var words = document.querySelectorAll(".message-form #contact-word");
+    var nums = document.querySelectorAll(".message-form #contact-num");
     var phoneRe = /^\(?(?:\+?61|0)(?:(?:2\)?[ -]?(?:3[ -]?[38]|[46-9][ -]?[0-9]|5[ -]?[0-35-9])|3\)?(?:4[ -]?[0-57-9]|[57-9][ -]?[0-9]|6[ -]?[1-67])|7\)?[ -]?(?:[2-4][ -]?[0-9]|5[ -]?[2-7]|7[ -]?6)|8\)?[ -]?(?:5[ -]?[1-4]|6[ -]?[0-8]|[7-9][ -]?[0-9]))(?:[ -]?[0-9]){6}|4\)?[ -]?(?:(?:[01][ -]?[0-9]|2[ -]?[0-57-9]|3[ -]?[1-9]|4[ -]?[7-9]|5[ -]?[018])[ -]?[0-9]|3[ -]?0[ -]?[0-5])(?:[ -]?[0-9]){5})$/;
     validated += validateElement(phones, phoneRe, "Please enter a standard Australian phone number in any standard format");
     validated += validateElement(emails, /^.+?@.+?\..+$/ ,"Please enter a valid email address");
@@ -261,7 +262,7 @@ function validateElement(element, pattern, errorMessage) {
     return valid;
 }
 
-/* inquiry form */
+/* inquiry form popup itself */
 function inquiryForm() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     var popup = document.getElementsByClassName("inquiry");
@@ -270,23 +271,11 @@ function inquiryForm() {
     body.classList.toggle("body--noscroll");
 }
 
-function inquirySuccess() {
-    var validated = false;
-    // run validation
-    validated = validation();
-    if (validated == true) {
-        var newPopup = document.getElementsByClassName("success-popup");
-        newPopup[0].classList.toggle("inquiry--show");
-    } else {
-        document.body.scrollTop = document.documentElement.scrollTop = 100;
-    }
-}
-
 /* inquiry form with slight variation */
-function inquirySuccessFinance(isFirstForm) {
+function inquirySuccessFinance(formID) {
     var validated = false;
     // run validation
-    if (isFirstForm==1) {
+    if (formID==1) {
         validated = validationDualForm();
     } else {
         validated = validation();
@@ -299,6 +288,26 @@ function inquirySuccessFinance(isFirstForm) {
         document.body.scrollTop = document.documentElement.scrollTop = 20;
     }
 }
+
+/* the success popup */
+function inquirySuccess() {
+    var validated = false;
+    // run validation
+    validated = validation();
+    if (validated == true) {
+        var newPopup = document.getElementsByClassName("success-popup");
+        newPopup[0].classList.toggle("inquiry--show");
+    } else {
+        document.body.scrollTop = document.documentElement.scrollTop = 100;
+    }
+}
+
+/* the create an account success popup */
+function accountSuccess() {
+    var newPopup = document.getElementsByClassName("success-popup");
+    newPopup[1].classList.toggle("inquiry--show");
+}
+
 
 /* (main)/major button function */
 function buttonClick(buttonElement) {
@@ -365,107 +374,6 @@ function buttonClick(buttonElement) {
     else if (buttonElement.id == "button-garage") {
         buttonElement.classList.toggle("button--added");
         compareCar(buttonElement);
-        /*
-        var addingCar = true;
-        if (buttonElement.textContent == "+") { 
-            buttonElement.textContent = "-";
-        } else {
-            buttonElement.textContent = "+";
-            addingCar = false;
-        }
-        if (addingCar == true) {
-            console.log("Adding...");
-            var CarID = "compare-car";
-            /* adding cars to comparison
-            var carBoxOne = document.getElementById("compare-car");
-            var carBoxTwo = document.getElementById("compare-car-2");
-            var boxOneEmpty = false;
-            var boxTwoEmpty = false;
-            if (carBoxOne.classList.contains("no-car-added")) {
-                // then can add to box 1
-                boxOneEmpty = true;
-            }
-            if (carBoxTwo.classList.contains("no-car-added")) {
-                // then can add to box 2
-                boxTwoEmpty = true;
-            }
-            if (boxOneEmpty == true) {
-                CarID = CarID+"-1";
-                carBoxOne.classList.toggle("no-car-added");
-            } else if (boxTwoEmpty == true) {
-                CarID = CarID+"-2";
-                carBoxTwo.classList.toggle("no-car-added");
-            } else {
-                // have to first remove a car
-                removeCar();
-                CarID = CarID+"-1";
-            }
-            console.log("okay up to here");
-            // now determine which car it is
-            if (buttonElement.classList.contains("garage-car-1")) {
-                // then adding car 1
-                CarID = CarID+"-1";
-            } else if (buttonElement.classList.contains("garage-car-2")) {
-                // then adding car 2
-                CarID = CarID+"-2";
-            } else if (buttonElement.classList.contains("garage-car-3")) {
-                // then adding car 3
-                CarID = CarID+"-3";
-            } else if (buttonElement.classList.contains("garage-car-4")) {
-                // then adding car 4
-                CarID = CarID+"-4";
-            } else {
-                // else must be car 5
-                CarID = CarID+"-5";
-            }
-        } else {
-            console.log("Removing...");
-            // simply removing the car
-            // find which instance it is
-            var carBoxOne = document.getElementById("compare-car");
-            var carBoxTwo = document.getElementById("compare-car-2");
-            var boxOneEmpty = false;
-            var boxTwoEmpty = false;
-            var inBox;
-            if (carBoxOne.classList.contains("no-car-added")) {
-                boxOneEmpty = true;
-            }
-            if (carBoxTwo.classList.contains("no-car-added")) {
-                boxTwoEmpty = true;
-            }
-            var CarID = "compare-car";
-            if (boxOneEmpty == true) {
-                // must be in box two
-                CarID = CarID + "-2";
-                boxTwoEmpty == true;
-            } else {
-                CarID = CarID + "-1";
-                boxOneEmpty == true;
-            }
-            // now determine which car it is
-            if (buttonElement.classList.contains("garage-car-1")) {
-                // then adding car 1
-                CarID = CarID+"-1";
-            } else if (buttonElement.classList.contains("garage-car-2")) {
-                // then adding car 2
-                CarID = CarID+"-2";
-            } else if (buttonElement.classList.contains("garage-car-3")) {
-                // then adding car 3
-                CarID = CarID+"-3";
-            } else if (buttonElement.classList.contains("garage-car-4")) {
-                // then adding car 4
-                CarID = CarID+"-4";
-            } else {
-                // else must be car 5
-                CarID = CarID+"-5";
-            }
-        }
-        console.log(CarID)
-        var CarToEdit = document.getElementById(CarID);
-        console.log(CarToEdit);
-        CarToEdit.classList.toggle("car--insert");
-    }    
-    */
     /* remove from garage button */
     } else if (buttonElement.textContent == "remove from garage") {
         var cars = document.getElementsByClassName("car-box");

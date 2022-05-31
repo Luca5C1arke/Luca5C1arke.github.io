@@ -62,3 +62,6 @@ Anti-lock Braking System (ABS)	Central Locking
 Air Conditioning	Traction control system
 Power mirrors	Alloy Wheels
 Climate Control	 
+
+Description:
+This 2013 Ford is a reliable, fairly-priced 6-speed automatic with only 109,738 kms on the dial.
