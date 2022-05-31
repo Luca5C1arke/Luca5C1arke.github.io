@@ -263,6 +263,10 @@
     .articles .img__article {
         min-width: 100%;
     }
+    .articles {
+        flex-wrap: wrap;
+    }
+
     /* finance page */
 
     /* news page */
@@ -410,7 +414,6 @@
 @media (min-width: 991.98px) { 
     /* header */
     /* index */
-
     /* cars page*/
     .accordion--active + .panel-1 {
         display: grid;
