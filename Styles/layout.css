@@ -146,6 +146,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 999;
+    box-shadow: 0 2px 10px var(--light-blue);
 }
 
 .desktop-header {
@@ -580,6 +581,55 @@ main .button--lge {
 }
 
 /* CARS PAGE */
+/* filter menu */
+.accordion-menu__filters {
+    position: fixed;
+    top: 4.7rem;
+    width: 100%;
+}
+
+#car-filters {
+    display: grid;
+    width: 90%;
+    max-width: 700px;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+}
+
+.accordion-menu__filters .panel__cars-filters {
+    grid-template-columns: 1fr;
+    background-color: var(--dark-blue);
+    padding: 0;
+    margin: 0;
+}
+
+#car-filters .filter-input-question, 
+#car-filters h3, #car-filters div,
+#car-filters select, #car-filters label {
+    padding-left: 0;
+    margin-left: 0;
+    color: white;
+}
+
+#car-filters .filter-input-question,
+#car-filters div {
+    background-color: var(--dark-blue);
+}
+
+#car-filters input:not(.button), #car-filters select {
+    background-color: white;
+    color: var(--dark-blue);
+}
+
+#car-filters .form__input {
+    flex-wrap: nowrap;
+}
+
+#car-filters .filter-input-question {
+    padding: 1em 0;
+}
+
+/* cars page header section */
 .filter-descriptions {
     margin: 0 1.5em;
 }
@@ -623,6 +673,7 @@ main .button--lge {
     text-align: center;
 }
 
+/* grid of cars */
 .car-grid {
     margin: 0 auto 1em;
     display: grid;

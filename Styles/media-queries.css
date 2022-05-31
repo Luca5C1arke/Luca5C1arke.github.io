@@ -301,7 +301,17 @@
         align-items: baseline;
     }
     /* cars page */
-
+    .accordion-menu__filters {
+        position: relative;
+        top: 4rem;
+        box-shadow: 0 2px 10px var(--dark-blue);
+    }
+    #car-filters {
+        grid-template-columns: 1fr;
+    }
+    #car-filters input {
+        max-width: 30vw;
+    }
     /* contact us page */
     .panel-1 {
         grid-template-columns: 1fr;
@@ -392,14 +402,19 @@
 /* for a large desktop */
 @media (min-width: 991.98px) { 
     /* header */
+    /* index */
+
+    /* cars page*/
     .accordion--active + .panel-1 {
         display: grid;
         grid-template-columns: 70% 30%;
     }
-    /* index */
-
-    /* cars page*/
-
+    .accordion-menu__filters #cars-panel {
+        grid-template-columns: 1fr;
+        background-color: var(--dark-blue);
+        padding: 0;
+        margin: 0;
+    }
     /* TOTALLY SWAP THE HEADER HERE TO THE DESKTOP VERSION */   
 
 }

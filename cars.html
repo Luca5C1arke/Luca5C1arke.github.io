@@ -25,10 +25,121 @@
 <body>
     <div class="inquiry"></div>
     <div id="header"></div>
-    <main>
-        <div class="nav-bar-search">
-            
+    <div class="accordion-menu accordion-menu__filters">
+        <button id="accordion-filter-1" class="button accordion">SEARCH BY</button>
+        <div id="cars-panel" class="panel panel-1 panel__cars-filters">
+            <form method="get" id="car-filters">
+                <div class="filter-dropdown-split">
+                    <div class="filters-dropdown">
+                        <div class="filter-input-question cluster">
+                            <h3 class="text__header text__form__title text--med text--white">Odometer</h3><br>
+                            <div class="form__input cluster">
+                                <label class="text" for="odometer-from">From</label>
+                                <input type="text" id="odometer-from" name="odometer-from">
+                                <label class="text" for="odometer-to">To</label>
+                                <input type="text" id="odometer-to" name="odometer-to">
+                            </div>
+                        </div>
+                        <div class="filter-input-question cluster">
+                            <h3 class="text__header text__form__title text--med text--white">Price</h3><br>
+                            <div class="form__input cluster">
+                                <label class="text" for="price-from">From</label>
+                                <input type="text" id="price-from" name="price-from">
+                                <label class="text" for="price-to">To</label>
+                                <input type="text" id="price-to" name="price-to">
+                            </div>
+                        </div>
+                        <div class="filter-input-question cluster">
+                            <h3 class="text__header text__form__title text--med text--white">Petrol Usage</h3><br>
+                            <div class="form__input cluster">
+                                <label class="text" for="petrol-usage-from">From</label>
+                                <input type="text" id="petrol-usage-from" name="petrol-usage-from">
+                                <label class="text" for="petrol-usage-to">To</label>
+                                <input type="text" id="petrol-usage-to" name="petrol-usage-to">
+                            </div>
+                        </div>
+                        <div class="filter-input-question cluster">
+                            <h3 class="text__header text__form__title text--med text--white">Year</h3><br>
+                            <div class="form__input cluster">
+                                <label class="text" for="year-from">From</label>
+                                <input type="text" id="year-from" name="year-from">
+                                <label class="text" for="year-to">To</label>
+                                <input type="text" id="year-to" name="year-to">
+                            </div>
+                        </div>
+                        <div class="filter-input-question">
+                            <h3 class="text__header text__form__question text--med text--white">Transmission</h3><br>
+                            <div class="radio-answers">
+                                <input type="checkbox" id="transmission-auto" name="transmission" value="transmission-auto">
+                                <label for="transmission-auto">Automatic</label>
+                                <input type="checkbox" id="transmission-manual" name="transmission" value="transmission-manual">
+                                <label for="transmission-manual">Manual</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-dropdown-split">
+                    <div class="filters-dropdown">
+                        <div class="filter-input-question">
+                            <label class="text__header text--med text--white" for="make">Make</label><br>
+                            <select name="make" id="make">
+                                <option value="all">All makes</option>
+                                <option value="holden">Holden</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="mazda">Mazda</option>
+                                <option value="nissan">Nissan</option>
+                            </select><br>
+                        </div>
+                        <div class="filter-input-question">
+                            <label class="text__header text--med text--white" for="body-type">Body</label><br>
+                            <select name="body-type" id="body-type">
+                                <option value="all">All builds</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="hatch">Hatchback</option>
+                                <option value="suv">SUV</option>
+                                <option value="wagon">Wagon</option>
+                                <option value="ute">Ute</option>
+                                <option value="four-wheel-drive">4WD</option>
+                                <option value="van">Van</option>
+                                <option value="convertible">Convertible</option>
+                            </select>
+                        </div>
+                        <div class="filter-input-question">
+                            <label class="text__header text--med text--white" for="fuel-type">Fuel Type</label><br>
+                            <select name="fuel-type" id="fuel-type">
+                                <option value="all">All fuel types</option>
+                                <option value="petrol-unlead">Petrol (Unleaded)</option>
+                                <option value="petrol-prem">Petrol (Premium)</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="lpg">LPG</option>
+                            </select><br>
+                        </div>
+                        <div class="filter-input-question">
+                            <label class="text__header text--med text--white" for="colour">Colour</label><br>
+                            <select name="colour" id="colour">
+                                <option value="all">All colours</option>
+                                <option value="white">White</option>
+                                <option value="silver">Siler</option>
+                                <option value="grey">Grey</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="orange">Orange</option>
+                                <option value="Yellow">Yellow</option>
+                                <option value="Green">Green</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Purple">Purple</option>
+                                <option value="Pink">Pink</option>
+                                <option value="Brown">Brown</option>
+                            </select><br>
+                        </div>
+                        <input type="reset" value="RESET" class="button button--sml button--white" id="cars-form-reset" name="cars-form-reset">
+                        <input type="submit" value="SUBMIT" class="button button--lge button--light" id="cars-form-submit" name="cars-form-submit">
+                    </div>
+                </div>
+            </form>
         </div>
+    </div>
+    <main>
         <div class="filter-descriptions cluster">
             <div class="filter-descriptions--worded">
                 <p class="text__header text--dark text--med">Looking at "all" cars...</p>
@@ -37,7 +148,7 @@
             <div class="filters-dropdown box cluster">
                 <form>
                     <label for="cars__sort-by">Sort By</label>
-                    <select name="cars__sort-by" id=cars__sort-by">
+                    <select name="cars__sort-by" id="cars__sort-by">
                         <option value="price-low-to-high">Price (low to high)</option>
                         <option value="price-high-to-low">Price (high to low)</option>
                         <option value="featured">Featured</option>
