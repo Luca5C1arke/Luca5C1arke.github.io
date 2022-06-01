@@ -577,6 +577,10 @@ main .button--lge {
     width: 100%;
 }
 
+#cars-panel {
+    transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 #accordion-filter-1 {
     text-align: center;
     padding: 1em;
@@ -603,9 +607,13 @@ main .button--lge {
 #car-filters .filter-input-question, 
 #car-filters h3, #car-filters div,
 #car-filters select, #car-filters label {
-    padding-left: 0;
-    margin-left: 0;
+    padding: 0;
+    margin: 0;
     color: white;
+}
+
+#car-filters select {
+    margin-top: 0.45em;
 }
 
 #car-filters .filter-input-question,
@@ -623,7 +631,11 @@ main .button--lge {
 }
 
 #car-filters .filter-input-question {
-    padding: 1em 0;
+    padding: 0.7em 0;
+}
+
+#car-filters .filters-dropdown {
+    padding: 1em;
 }
 
 /* cars page header section */
@@ -658,6 +670,11 @@ main .button--lge {
     padding: 0 0;
 }
 
+.filters-dropdown form, .filters-dropdown form * {
+    padding: 0.05em;
+    margin: 0;
+}
+
 .filters-dropdown select {
     margin-top: 0.25em;
     border: 1px var(--dark-blue) dotted;
@@ -677,6 +694,7 @@ main .button--lge {
 /* grid of cars */
 .car-grid {
     margin: 0 auto 1em;
+    padding-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
