@@ -130,7 +130,7 @@ body {
 
 main {
     max-width: 70rem;
-    margin-top: 80px;
+    margin-top: 95px;
     margin-left: auto;
     margin-right: auto;
     min-height: 800px;
@@ -236,17 +236,6 @@ header {
 .z-sub > .header-details .icon {
     max-height: 10px;
     max-width: 10px;
-}
-
-/* hamburger menu */
-.line1, .line2, .line3 {
-    display: block;
-    max-width: 35px;  
-    min-height: 3px;  
-    margin: 5px 0.75em 0 auto;
-    background-color: var(--gold);
-    border-radius: 5px;
-    transition: 0.4s;
 }
 
 /* footer */
@@ -588,6 +577,14 @@ main .button--lge {
     width: 100%;
 }
 
+#accordion-filter-1 {
+    text-align: center;
+    padding: 1em;
+    font-style: normal;
+    font-size: var(--text-s);
+    background-color: var(--light-blue);
+}
+
 #car-filters {
     display: grid;
     width: 90%;
@@ -646,6 +643,10 @@ main .button--lge {
     padding: 0.5em 0.1em;
     margin: 0;
     justify-self: center;
+}
+
+.filter-descriptions--worded .text__header {
+    margin: 1em 0.55em 0;
 }
 
 .filter-descriptions .text__header {
@@ -744,7 +745,7 @@ main .button--lge {
 }
 
 .welcome-to-jz > * > img {
-    padding: 0.5em 1em;
+    padding: 2.5em 1em 0.5em;
     max-width: 200px;
 }
 
@@ -807,7 +808,8 @@ main .button--lge {
 }
 
 .add-to-garage-text p {
-    padding: 0;
+    padding: 1.05em 0.5em 0.75em;
+    margiN: 0;
 }
 
 .car-listing__header > h2 {
@@ -1034,6 +1036,7 @@ main .button--lge {
     width: 10em;
     height: 2em;
     margin-right: 0;
+    border: 1px var(--dark-blue) solid;
 }
 
 .archives__filters .filters-dropdown {
@@ -1123,7 +1126,8 @@ main .button--lge {
 
 .panel-1 h3 {
     text-align: left;
-    padding-left: 0.75em 
+    padding: 1.75em 0 1.25em 0.75em;
+    margin: 0;
 }
 
 .panel-1 .icon {

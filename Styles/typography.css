@@ -15,19 +15,22 @@
     --text-xxxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
 }
 
-/* HEADINGS */
+/* headings */
 h2, h3, .text__header {
     font-family: var(--font-secondary), serif;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1em 0 0.25em;
+    margin: 1em;
 }
 
-/* DEFAULT TEXT */
+/* text default styles */
 p, .text, th, td {
     font-family: var(--font-primary), sans-serif;
     font-size: var(--text-s);
+    margin: 1em;
+    line-height: 1.25em;
 }
 
 th {
@@ -45,12 +48,12 @@ ul, ul > * {
     font-size: 0.55em;
 }
 
-i {
+.text i {
     font-style: italic;
+    margin: 0;
 }
 
-/* LINKS */
-
+/* links */
 a {
     text-decoration: none;
 }
@@ -65,49 +68,8 @@ a:active {
     color: var(--gold);
 }
 
-/* TEXT */
-.text--xlge {
-    font-size: var(--text-xl);
-}
 
-.text--lge {
-    font-size: var(--text-l);
-}
-
-.text--med {
-    font-size: var(--text-m);
-}
-
-.text--sml {
-    font-size: var(--text-s);
-}
-
-.text--xsml {
-    font-size: var(--text-xs);
-}
-
-.text--xxsml {
-    font-size: var(--text-xxs);
-}
-
-.text--bold {
-    font-weight: bold;
-}
-
-.text--white {
-    color: white;
-}
-
-.text--dark {
-    color: var(--dark-blue);
-}
-
-.text--light {
-    color: var(--gold);
-}
-
-
-/* LABELS */
+/* labels */
 label {
     font-family: var(--font-primary), sans-serif;
     font-size: var(--text-s);
@@ -119,12 +81,19 @@ label {
     text-decoration: none;
 }
 
-/* TABLES */
+/* tables */
 .compare-table-title {
     font-weight: bold;
 }
 
-/* ACCORDION MENU */
+/* forms */
+small {
+    color: var(--negative-red);
+    font-family: var(--font-primary), sans-serif;
+    font-size: var(--text-xs);
+}
+
+/* accordion menu */
 .accordion {
     font-family: var(--font-primary), sans-serif;
     font-weight: 700;
@@ -148,4 +117,36 @@ label {
     text-shadow: none;
     font-size: var(--text-s);
     text-align: right;
+}
+
+/* font class declarations */
+.text--xlge {
+    font-size: var(--text-xl);
+}
+.text--lge {
+    font-size: var(--text-l);
+}
+.text--med {
+    font-size: var(--text-m);
+}
+.text--sml {
+    font-size: var(--text-s);
+}
+.text--xsml {
+    font-size: var(--text-xs);
+}
+.text--xxsml {
+    font-size: var(--text-xxs);
+}
+.text--bold {
+    font-weight: bold;
+}
+.text--white {
+    color: white;
+}
+.text--dark {
+    color: var(--dark-blue);
+}
+.text--light {
+    color: var(--gold);
 }
