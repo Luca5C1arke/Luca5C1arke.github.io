@@ -61,6 +61,17 @@
         justify-content: space-between;
     }
 
+    /* fixing mobile issue with archives box */
+    .archives > .archives__box {
+        margin: 0 2em;
+    }
+    .archives > .archives__box > .archives__box__articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        overflow: hidden;
+    }
+
     /* CONTACT US PAGE */
     .accordion--active + .panel-1 {
         grid-template-columns: 1fr;
@@ -313,6 +324,7 @@
     .archives > .archives__box {
         grid-column: 1;
         grid-row: 2;
+        overflow: visible;
     }
     .featured-articles__cards > .card__news a {
         margin-bottom: 2em;

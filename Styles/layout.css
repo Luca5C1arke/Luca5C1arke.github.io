@@ -1138,6 +1138,17 @@ main .button--lge {
 }
 
 /* CONTACT US PAGE */
+.accordion-menu > .contact-us-header {
+    box-shadow: none;
+    background-color: var(--off-white);
+    padding-bottom: 2em;
+}
+
+.accordion-menu .contact-us-header > * {
+    text-align: center;
+    margin: 0.25em auto;
+}
+
 .accordion-menu {
     margin-bottom: 5rem;
 }

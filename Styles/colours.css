@@ -43,6 +43,10 @@ p, .text {
     background-color: var(--dark-blue);
 }
 
+.text--box--light {
+    background-color: var(--light-blue);
+}
+
 /* header and footer */
 header, footer {
     background-image: linear-gradient(var(--light-blue), var(--dark-blue));
