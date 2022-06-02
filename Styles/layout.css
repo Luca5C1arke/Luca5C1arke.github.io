@@ -1,3 +1,23 @@
+/* SPACING DEFINITION */
+:root {
+    /* spacing */
+    --space-xxxs: 0.25em;
+    --space-xxs: 0.375em;
+    --space-xs: 0.5em;
+    --space-s: 0.75em;
+    --space-m: 1.25em;
+    --space-l: 2em;
+    --space-xl: 3.25em;
+    --space-xxl: 5.25em;
+    --space-xxxl: 8.5em;
+    --space-xxxxl: 11.25em;
+    --space-xxxxxl: 15.75em;
+    
+    /* line height */
+    --heading-line-height: 1.2;
+    --body-line-height: 1.4;  
+}
+
 /* GENERIC LAYOUT STYLES */
 /* cover */
 .cover {
@@ -276,6 +296,12 @@ img {
     height: 1.375em;
 }
 
+.text--box--dark {
+    padding: 0.5em 0;
+    margin: 0;
+    min-height: 2em;
+}
+
 /* INDEX PAGE */
 #main__index {
     max-width: 100vw;
@@ -532,6 +558,18 @@ img {
     grid-row: 2;
     grid-column: 2;
     padding: 1em 2em 1em 0.5em;
+}
+
+.contact-us__website > p {
+    margin: 2em;
+}
+
+.contact-us__phone > .phone-number {
+    margin: 2em 1em;
+}
+
+.contact-us__phone > p {
+    margin: 1em;
 }
 
 .contact-us > .contact-us__map {

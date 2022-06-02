@@ -53,6 +53,9 @@
     .archives__article > .cluster a {
         margin: 0.25em 0 0;
     }
+    .reviews-list {
+        padding: 0;
+    }
     .archives__filters .filters-dropdown {
         padding: 0.25em 1.2em;
         justify-content: space-between;
