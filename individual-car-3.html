@@ -39,21 +39,22 @@
                 </div>
                 <button id="button__add-car" class="button button--success"><a>+</a></button>
             </div>
+            <!-- car image carousel, symbols+stats and static group of images -->
             <div class="car-hero-shots">
                 <div class="image-carousel">
                     <!-- credit to https://codepen.io/andrewchaika/pen/mEqRPz for foundation of slider --->
                     <div class="carousel-inner">
                         <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
                         <div class="carousel-item">
-                            <img src="Images/car-3/car3-main.jpg">
+                            <img src="Images/car-3/car3-main.jpg" alt="'Hero' of car for sale">
                         </div>
                         <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
                         <div class="carousel-item">
-                            <img src="Images/car-3/car3-3.jpg">
+                            <img src="Images/car-3/car3-3.jpg" alt="Alternate angle of car for sale">
                         </div>
                         <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
                         <div class="carousel-item">
-                            <img src="Images/car-3/car3-7.jpg">
+                            <img src="Images/car-3/car3-7.jpg" alt="Alternate angle of car for sale">
                         </div>
                         <label for="carousel-3" class="carousel-control prev control-1"></label>
                         <label for="carousel-2" class="carousel-control next control-1"></label>
@@ -75,6 +76,7 @@
                     </div>
                 </div>
             </div>
+            <!-- card of car details -->
             <div class="car-details stack">
                 <ul>
                     <li class="lineup">
@@ -111,10 +113,12 @@
             <img src="Images/car-3/car3-8.jpg" alt="Steering wheel of the car">
         </div>
         <div class ="stack">
+            <!-- short description of car (and inquiry button) -->
             <div class="card descriptor-box">
                 <p class="text text--blue text--sml">This 2016 diesel is the ideal car for any tradies in the market for a new ute.</p>
             </div>
             <a class="button button__inquire button--lge button--light" onclick="inquiryForm()">INQUIRE ABOUT THIS CAR</a>
+            <!-- accordion menu containing a contact form and the car details -->
             <div class="accordion-menu accordion-menu__individual-car-page">
                 <button id="accordion-contact-1" class="button accordion">WAYS TO CONTACT US</button>
                 <div class="panel panel-1">
@@ -178,6 +182,7 @@
                         </div>
                     </div>
                 </div>
+                <!---- car details dropdowns -->
                 <button id="accordion-contact-2" class="button accordion accordion--active">MAIN DETAILS</button>
                 <div class="panel panel-2">
                     <table>
@@ -389,6 +394,7 @@
                     </table>
                 </div>
             </div>
+            <!-- a repeat inquiry form popup button -->
             <a class="button button_inquire button--lge button--light" onclick="inquiryForm()">INQUIRE ABOUT THIS CAR</a>
         </div>
     </main>
