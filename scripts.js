@@ -83,7 +83,6 @@ let boxTwoFull = false;
 
 function compareCar(buttonElement) {
     // check whether to add or remove car
-    console.log("We are doing something to a car");
     var addingCar = true;
     var boxToInsert = -1;
     var CarID = "compare-car";
