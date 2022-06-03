@@ -82,17 +82,11 @@ let boxOneFull = false;
 let boxTwoFull = false;
 
 function compareCar(buttonElement) {
-    // check whether to add or remove car, and check for box collisions
+    // check whether to add or remove car
+    console.log("We are doing something to a car");
     var addingCar = true;
     var boxToInsert = -1;
     var CarID = "compare-car";
-    if (boxOneFull==true && boxTwoFull==true) {
-        // then first need to remove a car
-        console.log("Error, both boxes already full");
-        // so remove the car, set boxOneFull to false, and change the buttonElements text content (the one being removed)
-        boxOneFull = false;
-        compareCarRemove("#compare-car");
-    }
     if (buttonElement.textContent == "+") { 
         buttonElement.textContent = "-";
     } else {
@@ -101,6 +95,7 @@ function compareCar(buttonElement) {
     }
     // now either add or remove the car depending on the +/-
     if (addingCar == false) {
+        // then are removing the car
         var CarID = "compare-car";
         // find out what car it is
         if (buttonElement.classList.contains("garage-car-1")) {
@@ -120,15 +115,27 @@ function compareCar(buttonElement) {
             CarID = CarID+"-5";
         }
         // find out what column it's in
-        if ((document.querySelectorAll("#compare-car #"+CarID+" .car--insert").length) > 0) {
+        if ((document.querySelectorAll("#compare-car .car--insert").length) == 2) {
             boxOneFull = false;
-            compareCarRemove("#compare-car");
-        } else {
             boxTwoFull = false;
+            console.log("Here");
+            compareCarRemove("#compare-car-2");
+        } else {
+            boxOneFull = false;
+            boxTwoFull = false;
+            compareCarRemove("#compare-car");
             compareCarRemove("#compare-car-2");
         }
-        compareCarRemove("#compare-car");
     } else {
+        // check for box collisions
+        if (boxOneFull==true && boxTwoFull==true) {
+            // then first need to remove a car
+            console.log("Error, both boxes already full");
+            // so remove the car, set boxOneFull to false, and change the buttonElements text content (the one being removed)
+            boxOneFull = false;
+            compareCarRemove("#compare-car");
+            // and insert it into box one
+        }
         // now determine which box is free
         if (boxOneFull == false) {
             // insert it into box 1
@@ -160,10 +167,12 @@ function compareCar(buttonElement) {
         if (boxToInsert == 1) {
             boxOneFull = true;
             var CarToEdit = document.querySelector("#compare-car #"+CarID);
+            console.log("Box One now full");
 
         } else if (boxToInsert == 2) {
             boxTwoFull = true;
             var CarToEdit = document.querySelector("#compare-car-2 #"+CarID);
+            console.log("Box Two now full");
         } else {
             console.log("Error 2, should not have made it here, program must have flaw.");
         }
