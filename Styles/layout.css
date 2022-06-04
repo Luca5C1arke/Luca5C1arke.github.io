@@ -413,6 +413,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     place-items: center;
+    margin-bottom: 2em;
 }
 
 .about-us > a {
@@ -466,7 +467,7 @@ img {
 .contact-us > h2 {
     grid-row: 1;
     grid-column: 1 / span 2;
-    padding: 0.65em 0.25em 0.15em;
+    padding: 0 0.25em 0.15em;
 }
 
 .contact-us__website {
